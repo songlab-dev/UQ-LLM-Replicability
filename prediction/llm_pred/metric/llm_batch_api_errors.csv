@@ -1,0 +1,5 @@
+corpus,effort,temp,code,count
+CB,(untagged),(untagged),credit_balance_exhausted,6966
+RPP,high,0.2,credit_balance_exhausted,563
+RPP,high,0.7,credit_balance_exhausted,863
+RPP,(untagged),(untagged),unknown,1

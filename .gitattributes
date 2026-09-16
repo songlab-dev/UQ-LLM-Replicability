@@ -1,0 +1,2 @@
+# Preserve the source archive's original CRLF CSV files byte-for-byte.
+data/D*.csv -text whitespace=-trailing-space

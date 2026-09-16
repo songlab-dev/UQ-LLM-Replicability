@@ -1,0 +1,17 @@
+# Direct runtime dependencies for llm_uq.
+# Target interpreter: CPython 3.12.12.
+# For the resolved environment used to regenerate repository artifacts, install
+# requirements-lock.txt instead.
+httpx==0.28.1
+matplotlib==3.11.0
+numpy==2.4.6
+openai==2.41.1
+pandas==3.0.3
+PyMuPDF==1.27.2.3
+python-docx==1.2.0
+python-dotenv==1.2.2
+scikit-learn==1.9.0
+scipy==1.17.1
+statsmodels==0.14.6
+tiktoken==0.13.0
+tqdm==4.68.2

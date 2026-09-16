@@ -1,0 +1,2 @@
+model,evaluation,n,AUC,AUC_SD,Accuracy,Accuracy_SD
+"gpt-5.4-mini qbar (verbalized confidence, high-quality RPP subset)",zero-shot,90,0.625,0.06294723709373198,0.6777777777777778,0.049260651609394766

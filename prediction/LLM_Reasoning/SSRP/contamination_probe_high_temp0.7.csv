@@ -1,0 +1,631 @@
+study_num,run_id,title,familiarity,verdict,notes,reasoning,ground_truth
+1,0,Incidental haptic sensations influence social judgments and decisions,unsure,unknown,"I recognize the general embodied-haptics paper, but I don’t specifically recall the exact replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the general embodied-haptics paper, but I don’t specifically recall the exact replication attempt or its result.",no
+1,1,Incidental haptic sensations influence social judgments and decisions,recognized,unreplicable,"I recognize this as the heavy-clipboard/weight-importance embodied-cognition finding, and the direct independent replication I recall did not reproduce the original F-test effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize this as the heavy-clipboard/weight-importance embodied-cognition finding, and the direct independent replication I recall did not reproduce the original F-test effect.",no
+1,2,Incidental haptic sensations influence social judgments and decisions,recognized,unreplicable,"I recall this as the classic heavy-clipboard/haptic-priming effect on seriousness or importance judgments, and the independent direct replication I remember did not show the original effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as the classic heavy-clipboard/haptic-priming effect on seriousness or importance judgments, and the independent direct replication I remember did not show the original effect.",no
+1,3,Incidental haptic sensations influence social judgments and decisions,recognized,unreplicable,"I recognize this as the classic heavy-vs-light clipboard haptic-weight effect on social/importance judgments, and I recall the formal direct replication/registered replication finding no reliable effect in the ANOVA (F-test) outcome.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize this as the classic heavy-vs-light clipboard haptic-weight effect on social/importance judgments, and I recall the formal direct replication/registered replication finding no reliable effect in the ANOVA (F-test) outcome.",no
+1,4,Incidental haptic sensations influence social judgments and decisions,unsure,unknown,"I recognize this as the 2010 Science paper on embodied haptic sensations, but I don't specifically recall the independent replication attempt or its F-test result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the 2010 Science paper on embodied haptic sensations, but I don't specifically recall the independent replication attempt or its F-test result.",no
+1,5,Incidental haptic sensations influence social judgments and decisions,recognized,unknown,"I recognize this as the 2010 heavy-clipboard/importance-judgment embodied-cognition study, but I don’t specifically recall the formal independent replication outcome well enough to classify it confidently.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2010 heavy-clipboard/importance-judgment embodied-cognition study, but I don’t specifically recall the formal independent replication outcome well enough to classify it confidently.",no
+1,6,Incidental haptic sensations influence social judgments and decisions,unsure,unknown,"I vaguely remember this as the Ackerman/Nocera/Bargh haptic-priming paper using hard/soft or rough/smooth sensations, but I don’t specifically recall the outcome of a formal independent replication of the exact F-tested finding.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely remember this as the Ackerman/Nocera/Bargh haptic-priming paper using hard/soft or rough/smooth sensations, but I don’t specifically recall the outcome of a formal independent replication of the exact F-tested finding.",no
+1,7,Incidental haptic sensations influence social judgments and decisions,recognized,unreplicable,"I recall this as Ackerman, Nocera, and Bargh’s heavy-clipboard embodied-priming study, and the direct replication I remember did not reproduce the original weight-on-judgment effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Ackerman, Nocera, and Bargh’s heavy-clipboard embodied-priming study, and the direct replication I remember did not reproduce the original weight-on-judgment effect.",no
+1,8,Incidental haptic sensations influence social judgments and decisions,recognized,unreplicable,"I recognize this as the haptic-weight/importance embodied-cognition line of work, and the direct replication I recall did not find the original effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize this as the haptic-weight/importance embodied-cognition line of work, and the direct replication I recall did not find the original effect.",no
+1,9,Incidental haptic sensations influence social judgments and decisions,unsure,unknown,"I recognize the 2010 Ackerman/Nocera/Bargh haptic-priming paper, but I do not specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2010 Ackerman/Nocera/Bargh haptic-priming paper, but I do not specifically recall the formal independent replication attempt or its outcome.",no
+2,0,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",unsure,unknown,"I recognize this as an Aviezer-style emotion-perception finding about bodies vs faces, but I don’t specifically recall the formal independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as an Aviezer-style emotion-perception finding about bodies vs faces, but I don’t specifically recall the formal independent replication attempt or its result.",yes
+2,1,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",unsure,unknown,"I recognize the 2012 emotion-perception paper in broad terms, but I don’t specifically recall the independent replication attempt or whether it supported the body-cue effect.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2012 emotion-perception paper in broad terms, but I don’t specifically recall the independent replication attempt or whether it supported the body-cue effect.",yes
+2,2,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",unsure,unknown,"I recognize the 2012 Aviezer et al. paper on body cues versus facial expressions in emotion discrimination, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2012 Aviezer et al. paper on body cues versus facial expressions in emotion discrimination, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+2,3,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",recognized,unknown,"I recall the Aviezer et al. study arguing that body posture, more than facial expression, drives judgments of intense positive vs. negative emotion, but I don’t specifically remember the outcome of a formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall the Aviezer et al. study arguing that body posture, more than facial expression, drives judgments of intense positive vs. negative emotion, but I don’t specifically remember the outcome of a formal independent replication attempt.",yes
+2,4,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",recognized,unknown,"I recognize the 2012 Aviezer et al. claim that body posture is more diagnostic than facial expression for intense positive vs. negative emotion, but I don’t specifically recall the outcome of the formal independent replication.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2012 Aviezer et al. claim that body posture is more diagnostic than facial expression for intense positive vs. negative emotion, but I don’t specifically recall the outcome of the formal independent replication.",yes
+2,5,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",recognized,unknown,"I recognize this as the Aviezer et al. 2012 claim that body posture was more informative than facial expressions for distinguishing intense positive versus negative emotions, but I don’t specifically recall the independent replication outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the Aviezer et al. 2012 claim that body posture was more informative than facial expressions for distinguishing intense positive versus negative emotions, but I don’t specifically recall the independent replication outcome.",yes
+2,6,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",unsure,unknown,"I vaguely recognize this as a body-vs-face emotion-perception paper, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a body-vs-face emotion-perception paper, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+2,7,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",recognized,unknown,"I recognize the 2012 Aviezer/Todorov finding that body posture dominated facial expression for judging intense emotion, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2012 Aviezer/Todorov finding that body posture dominated facial expression for judging intense emotion, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+2,8,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",unsure,unknown,"I recognize this as the Aviezer et al. body-vs-face emotion recognition paper, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the Aviezer et al. body-vs-face emotion recognition paper, but I do not specifically recall the independent replication attempt or its outcome.",yes
+2,9,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",recognized,unknown,"I recognize the Aviezer et al. 2012 finding that body posture dominated facial cues in judging intense positive versus negative emotions, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the Aviezer et al. 2012 finding that body posture dominated facial cues in judging intense positive versus negative emotions, but I don’t specifically recall the outcome of the independent replication attempt.",yes
+3,0,Affirmative action policies promote women and do not harm efficiency in the laboratory,unsure,unknown,"I vaguely recall the 2012 laboratory affirmative-action experiment showing more women promoted without efficiency loss, but I do not specifically remember the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall the 2012 laboratory affirmative-action experiment showing more women promoted without efficiency loss, but I do not specifically remember the independent replication attempt or its outcome.",yes
+3,1,Affirmative action policies promote women and do not harm efficiency in the laboratory,recognized,unknown,"I recognize this as the 2012 experimental economics paper by Balafoutas and Sutter on affirmative action/quotas in the lab, but I do not specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2012 experimental economics paper by Balafoutas and Sutter on affirmative action/quotas in the lab, but I do not specifically recall the outcome of the independent replication attempt.",yes
+3,2,Affirmative action policies promote women and do not harm efficiency in the laboratory,unsure,unknown,"I vaguely recognize this as an experimental economics paper on affirmative action and gender promotion, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as an experimental economics paper on affirmative action and gender promotion, but I do not specifically recall the independent replication attempt or its outcome.",yes
+3,3,Affirmative action policies promote women and do not harm efficiency in the laboratory,recognized,replicable,"I recall this as the Balafoutas & Sutter laboratory affirmative-action experiment, and the independent replication is generally described as finding the same women-promoting effect without an efficiency loss.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recall this as the Balafoutas & Sutter laboratory affirmative-action experiment, and the independent replication is generally described as finding the same women-promoting effect without an efficiency loss.",yes
+3,4,Affirmative action policies promote women and do not harm efficiency in the laboratory,unsure,unknown,"I recognize the 2012 lab affirmative-action paper by Balafoutas et al., but I do not specifically recall the independent replication attempt or its chi-square-based test, so I can’t judge whether it replicated.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2012 lab affirmative-action paper by Balafoutas et al., but I do not specifically recall the independent replication attempt or its chi-square-based test, so I can’t judge whether it replicated.",yes
+3,5,Affirmative action policies promote women and do not harm efficiency in the laboratory,recognized,unknown,"I recognize this as the 2012 Science lab experiment by Balafoutas and Sutter on affirmative action in contests, but I do not specifically recall the outcome of its independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2012 Science lab experiment by Balafoutas and Sutter on affirmative action in contests, but I do not specifically recall the outcome of its independent replication attempt.",yes
+3,6,Affirmative action policies promote women and do not harm efficiency in the laboratory,recognized,unknown,"I recognize this as the 2012 experimental economics paper on affirmative action in tournaments, but I don’t specifically recall the independent replication attempt or its outcome well enough to classify it confidently.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2012 experimental economics paper on affirmative action in tournaments, but I don’t specifically recall the independent replication attempt or its outcome well enough to classify it confidently.",yes
+3,7,Affirmative action policies promote women and do not harm efficiency in the laboratory,unsure,unknown,"I recognize this as an economics lab experiment on affirmative action and gender, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as an economics lab experiment on affirmative action and gender, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+3,8,Affirmative action policies promote women and do not harm efficiency in the laboratory,recognized,unknown,"I recall this as an experimental economics study on affirmative action and women’s promotion, but I don’t specifically remember the independent replication or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall this as an experimental economics study on affirmative action and women’s promotion, but I don’t specifically remember the independent replication or its outcome.",yes
+3,9,Affirmative action policies promote women and do not harm efficiency in the laboratory,unsure,unknown,"I remember this as a laboratory affirmative-action/quota experiment in economics, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I remember this as a laboratory affirmative-action/quota experiment in economics, but I do not specifically recall the independent replication attempt or its outcome.",yes
+4,0,Experimental evidence for the influence of group size on cultural complexity,recognized,unknown,"I recognize the 2013 Derex et al. experiment on group size and cultural complexity, but I don’t specifically recall the independent replication attempt or whether that effect was confirmed.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2013 Derex et al. experiment on group size and cultural complexity, but I don’t specifically recall the independent replication attempt or whether that effect was confirmed.",yes
+4,1,Experimental evidence for the influence of group size on cultural complexity,unsure,unknown,"I recognize the 2013 Derex et al. study on group size and cultural complexity, but I do not specifically recall the outcome of the independent chi-square-based replication attempt.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2013 Derex et al. study on group size and cultural complexity, but I do not specifically recall the outcome of the independent chi-square-based replication attempt.",yes
+4,2,Experimental evidence for the influence of group size on cultural complexity,recognized,unknown,"I recognize this as Derex et al.’s 2013 experiment claiming larger groups generate greater cultural complexity, but I don’t specifically recall the formal independent replication or its result.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as Derex et al.’s 2013 experiment claiming larger groups generate greater cultural complexity, but I don’t specifically recall the formal independent replication or its result.",yes
+4,3,Experimental evidence for the influence of group size on cultural complexity,recognized,unknown,"I recognize the 2013 Derex et al. group-size/cultural-complexity experiment, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2013 Derex et al. group-size/cultural-complexity experiment, but I do not specifically recall the independent replication attempt or its outcome.",yes
+4,4,Experimental evidence for the influence of group size on cultural complexity,recognized,unknown,"I recognize this as the 2013 Derex et al. experiment arguing that larger groups promote greater cultural complexity, but I do not specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2013 Derex et al. experiment arguing that larger groups promote greater cultural complexity, but I do not specifically recall the outcome of the independent replication attempt.",yes
+4,5,Experimental evidence for the influence of group size on cultural complexity,unsure,unknown,"I recognize the Derex et al. study on group size and cultural complexity, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the Derex et al. study on group size and cultural complexity, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+4,6,Experimental evidence for the influence of group size on cultural complexity,recognized,unknown,"I recognize the 2013 Derex et al. study on group size and cultural complexity, but I don’t specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2013 Derex et al. study on group size and cultural complexity, but I don’t specifically recall the formal independent replication attempt or its outcome.",yes
+4,7,Experimental evidence for the influence of group size on cultural complexity,unsure,unknown,"I recognize this as the 2013 group-size/cultural-complexity experiment in cultural evolution, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the 2013 group-size/cultural-complexity experiment in cultural evolution, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+4,8,Experimental evidence for the influence of group size on cultural complexity,unsure,unknown,"I recognize the 2013 Derex et al. paper as a cultural-evolution study on group size and complexity, but I don’t specifically recall the details or outcome of its independent replication attempt.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2013 Derex et al. paper as a cultural-evolution study on group size and complexity, but I don’t specifically recall the details or outcome of its independent replication attempt.",yes
+4,9,Experimental evidence for the influence of group size on cultural complexity,unsure,unknown,"I recognize Derex et al.’s 2013 group-size/cultural-complexity paper, but I don’t specifically recall the formal independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize Derex et al.’s 2013 group-size/cultural-complexity paper, but I don’t specifically recall the formal independent replication attempt or its result.",yes
+5,0,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unsure,unknown,"I vaguely recognize this as a paper about sequential memory biases, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a paper about sequential memory biases, but I do not specifically recall the independent replication attempt or its outcome.",yes
+5,1,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unfamiliar,unknown,"I don’t specifically recognize this 2012 “Memory’s penumbra” study or its independent replication attempt, so I can’t reliably say whether the replicated finding succeeded.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2012 “Memory’s penumbra” study or its independent replication attempt, so I can’t reliably say whether the replicated finding succeeded.",yes
+5,2,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unfamiliar,unknown,"I don’t specifically recognize this 2012 paper or a formal independent replication of its finding, so I can’t reliably judge whether it replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2012 paper or a formal independent replication of its finding, so I can’t reliably judge whether it replicated.",yes
+5,3,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,recognized,unknown,"I recognize this as the 2012 paper on lingering mnemonic biases from episodic memory decisions, but I don’t specifically recall the independent replication outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2012 paper on lingering mnemonic biases from episodic memory decisions, but I don’t specifically recall the independent replication outcome.",yes
+5,4,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unsure,unknown,"I vaguely recognize the 2012 title as a memory-bias/episodic-recognition paper, but I do not specifically recall the formal replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize the 2012 title as a memory-bias/episodic-recognition paper, but I do not specifically recall the formal replication attempt or its outcome.",yes
+5,5,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unsure,unknown,"I vaguely recognize the 2012 memory-bias paper, but I do not specifically recall the independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize the 2012 memory-bias paper, but I do not specifically recall the independent replication attempt or its result.",yes
+5,6,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unfamiliar,unknown,"I don't specifically recognize this study or its independent replication attempt, so I can't recall the outcome without guessing.","FAMILIARITY: unfamiliar  
+VERDICT: unknown  
+NOTES: I don't specifically recognize this study or its independent replication attempt, so I can't recall the outcome without guessing.",yes
+5,7,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unfamiliar,unknown,"I don’t specifically recognize this 2012 study or its formal independent replication attempt, so I can’t reliably say whether that finding replicated.","FAMILIARITY: unfamiliar  
+VERDICT: unknown  
+NOTES: I don’t specifically recognize this 2012 study or its formal independent replication attempt, so I can’t reliably say whether that finding replicated.",yes
+5,8,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unsure,unknown,"I vaguely recognize the title as a memory-bias/decision-aftereffect paper, but I don’t specifically recall the independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize the title as a memory-bias/decision-aftereffect paper, but I don’t specifically recall the independent replication attempt or its result.",yes
+5,9,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,unsure,unknown,"I vaguely recall this as a 2012 cognitive-psychology paper on recognition decisions creating lingering memory biases, but I don’t specifically remember the independent replication’s outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as a 2012 cognitive-psychology paper on recognition decisions creating lingering memory biases, but I don’t specifically remember the independent replication’s outcome.",yes
+6,0,Analytic thinking promotes religious disbelief,unsure,unknown,"I recognize the 2012 Gervais & Norenzayan study on analytic thinking and religiosity, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2012 Gervais & Norenzayan study on analytic thinking and religiosity, but I do not specifically recall the independent replication attempt or its outcome.",no
+6,1,Analytic thinking promotes religious disbelief,recognized,unknown,"I recognize the 2012 Gervais & Norenzayan study on analytic thinking and religious disbelief, but I do not specifically recall the outcome of its formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2012 Gervais & Norenzayan study on analytic thinking and religious disbelief, but I do not specifically recall the outcome of its formal independent replication attempt.",no
+6,2,Analytic thinking promotes religious disbelief,recognized,unreplicable,"I recall this as Gervais & Norenzayan’s 2012 Science paper, and the direct replication of the analytic-thinking prime effect on religious belief did not reproduce, even though the correlational CRT–religiosity link has been more robust.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Gervais & Norenzayan’s 2012 Science paper, and the direct replication of the analytic-thinking prime effect on religious belief did not reproduce, even though the correlational CRT–religiosity link has been more robust.",no
+6,3,Analytic thinking promotes religious disbelief,recognized,unreplicable,"I recall Gervais & Norenzayan’s 2012 analytic-thinking prime effect on religious belief, and the later direct replication I remember did not reproduce the effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall Gervais & Norenzayan’s 2012 analytic-thinking prime effect on religious belief, and the later direct replication I remember did not reproduce the effect.",no
+6,4,Analytic thinking promotes religious disbelief,recognized,unreplicable,"I recognize the 2012 Science paper by Gervais and Norenzayan, and I recall that later direct/preregistered replications did not reproduce the analytic-prime effect on religiosity.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize the 2012 Science paper by Gervais and Norenzayan, and I recall that later direct/preregistered replications did not reproduce the analytic-prime effect on religiosity.",no
+6,5,Analytic thinking promotes religious disbelief,recognized,unreplicable,"I recognize Gervais & Norenzayan’s 2012 finding that analytic thinking lowers religious belief, and I recall later direct replications failing to reproduce the causal priming effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize Gervais & Norenzayan’s 2012 finding that analytic thinking lowers religious belief, and I recall later direct replications failing to reproduce the causal priming effect.",no
+6,6,Analytic thinking promotes religious disbelief,recognized,unknown,"I recognize the 2012 Science paper by Gervais and Norenzayan, but I don’t specifically recall the formal independent replication attempt you’re referring to or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2012 Science paper by Gervais and Norenzayan, but I don’t specifically recall the formal independent replication attempt you’re referring to or its outcome.",no
+6,7,Analytic thinking promotes religious disbelief,recognized,unreplicable,"This is Gervais & Norenzayan’s 2012 claim that analytic thinking lowers religious belief, and I recall the later direct replication of the prime effect coming back null/very small rather than reproducing the original result.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: This is Gervais & Norenzayan’s 2012 claim that analytic thinking lowers religious belief, and I recall the later direct replication of the prime effect coming back null/very small rather than reproducing the original result.",no
+6,8,Analytic thinking promotes religious disbelief,recognized,unreplicable,"I remember the 2012 Gervais and Norenzayan paper on analytic thinking and religious disbelief, and I recall that a later independent registered replication report did not find the predicted reduction in religious belief.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I remember the 2012 Gervais and Norenzayan paper on analytic thinking and religious disbelief, and I recall that a later independent registered replication report did not find the predicted reduction in religious belief.",no
+6,9,Analytic thinking promotes religious disbelief,recognized,unreplicable,"I recall this as Gervais and Norenzayan’s 2012 analytic-thinking/religion paper, and the independent replication I know of did not reproduce the original priming effect on religious disbelief.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Gervais and Norenzayan’s 2012 analytic-thinking/religion paper, and the independent replication I know of did not reproduce the original priming effect on religious disbelief.",no
+7,0,Avoiding overhead aversion in charity,unsure,unknown,"I recognize the general overhead-aversion-in-charity topic, but I don't specifically recall this 2014 study’s formal independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the general overhead-aversion-in-charity topic, but I don't specifically recall this 2014 study’s formal independent replication attempt or its outcome.",yes
+7,1,Avoiding overhead aversion in charity,unsure,unknown,"I vaguely recall this as a 2014 study on reducing donors’ aversion to charities’ overhead by separating who pays those costs, but I don’t specifically remember the independent replication result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as a 2014 study on reducing donors’ aversion to charities’ overhead by separating who pays those costs, but I don’t specifically remember the independent replication result.",yes
+7,2,Avoiding overhead aversion in charity,unfamiliar,unknown,"I don’t specifically recognize this 2014 charity-overhead study or its independent replication attempt from memory, so I can’t reliably say whether that finding replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2014 charity-overhead study or its independent replication attempt from memory, so I can’t reliably say whether that finding replicated.",yes
+7,3,Avoiding overhead aversion in charity,unfamiliar,unknown,"I don’t specifically recognize this study or its independent replication attempt, so I can’t reliably recall whether the reported effect replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this study or its independent replication attempt, so I can’t reliably recall whether the reported effect replicated.",yes
+7,4,Avoiding overhead aversion in charity,unsure,unknown,"I recognize this as the 2014 charity overhead-aversion framing paper, but I don’t specifically recall the independent replication result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the 2014 charity overhead-aversion framing paper, but I don’t specifically recall the independent replication result.",yes
+7,5,Avoiding overhead aversion in charity,unsure,unknown,"I recognize the general overhead-aversion-in-charity literature, but I don’t specifically recall this 2014 paper or a formal independent replication of this exact finding.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the general overhead-aversion-in-charity literature, but I don’t specifically recall this 2014 paper or a formal independent replication of this exact finding.",yes
+7,6,Avoiding overhead aversion in charity,unsure,unknown,"I recognize the general overhead-aversion-in-charity literature, but I don’t specifically recall this 2014 study or the independent replication attempt tied to the z-distribution test.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the general overhead-aversion-in-charity literature, but I don’t specifically recall this 2014 study or the independent replication attempt tied to the z-distribution test.",yes
+7,7,Avoiding overhead aversion in charity,unfamiliar,unknown,"I don’t specifically recognize this study or its independent replication attempt, so I can’t assess the replication outcome from memory.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this study or its independent replication attempt, so I can’t assess the replication outcome from memory.",yes
+7,8,Avoiding overhead aversion in charity,unsure,unknown,"I vaguely recall this as a study on reducing donors' aversion to charity overhead, but I don't specifically recognize the independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as a study on reducing donors' aversion to charity overhead, but I don't specifically recognize the independent replication attempt or its result.",yes
+7,9,Avoiding overhead aversion in charity,unsure,unknown,"I vaguely recall this as a charity-overhead framing paper about reducing donors’ “overhead aversion,” but I don’t specifically remember the independent replication result for that finding.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as a charity-overhead framing paper about reducing donors’ “overhead aversion,” but I don’t specifically remember the independent replication result for that finding.",yes
+8,0,Cooperating with the future,unsure,unknown,"I vaguely associate this title with a future-self/cooperation priming study, but I don’t specifically recall the independent replication attempt or its outcome well enough to judge it.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely associate this title with a future-self/cooperation priming study, but I don’t specifically recall the independent replication attempt or its outcome well enough to judge it.",yes
+8,1,Cooperating with the future,unsure,unknown,"I vaguely recall a 2014 study on future-self continuity/cooperation, but I don’t specifically remember the exact independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall a 2014 study on future-self continuity/cooperation, but I don’t specifically remember the exact independent replication attempt or its outcome.",yes
+8,2,Cooperating with the future,unfamiliar,unknown,"I don’t specifically recognize a 2014 study titled “Cooperating with the future” or its independent replication attempt, so I can’t reliably say whether that specific finding replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize a 2014 study titled “Cooperating with the future” or its independent replication attempt, so I can’t reliably say whether that specific finding replicated.",yes
+8,3,Cooperating with the future,unfamiliar,unknown,I don’t specifically recognize this exact 2014 “Cooperating with the future” study or its formal replication attempt from the title plus the t-distribution detail.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this exact 2014 “Cooperating with the future” study or its formal replication attempt from the title plus the t-distribution detail.",yes
+8,4,Cooperating with the future,unsure,unknown,"I don’t specifically recognize the 2014 study “Cooperating with the future” or the replication attempt described by the t-distributed null, so I can’t reliably say whether the finding replicated.","FAMILIARITY: unsure  
+VERDICT: unknown  
+NOTES: I don’t specifically recognize the 2014 study “Cooperating with the future” or the replication attempt described by the t-distributed null, so I can’t reliably say whether the finding replicated.",yes
+8,5,Cooperating with the future,unfamiliar,unknown,I don’t specifically recognize this 2014 study or its independent replication attempt from the title and t-distribution detail alone.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2014 study or its independent replication attempt from the title and t-distribution detail alone.",yes
+8,6,Cooperating with the future,unfamiliar,unknown,I don’t specifically recognize this 2014 study or its independent replication attempt well enough to say whether the finding replicated.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2014 study or its independent replication attempt well enough to say whether the finding replicated.",yes
+8,7,Cooperating with the future,recognized,unreplicable,"I recall this as the future-self-continuity manipulation paper claiming more cooperation in a prisoner’s dilemma, and I remember the independent replication not finding that effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as the future-self-continuity manipulation paper claiming more cooperation in a prisoner’s dilemma, and I remember the independent replication not finding that effect.",yes
+8,8,Cooperating with the future,unfamiliar,unknown,"I don’t specifically recognize this 2014 “Cooperating with the future” result or its formal replication attempt from my training, so I can’t reliably say whether it replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2014 “Cooperating with the future” result or its formal replication attempt from my training, so I can’t reliably say whether it replicated.",yes
+8,9,Cooperating with the future,unsure,unknown,"I have a vague sense this is a future-orientation/cooperation experiment, but I don’t specifically recognize the exact study or its independent replication result well enough to judge.","FAMILIARITY: unsure  
+VERDICT: unknown  
+NOTES: I have a vague sense this is a future-orientation/cooperation experiment, but I don’t specifically recognize the exact study or its independent replication result well enough to judge.",yes
+9,0,Lab experiments for the study of social-ecological systems,unsure,unknown,"I vaguely recognize this as a 2010 review-style paper on lab experiments in social-ecological systems, but I don’t specifically recall the empirical finding or any independent replication attempt of it.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a 2010 review-style paper on lab experiments in social-ecological systems, but I don’t specifically recall the empirical finding or any independent replication attempt of it.",yes
+9,1,Lab experiments for the study of social-ecological systems,unsure,unknown,"I vaguely recognize this as a 2010 review-style paper on lab experiments in common-pool/social-ecological systems, but I do not specifically recognize the exact finding or its independent replication attempt well enough to judge replication.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a 2010 review-style paper on lab experiments in common-pool/social-ecological systems, but I do not specifically recognize the exact finding or its independent replication attempt well enough to judge replication.",yes
+9,2,Lab experiments for the study of social-ecological systems,unfamiliar,unknown,"I don’t specifically recognize this 2010 social-ecological-systems paper or any formal independent replication attempt of the z-distribution null-result claim, so I can’t assess the outcome reliably.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2010 social-ecological-systems paper or any formal independent replication attempt of the z-distribution null-result claim, so I can’t assess the outcome reliably.",yes
+9,3,Lab experiments for the study of social-ecological systems,unfamiliar,unknown,"I don’t specifically recognize this 2010 social-ecological-systems lab-experiments paper or a particular independent replication of the z-test finding, so I can’t reliably judge the outcome.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2010 social-ecological-systems lab-experiments paper or a particular independent replication of the z-test finding, so I can’t reliably judge the outcome.",yes
+9,4,Lab experiments for the study of social-ecological systems,unsure,unknown,"I recognize the 2010 review on lab experiments for social-ecological systems, but I do not specifically recall the exact finding identified by the z-distribution test or the result of its independent replication attempt.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2010 review on lab experiments for social-ecological systems, but I do not specifically recall the exact finding identified by the z-distribution test or the result of its independent replication attempt.",yes
+9,5,Lab experiments for the study of social-ecological systems,unfamiliar,unknown,"I don’t specifically recognize this study or its independent replication attempt, so I can’t reliably say whether that finding replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this study or its independent replication attempt, so I can’t reliably say whether that finding replicated.",yes
+9,6,Lab experiments for the study of social-ecological systems,unfamiliar,unknown,"I don’t specifically recognize this paper or its formal replication attempt, so I can’t reliably judge whether that z-distribution finding was replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this paper or its formal replication attempt, so I can’t reliably judge whether that z-distribution finding was replicated.",yes
+9,7,Lab experiments for the study of social-ecological systems,unfamiliar,unknown,I don’t specifically recognize this 2010 paper or any formal independent replication attempt of the result described.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2010 paper or any formal independent replication attempt of the result described.",yes
+9,8,Lab experiments for the study of social-ecological systems,unsure,unknown,"I vaguely recognize this as a broad lab-experiments paper on social-ecological systems, but I do not specifically recall the exact z-test finding or any formal independent replication of it.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a broad lab-experiments paper on social-ecological systems, but I do not specifically recall the exact z-test finding or any formal independent replication of it.",yes
+9,9,Lab experiments for the study of social-ecological systems,unfamiliar,unknown,"I don’t specifically recognize this 2010 “Lab experiments for the study of social-ecological systems” finding or its independent replication attempt, so I can’t assess the replication outcome from memory.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2010 “Lab experiments for the study of social-ecological systems” finding or its independent replication attempt, so I can’t assess the replication outcome from memory.",yes
+10,0,Retrieval practice produces more learning than elaborative studying with concept mapping,unsure,unknown,"I recognize the 2011 Karpicke & Blunt Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2011 Karpicke & Blunt Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+10,1,Retrieval practice produces more learning than elaborative studying with concept mapping,unsure,unknown,"I recognize the 2011 Karpicke & Blunt Science study, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2011 Karpicke & Blunt Science study, but I do not specifically recall the independent replication attempt or its outcome.",yes
+10,2,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,unknown,"I recognize Karpicke & Blunt’s 2011 Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the formal independent replication attempt or whether it supported the effect.","FAMILIARITY: recognized  
+VERDICT: unknown  
+NOTES: I recognize Karpicke & Blunt’s 2011 Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the formal independent replication attempt or whether it supported the effect.",yes
+10,3,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,unknown,"I recognize Karpicke & Blunt’s 2011 Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Karpicke & Blunt’s 2011 Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+10,4,Retrieval practice produces more learning than elaborative studying with concept mapping,unsure,unknown,"I recognize the 2011 Karpicke & Blunt Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2011 Karpicke & Blunt Science paper on retrieval practice versus concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+10,5,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,replicable,I recall the 2011 Science study by Karpicke & Blunt and a later independent replication that again found retrieval practice outperforming concept mapping on the delayed test.,"FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recall the 2011 Science study by Karpicke & Blunt and a later independent replication that again found retrieval practice outperforming concept mapping on the delayed test.",yes
+10,6,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,replicable,"I recognize this as Karpicke & Blunt’s 2011 Science paper on the retrieval-practice/testing effect, and I recall later direct replications generally found the same advantage over concept mapping.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recognize this as Karpicke & Blunt’s 2011 Science paper on the retrieval-practice/testing effect, and I recall later direct replications generally found the same advantage over concept mapping.",yes
+10,7,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,replicable,"This is the Karpicke & Blunt (2011) Science finding on retrieval practice beating concept mapping, and I recall the direct replication as likewise favoring retrieval practice.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: This is the Karpicke & Blunt (2011) Science finding on retrieval practice beating concept mapping, and I recall the direct replication as likewise favoring retrieval practice.",yes
+10,8,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,unknown,"I recognize the 2011 Science study by Karpicke and Blunt showing retrieval practice beat concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2011 Science study by Karpicke and Blunt showing retrieval practice beat concept mapping, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+10,9,Retrieval practice produces more learning than elaborative studying with concept mapping,recognized,unknown,"I recognize the 2011 Science paper showing retrieval practice outperformed concept mapping, but I don’t specifically recall the independent replication attempt’s result.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2011 Science paper showing retrieval practice outperformed concept mapping, but I don’t specifically recall the independent replication attempt’s result.",yes
+11,0,Reading literary fiction improves theory of mind,recognized,unreplicable,"I recognize Kidd and Castano’s 2013 claim that reading literary fiction improves theory of mind, and the later independent replication attempt I recall failed to detect that effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize Kidd and Castano’s 2013 claim that reading literary fiction improves theory of mind, and the later independent replication attempt I recall failed to detect that effect.",no
+11,1,Reading literary fiction improves theory of mind,recognized,unreplicable,"I recall that Kidd and Castano’s 2013 “reading literary fiction improves theory of mind” effect was formally replicated by Panero et al., who did not find the original effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall that Kidd and Castano’s 2013 “reading literary fiction improves theory of mind” effect was formally replicated by Panero et al., who did not find the original effect.",no
+11,2,Reading literary fiction improves theory of mind,recognized,unreplicable,"This is Kidd and Castano’s 2013 Science finding, and the well-known independent replication by Panero et al. did not find the literary-fiction advantage on theory-of-mind measures.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: This is Kidd and Castano’s 2013 Science finding, and the well-known independent replication by Panero et al. did not find the literary-fiction advantage on theory-of-mind measures.",no
+11,3,Reading literary fiction improves theory of mind,recognized,unreplicable,"I recall Kidd and Castano’s 2013 Science claim that literary fiction boosts theory of mind was directly replicated in later attempts such as Panero et al., and those replications did not reproduce the effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall Kidd and Castano’s 2013 Science claim that literary fiction boosts theory of mind was directly replicated in later attempts such as Panero et al., and those replications did not reproduce the effect.",no
+11,4,Reading literary fiction improves theory of mind,recognized,unreplicable,I recall Kidd and Castano’s 2013 Science claim that reading literary fiction boosts theory of mind (often via the RMET) was the target of later direct replication attempts that did not confirm the effect.,"FAMILIARITY: recognized  
+VERDICT: unreplicable  
+NOTES: I recall Kidd and Castano’s 2013 Science claim that reading literary fiction boosts theory of mind (often via the RMET) was the target of later direct replication attempts that did not confirm the effect.",no
+11,5,Reading literary fiction improves theory of mind,recognized,unreplicable,"I recall Kidd and Castano’s 2013 Science paper on literary fiction and theory of mind, and the direct independent replication I remember failed to reproduce the reading-literary-fiction advantage.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall Kidd and Castano’s 2013 Science paper on literary fiction and theory of mind, and the direct independent replication I remember failed to reproduce the reading-literary-fiction advantage.",no
+11,6,Reading literary fiction improves theory of mind,recognized,unreplicable,"This is Kidd and Castano’s 2013 Science finding, and I recall the independent direct replication by Panero et al. failed to reproduce the literary-fiction advantage on theory-of-mind performance.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: This is Kidd and Castano’s 2013 Science finding, and I recall the independent direct replication by Panero et al. failed to reproduce the literary-fiction advantage on theory-of-mind performance.",no
+11,7,Reading literary fiction improves theory of mind,recognized,unreplicable,"This is Kidd and Castano’s 2013 Science finding that reading literary fiction boosts theory of mind, and I recall a later independent replication attempt that failed to find the same effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: This is Kidd and Castano’s 2013 Science finding that reading literary fiction boosts theory of mind, and I recall a later independent replication attempt that failed to find the same effect.",no
+11,8,Reading literary fiction improves theory of mind,recognized,unreplicable,"I recognize Kidd and Castano’s 2013 Science paper, and I recall the independent direct replication attempt reporting no literary-fiction advantage on theory-of-mind performance.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize Kidd and Castano’s 2013 Science paper, and I recall the independent direct replication attempt reporting no literary-fiction advantage on theory-of-mind performance.",no
+11,9,Reading literary fiction improves theory of mind,recognized,unreplicable,"I recognize Kidd and Castano’s 2013 Science paper, and I recall the independent replication attempt by Panero et al. failing to find the literary-fiction-to-theory-of-mind effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize Kidd and Castano’s 2013 Science paper, and I recall the independent replication attempt by Panero et al. failing to find the literary-fiction-to-theory-of-mind effect.",no
+12,0,The social sense: susceptibility to others' beliefs in human infants and adults,recognized,unknown,"I recall this as the 2010 Kovács/Téglás/Endress paper on automatic belief tracking in infants and adults, but I don’t specifically remember the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall this as the 2010 Kovács/Téglás/Endress paper on automatic belief tracking in infants and adults, but I don’t specifically remember the independent replication attempt or its outcome.",yes
+12,1,The social sense: susceptibility to others' beliefs in human infants and adults,unsure,unknown,"I vaguely recognize this as the Kovács/Téglás/Endress-style implicit false-belief paper on infants and adults, but I do not specifically recall the independent replication attempt or whether it succeeded.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as the Kovács/Téglás/Endress-style implicit false-belief paper on infants and adults, but I do not specifically recall the independent replication attempt or whether it succeeded.",yes
+12,2,The social sense: susceptibility to others' beliefs in human infants and adults,unfamiliar,unknown,"I don’t specifically recognize this 2010 study or its formal replication attempt from the title and t-test description alone, so I can’t responsibly say whether the finding replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2010 study or its formal replication attempt from the title and t-test description alone, so I can’t responsibly say whether the finding replicated.",yes
+12,3,The social sense: susceptibility to others' beliefs in human infants and adults,unsure,unknown,"I recognize this as the Kovács et al. implicit false-belief/susceptibility-to-others’ beliefs paper, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the Kovács et al. implicit false-belief/susceptibility-to-others’ beliefs paper, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+12,4,The social sense: susceptibility to others' beliefs in human infants and adults,recognized,unreplicable,"I recognize this as the Kovács, Téglás, and Endress false-belief-tracking study, and I recall that independent direct replications of the adult belief-susceptibility effect did not reproduce the original result.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize this as the Kovács, Téglás, and Endress false-belief-tracking study, and I recall that independent direct replications of the adult belief-susceptibility effect did not reproduce the original result.",yes
+12,5,The social sense: susceptibility to others' beliefs in human infants and adults,unsure,unknown,"I vaguely recognize this as a developmental/social-cognition paper about how others’ beliefs influence judgments, but I do not specifically recall the independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a developmental/social-cognition paper about how others’ beliefs influence judgments, but I do not specifically recall the independent replication attempt or its result.",yes
+12,6,The social sense: susceptibility to others' beliefs in human infants and adults,recognized,unknown,"I recognize this as the 2010 Kovács/Téglás/Endress paper on spontaneous belief tracking in infants and adults, but I don’t specifically recall the result of its formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2010 Kovács/Téglás/Endress paper on spontaneous belief tracking in infants and adults, but I don’t specifically recall the result of its formal independent replication attempt.",yes
+12,7,The social sense: susceptibility to others' beliefs in human infants and adults,unfamiliar,unknown,I don’t specifically recognize this 2010 study or any formal independent replication of the particular finding you mention.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2010 study or any formal independent replication of the particular finding you mention.",yes
+12,8,The social sense: susceptibility to others' beliefs in human infants and adults,recognized,unknown,"I recognize this as the Kovács/Téglás/Endress 2010 false-belief/“social sense” infant-adult study, but I don’t specifically recall the outcome of the named independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the Kovács/Téglás/Endress 2010 false-belief/“social sense” infant-adult study, but I don’t specifically recall the outcome of the named independent replication attempt.",yes
+12,9,The social sense: susceptibility to others' beliefs in human infants and adults,unsure,unknown,"I vaguely recognize this as a developmental false-belief/susceptibility-to-beliefs paper, but I don’t specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a developmental false-belief/susceptibility-to-beliefs paper, but I don’t specifically recall the formal independent replication attempt or its outcome.",yes
+13,0,Washing away postdecisional dissonance,unsure,unknown,"I recognize this as the “hand washing after a difficult choice reduces postdecisional dissonance” effect, but I don’t specifically recall the independent replication attempt or whether it succeeded.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the “hand washing after a difficult choice reduces postdecisional dissonance” effect, but I don’t specifically recall the independent replication attempt or whether it succeeded.",no
+13,1,Washing away postdecisional dissonance,unsure,unknown,"I vaguely recall this as a 2010 embodied-cognition study claiming that hand washing reduced postdecisional dissonance, but I do not specifically recognize the formal replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as a 2010 embodied-cognition study claiming that hand washing reduced postdecisional dissonance, but I do not specifically recognize the formal replication attempt or its outcome.",no
+13,2,Washing away postdecisional dissonance,recognized,unreplicable,"I remember this as the hand-washing/post-choice dissonance effect, and the independent direct replication I recall did not find the predicted reduction in dissonance after washing.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I remember this as the hand-washing/post-choice dissonance effect, and the independent direct replication I recall did not find the predicted reduction in dissonance after washing.",no
+13,3,Washing away postdecisional dissonance,unsure,unknown,"I vaguely recall this as the handwashing-after-choice dissonance study, but I don’t specifically remember the independent replication’s outcome well enough to classify it.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as the handwashing-after-choice dissonance study, but I don’t specifically remember the independent replication’s outcome well enough to classify it.",no
+13,4,Washing away postdecisional dissonance,recognized,unreplicable,"I recognize the 2010 Lee & Schwarz hand-washing study on postdecisional dissonance, and I recall the independent replication failing to show the original reduction in dissonance/spread of alternatives.","FAMILIARITY: recognized  
+VERDICT: unreplicable  
+NOTES: I recognize the 2010 Lee & Schwarz hand-washing study on postdecisional dissonance, and I recall the independent replication failing to show the original reduction in dissonance/spread of alternatives.",no
+13,5,Washing away postdecisional dissonance,unsure,unknown,"I vaguely recognize this as the handwashing-after-decision dissonance effect, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as the handwashing-after-decision dissonance effect, but I don’t specifically recall the independent replication attempt or its outcome.",no
+13,6,Washing away postdecisional dissonance,unsure,unknown,"I recognize the 2010 hand-washing/postdecisional-dissonance study in general, but I do not specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2010 hand-washing/postdecisional-dissonance study in general, but I do not specifically recall the formal independent replication attempt or its outcome.",no
+13,7,Washing away postdecisional dissonance,recognized,unreplicable,"I recall this as the handwashing-after-choice study on reducing spread-of-alternatives/postdecisional dissonance, and the independent direct replication did not reproduce the effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as the handwashing-after-choice study on reducing spread-of-alternatives/postdecisional dissonance, and the independent direct replication did not reproduce the effect.",no
+13,8,Washing away postdecisional dissonance,recognized,unreplicable,"I recall this as the hand-washing-after-choice study on postdecisional dissonance, and the independent direct replication did not reproduce the original effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as the hand-washing-after-choice study on postdecisional dissonance, and the independent direct replication did not reproduce the original effect.",no
+13,9,Washing away postdecisional dissonance,recognized,unknown,"I recall this as the physical-cleansing-after-choice effect on postdecisional dissonance, but I don’t specifically remember the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall this as the physical-cleansing-after-choice effect on postdecisional dissonance, but I don’t specifically remember the outcome of the independent replication attempt.",no
+14,0,Thought for food: imagined consumption reduces actual consumption,recognized,replicable,"I recognize the Morewedge et al. imagined-consumption effect, and I recall an independent direct replication that supported the same reduction in actual intake.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recognize the Morewedge et al. imagined-consumption effect, and I recall an independent direct replication that supported the same reduction in actual intake.",yes
+14,1,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize the 2010 Science paper by Morewedge et al. showing that imagining consuming food can reduce later intake, but I don’t specifically recall the outcome of its independent formal replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2010 Science paper by Morewedge et al. showing that imagining consuming food can reduce later intake, but I don’t specifically recall the outcome of its independent formal replication attempt.",yes
+14,2,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize the 2010 Morewedge, Huh, & Vosgerau “thought for food” study, but I don’t specifically recall the outcome of its formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2010 Morewedge, Huh, & Vosgerau “thought for food” study, but I don’t specifically recall the outcome of its formal independent replication attempt.",yes
+14,3,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize Morewedge et al.’s 2010 “Thought for food” imagined-consumption effect, but I don’t specifically recall the outcome of the formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Morewedge et al.’s 2010 “Thought for food” imagined-consumption effect, but I don’t specifically recall the outcome of the formal independent replication attempt.",yes
+14,4,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I remember the 2010 Morewedge et al. “thought for food” M&Ms imagery study, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I remember the 2010 Morewedge et al. “thought for food” M&Ms imagery study, but I don’t specifically recall the outcome of the independent replication attempt.",yes
+14,5,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize Morewedge et al.’s 2010 Science paper on imagined food consumption reducing later intake, but I don’t specifically recall the outcome of the formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Morewedge et al.’s 2010 Science paper on imagined food consumption reducing later intake, but I don’t specifically recall the outcome of the formal independent replication attempt.",yes
+14,6,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize the 2010 Science paper by Morewedge et al. on imagined food consumption, but I don’t specifically recall the outcome of its independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2010 Science paper by Morewedge et al. on imagined food consumption, but I don’t specifically recall the outcome of its independent replication attempt.",yes
+14,7,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize the 2010 Morewedge et al. “imagined consumption reduces actual consumption” study, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized  
+VERDICT: unknown  
+NOTES: I recognize the 2010 Morewedge et al. “imagined consumption reduces actual consumption” study, but I don’t specifically recall the outcome of the independent replication attempt.",yes
+14,8,Thought for food: imagined consumption reduces actual consumption,recognized,unknown,"I recognize Morewedge et al.’s 2010 “Thought for food” paper on imagined consumption reducing later intake, but I don’t specifically recall the outcome of a formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Morewedge et al.’s 2010 “Thought for food” paper on imagined consumption reducing later intake, but I don’t specifically recall the outcome of a formal independent replication attempt.",yes
+14,9,Thought for food: imagined consumption reduces actual consumption,unsure,unknown,"I recognize the original Morewedge et al. (2010) imagined-consumption effect, but I don’t specifically recall the outcome of the formal independent replication attempt.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the original Morewedge et al. (2010) imagined-consumption effect, but I don’t specifically recall the outcome of the formal independent replication attempt.",yes
+15,0,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I vaguely recognize this as a 2015 experimental-network study about how making wealth visible affects inequality, but I don't specifically recall the independent replication result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a 2015 experimental-network study about how making wealth visible affects inequality, but I don't specifically recall the independent replication result.",yes
+15,1,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I vaguely recognize the 2015 experimental social-network paper on wealth inequality and visibility, but I don’t specifically recall the independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize the 2015 experimental social-network paper on wealth inequality and visibility, but I don’t specifically recall the independent replication attempt or its result.",yes
+15,2,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I vaguely recognize this as a 2015 experimental social-network study on how visible wealth affects network inequality, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a 2015 experimental social-network study on how visible wealth affects network inequality, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+15,3,Inequality and visibility of wealth in experimental social networks,unfamiliar,unknown,I don't specifically recognize this paper or its independent replication attempt from memory.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don't specifically recognize this paper or its independent replication attempt from memory.",yes
+15,4,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I recall this as a 2015 experimental social-network study about how visible wealth and inequality affect behavior, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recall this as a 2015 experimental social-network study about how visible wealth and inequality affect behavior, but I do not specifically recall the independent replication attempt or its outcome.",yes
+15,5,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I vaguely recognize this as an experimental social-network paper about wealth visibility and inequality, but I don’t specifically recall the independent replication attempt or whether its key t-test finding was reproduced.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as an experimental social-network paper about wealth visibility and inequality, but I don’t specifically recall the independent replication attempt or whether its key t-test finding was reproduced.",yes
+15,6,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I vaguely recognize this as a 2015 experimental social-network paper about visible wealth and inequality, but I do not specifically remember any formal independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a 2015 experimental social-network paper about visible wealth and inequality, but I do not specifically remember any formal independent replication attempt or its outcome.",yes
+15,7,Inequality and visibility of wealth in experimental social networks,unfamiliar,unknown,"I don’t specifically recognize this 2015 study or a formal independent replication of its wealth-visibility effect from memory, so I can’t assess the outcome without guessing.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2015 study or a formal independent replication of its wealth-visibility effect from memory, so I can’t assess the outcome without guessing.",yes
+15,8,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"The title/topic rings only a faint bell, but I do not specifically recognize this study or its independent replication attempt well enough to recall whether that finding was supported.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: The title/topic rings only a faint bell, but I do not specifically recognize this study or its independent replication attempt well enough to recall whether that finding was supported.",yes
+15,9,Inequality and visibility of wealth in experimental social networks,unsure,unknown,"I vaguely recall this 2015 experimental social-network paper about how visible wealth shapes inequality, but I don’t specifically remember the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this 2015 experimental social-network paper about how visible wealth shapes inequality, but I don’t specifically remember the independent replication attempt or its outcome.",yes
+16,0,Why testing improves memory: mediator effectiveness hypothesis,recognized,unknown,"I recall this as the Pyc & Rawson 2010 paper proposing the mediator-effectiveness account of the testing effect, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall this as the Pyc & Rawson 2010 paper proposing the mediator-effectiveness account of the testing effect, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+16,1,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I vaguely recognize this as Pyc & Rawson’s testing-effect paper on mediator effectiveness, but I don’t specifically recall the independent replication or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as Pyc & Rawson’s testing-effect paper on mediator effectiveness, but I don’t specifically recall the independent replication or its outcome.",yes
+16,2,Why testing improves memory: mediator effectiveness hypothesis,recognized,unknown,"I recognize this as the 2010 testing-effect paper arguing that testing improves memory by promoting more effective mediators, but I do not specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2010 testing-effect paper arguing that testing improves memory by promoting more effective mediators, but I do not specifically recall the independent replication attempt or its outcome.",yes
+16,3,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I recall this as a testing-effect/mediator-effectiveness paper about retrieval practice benefiting memory when learners generate effective mediators, but I don’t specifically remember the named replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recall this as a testing-effect/mediator-effectiveness paper about retrieval practice benefiting memory when learners generate effective mediators, but I don’t specifically remember the named replication attempt or its outcome.",yes
+16,4,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I vaguely recall this as a 2010 testing-effect paper proposing the mediator effectiveness hypothesis, but I do not specifically remember the independent replication attempt or its result.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recall this as a 2010 testing-effect paper proposing the mediator effectiveness hypothesis, but I do not specifically remember the independent replication attempt or its result.",yes
+16,5,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I vaguely recognize this as a 2010 retrieval-practice paper about mediator effectiveness, but I don’t specifically recall the independent replication or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize this as a 2010 retrieval-practice paper about mediator effectiveness, but I don’t specifically recall the independent replication or its outcome.",yes
+16,6,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I vaguely recognize Pyc and Rawson’s 2010 mediator-effectiveness account of the testing effect, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I vaguely recognize Pyc and Rawson’s 2010 mediator-effectiveness account of the testing effect, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+16,7,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I recognize this as the 2010 retrieval-practice paper on the mediator effectiveness account, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as the 2010 retrieval-practice paper on the mediator effectiveness account, but I don’t specifically recall the independent replication attempt or its outcome.",yes
+16,8,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I recognize the 2010 testing-effect paper on the mediator effectiveness hypothesis, but I don’t specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2010 testing-effect paper on the mediator effectiveness hypothesis, but I don’t specifically recall the formal independent replication attempt or its outcome.",yes
+16,9,Why testing improves memory: mediator effectiveness hypothesis,unsure,unknown,"I recognize this as a 2010 testing-effect paper proposing the mediator effectiveness hypothesis, but I don’t specifically recall the independent replication attempt or whether that exact finding replicated.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize this as a 2010 testing-effect paper proposing the mediator effectiveness hypothesis, but I don’t specifically recall the independent replication attempt or whether that exact finding replicated.",yes
+17,0,Writing about testing worries boosts exam performance in the classroom,recognized,unreplicable,"This is Ramirez and Beilock’s 2011 expressive-writing intervention before exams, and I recall an independent replication failing to recover the test-anxiety performance boost.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: This is Ramirez and Beilock’s 2011 expressive-writing intervention before exams, and I recall an independent replication failing to recover the test-anxiety performance boost.",no
+17,1,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recognize Ramirez and Beilock’s 2011 expressive-writing intervention about test worries, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Ramirez and Beilock’s 2011 expressive-writing intervention about test worries, but I don’t specifically recall the independent replication attempt or its outcome.",no
+17,2,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recognize the 2011 Ramirez & Beilock Science study on expressive writing before exams, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2011 Ramirez & Beilock Science study on expressive writing before exams, but I don’t specifically recall the outcome of the independent replication attempt.",no
+17,3,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recall the Ramirez & Beilock 2011 expressive-writing classroom study, but I don’t specifically recall the independent replication attempt or its result.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall the Ramirez & Beilock 2011 expressive-writing classroom study, but I don’t specifically recall the independent replication attempt or its result.",no
+17,4,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recognize Ramirez and Beilock’s 2011 classroom expressive-writing intervention, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Ramirez and Beilock’s 2011 classroom expressive-writing intervention, but I don’t specifically recall the independent replication attempt or its outcome.",no
+17,5,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recognize this as the Ramirez & Beilock 2011 expressive-writing classroom intervention, but I don’t specifically recall the outcome of its formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the Ramirez & Beilock 2011 expressive-writing classroom intervention, but I don’t specifically recall the outcome of its formal independent replication attempt.",no
+17,6,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recognize the 2011 Ramirez & Beilock Science paper on expressive writing about test worries before exams, but I don’t specifically recall the outcome of a formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2011 Ramirez & Beilock Science paper on expressive writing about test worries before exams, but I don’t specifically recall the outcome of a formal independent replication attempt.",no
+17,7,Writing about testing worries boosts exam performance in the classroom,unsure,unknown,"I remember the 2011 Ramirez & Beilock classroom expressive-writing intervention, but I don’t specifically recognize the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I remember the 2011 Ramirez & Beilock classroom expressive-writing intervention, but I don’t specifically recognize the independent replication attempt or its outcome.",no
+17,8,Writing about testing worries boosts exam performance in the classroom,recognized,unknown,"I recognize this as the Ramirez & Beilock expressive-writing classroom study on test anxiety, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the Ramirez & Beilock expressive-writing classroom study on test anxiety, but I don’t specifically recall the independent replication attempt or its outcome.",no
+17,9,Writing about testing worries boosts exam performance in the classroom,recognized,replicable,"I recognize the 2011 Science study by Ramirez & Beilock on expressive writing before exams, and my recollection is that a later independent classroom replication also found the writing condition improved exam performance.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recognize the 2011 Science study by Ramirez & Beilock on expressive writing before exams, and my recollection is that a later independent classroom replication also found the writing condition improved exam performance.",no
+18,0,Spontaneous giving and calculated greed,recognized,unknown,"I remember this as the Rand/Greene/Nowak “time pressure increases generosity” dictator-game paper, but I don’t specifically recall the outcome of the formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I remember this as the Rand/Greene/Nowak “time pressure increases generosity” dictator-game paper, but I don’t specifically recall the outcome of the formal independent replication attempt.",no
+18,1,Spontaneous giving and calculated greed,recognized,unreplicable,"I recognize this as Rand, Greene, and Nowak’s 2012 time-pressure/cooperation paper, and the independent replication of the spontaneous-giving effect generally did not reproduce the original increase in cooperation under time pressure.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize this as Rand, Greene, and Nowak’s 2012 time-pressure/cooperation paper, and the independent replication of the spontaneous-giving effect generally did not reproduce the original increase in cooperation under time pressure.",no
+18,2,Spontaneous giving and calculated greed,recognized,unreplicable,"I recognize this as Rand, Greene, and Nowak’s 2012 time-pressure/cooperation paper, and I recall the independent direct replication of the main intuition-promotes-cooperation finding did not reproduce the effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recognize this as Rand, Greene, and Nowak’s 2012 time-pressure/cooperation paper, and I recall the independent direct replication of the main intuition-promotes-cooperation finding did not reproduce the effect.",no
+18,3,Spontaneous giving and calculated greed,recognized,unreplicable,"I recognize this as Rand et al.’s 2012 “Spontaneous giving and calculated greed,” which argued that time pressure increases intuitive cooperation/giving, and I recall an independent direct replication (notably Tinghög et al.) failing to find that effect.","FAMILIARITY: recognized  
+VERDICT: unreplicable  
+NOTES: I recognize this as Rand et al.’s 2012 “Spontaneous giving and calculated greed,” which argued that time pressure increases intuitive cooperation/giving, and I recall an independent direct replication (notably Tinghög et al.) failing to find that effect.",no
+18,4,Spontaneous giving and calculated greed,recognized,unreplicable,"I recall this as Rand et al.’s claim that fast/intuitive decisions increase dictator-game giving, and the independent replication I remember did not reproduce that effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Rand et al.’s claim that fast/intuitive decisions increase dictator-game giving, and the independent replication I remember did not reproduce that effect.",no
+18,5,Spontaneous giving and calculated greed,recognized,unreplicable,"I recall this as Rand, Greene, and Nowak’s time-pressure dictator-game finding that intuition boosts generosity, and the later independent preregistered replication (“Intuition and cooperation reconsidered”) did not confirm that effect and in some conditions went the other way.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Rand, Greene, and Nowak’s time-pressure dictator-game finding that intuition boosts generosity, and the later independent preregistered replication (“Intuition and cooperation reconsidered”) did not confirm that effect and in some conditions went the other way.",no
+18,6,Spontaneous giving and calculated greed,recognized,unknown,"I recognize the 2012 Rand/Greene/Nowak “intuition increases cooperation” paper, but I don’t specifically recall the formal replication attempt or its outcome well enough to say whether it was replicable or unreplicable.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2012 Rand/Greene/Nowak “intuition increases cooperation” paper, but I don’t specifically recall the formal replication attempt or its outcome well enough to say whether it was replicable or unreplicable.",no
+18,7,Spontaneous giving and calculated greed,recognized,unreplicable,"I recall this as Rand, Greene, and Nowak’s 2012 time-pressure/cooperation paper, and I remember later direct replications failing to reproduce the original intuition-favors-cooperation effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Rand, Greene, and Nowak’s 2012 time-pressure/cooperation paper, and I remember later direct replications failing to reproduce the original intuition-favors-cooperation effect.",no
+18,8,Spontaneous giving and calculated greed,recognized,unreplicable,"I recall this as Rand, Greene, and Nowak’s 2012 “Spontaneous giving and calculated greed,” where intuition/time pressure was claimed to increase generosity, and an independent preregistered replication did not find that effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Rand, Greene, and Nowak’s 2012 “Spontaneous giving and calculated greed,” where intuition/time pressure was claimed to increase generosity, and an independent preregistered replication did not find that effect.",no
+18,9,Spontaneous giving and calculated greed,recognized,unreplicable,"I recall this as Rand, Greene, and Nowak’s 2012 “Spontaneous giving and calculated greed,” whose key claim that time pressure boosts cooperation was later tested in a formal replication and did not hold up.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I recall this as Rand, Greene, and Nowak’s 2012 “Spontaneous giving and calculated greed,” whose key claim that time pressure boosts cooperation was later tested in a formal replication and did not hold up.",no
+19,0,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize this 2012 study from the truncated title alone, so I can’t reliably recall the outcome of its independent replication attempt.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2012 study from the truncated title alone, so I can’t reliably recall the outcome of its independent replication attempt.",no
+19,1,Some consequences of having too little,unfamiliar,unknown,I don't specifically recognize a 2012 study with the title fragment “Some consequences of having too little” or its formal independent replication attempt.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don't specifically recognize a 2012 study with the title fragment “Some consequences of having too little” or its formal independent replication attempt.",no
+19,2,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize a 2012 study with this truncated title or its independent replication attempt, so I can’t reliably state whether the finding replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize a 2012 study with this truncated title or its independent replication attempt, so I can’t reliably state whether the finding replicated.",no
+19,3,Some consequences of having too little,unsure,unknown,"I don’t specifically recognize this 2012 title fragment or a formal replication attempt of its F-test finding, so I can’t determine whether it replicated.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2012 title fragment or a formal replication attempt of its F-test finding, so I can’t determine whether it replicated.",no
+19,4,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize the 2012 study from this truncated title and the F-distribution clue, so I can’t reliably identify the exact replication attempt or its outcome.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize the 2012 study from this truncated title and the F-distribution clue, so I can’t reliably identify the exact replication attempt or its outcome.",no
+19,5,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize this 2012 study or its formal replication attempt from the partial title and F-distribution clue, so I can’t reliably say whether that finding replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2012 study or its formal replication attempt from the partial title and F-distribution clue, so I can’t reliably say whether that finding replicated.",no
+19,6,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize a 2012 study with this truncated title or any formal replication of a finding about the null distribution being F-distributed, so I can’t assess the outcome reliably.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize a 2012 study with this truncated title or any formal replication of a finding about the null distribution being F-distributed, so I can’t assess the outcome reliably.",no
+19,7,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize this study or its replication attempt from the title fragment and the F-distribution clue, so I can’t reliably say whether it replicated.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this study or its replication attempt from the title fragment and the F-distribution clue, so I can’t reliably say whether it replicated.",no
+19,8,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize a 2012 study or formal replication attempt from the title fragment “Some consequences of having too little,” so I can’t reliably identify the replicated finding.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize a 2012 study or formal replication attempt from the title fragment “Some consequences of having too little,” so I can’t reliably identify the replicated finding.",no
+19,9,Some consequences of having too little,unfamiliar,unknown,"I don’t specifically recognize a 2012 study or replication with the truncated title fragment “Some consequences of having too little,” so I can’t identify the finding reliably.","FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize a 2012 study or replication with the truncated title fragment “Some consequences of having too little,” so I can’t identify the finding reliably.",no
+20,0,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,unknown,"I recognize Sparrow, Liu, and Wegner’s 2011 “Google effect” paper about poorer recall for facts people expect to be able to look up later, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Sparrow, Liu, and Wegner’s 2011 “Google effect” paper about poorer recall for facts people expect to be able to look up later, but I don’t specifically recall the outcome of the independent replication attempt.",no
+20,1,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,unknown,"I recognize Sparrow, Liu, and Wegner’s 2011 “Google effect” paper, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Sparrow, Liu, and Wegner’s 2011 “Google effect” paper, but I don’t specifically recall the outcome of the independent replication attempt.",no
+20,2,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,replicable,"I recall this as Sparrow et al.’s classic “Google effect” finding, and my memory is that a later direct replication supported the main effect that expected future access reduces recall of the information itself.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recall this as Sparrow et al.’s classic “Google effect” finding, and my memory is that a later direct replication supported the main effect that expected future access reduces recall of the information itself.",no
+20,3,Google effects on memory: cognitive consequences of having information at our fingertips,unsure,unknown,"I recognize the 2011 Sparrow, Liu, and Wegner “Google effects on memory” paper, but I don’t specifically recall the independent replication attempt or its outcome.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize the 2011 Sparrow, Liu, and Wegner “Google effects on memory” paper, but I don’t specifically recall the independent replication attempt or its outcome.",no
+20,4,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,unknown,"I recognize Sparrow, Liu, and Wegner’s 2011 “Google effects on memory” paper, but I don’t specifically recall the outcome of the named independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Sparrow, Liu, and Wegner’s 2011 “Google effects on memory” paper, but I don’t specifically recall the outcome of the named independent replication attempt.",no
+20,5,Google effects on memory: cognitive consequences of having information at our fingertips,unsure,unknown,"I recognize Sparrow et al.’s 2011 “Google effect” paper, but I don’t specifically recall the independent replication attempt or its result well enough to judge it.","FAMILIARITY: unsure
+VERDICT: unknown
+NOTES: I recognize Sparrow et al.’s 2011 “Google effect” paper, but I don’t specifically recall the independent replication attempt or its result well enough to judge it.",no
+20,6,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,replicable,"I recall Sparrow, Liu, and Wegner’s 2011 “Google effect” result that expected future access reduces memory for the item but improves source/location memory, and I believe a direct independent replication supported that core pattern.","FAMILIARITY: recognized
+VERDICT: replicable
+NOTES: I recall Sparrow, Liu, and Wegner’s 2011 “Google effect” result that expected future access reduces memory for the item but improves source/location memory, and I believe a direct independent replication supported that core pattern.",no
+20,7,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,unknown,"I recognize Sparrow et al.’s 2011 “Google effect” paper, but I don’t specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Sparrow et al.’s 2011 “Google effect” paper, but I don’t specifically recall the formal independent replication attempt or its outcome.",no
+20,8,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,unknown,"I recognize Sparrow et al.’s 2011 “Google effect” paper, but I don’t specifically recall the outcome of the formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Sparrow et al.’s 2011 “Google effect” paper, but I don’t specifically recall the outcome of the formal independent replication attempt.",no
+20,9,Google effects on memory: cognitive consequences of having information at our fingertips,recognized,unknown,"I recognize the original Sparrow, Liu, and Wegner “Google effect” paper, but I don’t specifically recall the independent replication attempt well enough to say whether that exact finding replicated.","FAMILIARITY: recognized  
+VERDICT: unknown  
+NOTES: I recognize the original Sparrow, Liu, and Wegner “Google effect” paper, but I don’t specifically recall the independent replication attempt well enough to say whether that exact finding replicated.",no
+21,0,Just think: the challenges of the disengaged mind,recognized,unreplicable,"I remember this as the Wilson et al. study on people preferring mild electric shocks over being alone with their thoughts, and I recall the direct replication did not reproduce that strong effect.","FAMILIARITY: recognized
+VERDICT: unreplicable
+NOTES: I remember this as the Wilson et al. study on people preferring mild electric shocks over being alone with their thoughts, and I recall the direct replication did not reproduce that strong effect.",yes
+21,1,Just think: the challenges of the disengaged mind,unfamiliar,unknown,I don’t specifically recognize this 2014 paper or a formal independent replication of its t-test finding from the title alone.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2014 paper or a formal independent replication of its t-test finding from the title alone.",yes
+21,2,Just think: the challenges of the disengaged mind,unfamiliar,unknown,I don’t specifically recognize this study or its formal independent replication attempt from the title and test-distribution detail alone.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this study or its formal independent replication attempt from the title and test-distribution detail alone.",yes
+21,3,Just think: the challenges of the disengaged mind,recognized,unknown,"I recognize this as the Wilson et al. “just think” paper about people disliking being alone with their thoughts, but I don’t specifically recall the formal replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the Wilson et al. “just think” paper about people disliking being alone with their thoughts, but I don’t specifically recall the formal replication attempt or its outcome.",yes
+21,4,Just think: the challenges of the disengaged mind,recognized,unknown,"I recognize this as the 2014 Wilson et al. “disengaged mind” paper about people disliking to sit alone with their thoughts, but I don’t specifically recall the outcome of the independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize this as the 2014 Wilson et al. “disengaged mind” paper about people disliking to sit alone with their thoughts, but I don’t specifically recall the outcome of the independent replication attempt.",yes
+21,5,Just think: the challenges of the disengaged mind,unfamiliar,unknown,I don’t specifically recognize this paper/replication pair well enough to identify the exact finding or whether the independent replication succeeded.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this paper/replication pair well enough to identify the exact finding or whether the independent replication succeeded.",yes
+21,6,Just think: the challenges of the disengaged mind,recognized,unknown,"I recognize Wilson et al.’s 2014 Science paper about people disliking being left alone with their thoughts, but I don’t specifically recall the formal independent replication attempt or its outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize Wilson et al.’s 2014 Science paper about people disliking being left alone with their thoughts, but I don’t specifically recall the formal independent replication attempt or its outcome.",yes
+21,7,Just think: the challenges of the disengaged mind,recognized,unknown,"I recall this as the 2014 Science paper by Wilson et al. about people disliking being left alone with their thoughts and sometimes choosing electric shocks instead, but I don’t specifically remember the independent replication outcome.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recall this as the 2014 Science paper by Wilson et al. about people disliking being left alone with their thoughts and sometimes choosing electric shocks instead, but I don’t specifically remember the independent replication outcome.",yes
+21,8,Just think: the challenges of the disengaged mind,unfamiliar,unknown,I don’t specifically recognize this 2014 “Just think: the challenges of the disengaged mind” finding or its independent replication attempt well enough to say whether it replicated.,"FAMILIARITY: unfamiliar
+VERDICT: unknown
+NOTES: I don’t specifically recognize this 2014 “Just think: the challenges of the disengaged mind” finding or its independent replication attempt well enough to say whether it replicated.",yes
+21,9,Just think: the challenges of the disengaged mind,recognized,unknown,"I recognize the 2014 Wilson et al. “Just think” paper about people disliking being alone with their thoughts, but I don’t specifically recall the outcome of any formal independent replication attempt.","FAMILIARITY: recognized
+VERDICT: unknown
+NOTES: I recognize the 2014 Wilson et al. “Just think” paper about people disliking being alone with their thoughts, but I don’t specifically recall the outcome of any formal independent replication attempt.",yes

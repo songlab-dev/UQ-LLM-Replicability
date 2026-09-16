@@ -1,0 +1,5 @@
+model,evaluation,n,AUC,Brier,Accuracy,AUC_SD,Accuracy_SD,dispersion_mean_proba_sd
+"Text-embedding LR (CB, effect-level, paper-grouped CV)",in-sample,158,0.9644480519480519,0.07262103680832557,0.8924050632911392,,,
+"Text-embedding LR (CB, effect-level, paper-grouped CV)","nested CV, 20-seed avg prediction",158,0.5810064935064937,0.2868787033019161,0.5886075949367089,0.04591490461860241,0.039148265244358,0.31211054259128923
+"Text-embedding LR (CB, effect-level, paper-grouped CV)","nested CV, per-seed (mean of 20)",158,0.5465300324675325,0.39135272089873835,0.5174050632911392,,,
+"Text-embedding LR (CB, effect-level, paper-grouped CV)","nested CV, per-seed (sd of 20)",158,0.05557865098967044,0.03659622099950943,0.04049357519066836,,,

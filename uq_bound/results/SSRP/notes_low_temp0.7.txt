@@ -1,0 +1,3 @@
+Panels B and C select claims closest to the 5%/95% v_i percentiles for SSRP (low, temp=0.7).
+Low id=4, v_i=0.005176, delta=0.191446
+High id=6, v_i=0.038784, delta=0.112081

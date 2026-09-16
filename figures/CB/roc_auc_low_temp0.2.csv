@@ -1,0 +1,4 @@
+dataset,method,auc,n
+CB,Text-embedding LR,0.5810064935064937,158
+CB,Self-consistency vote rate,0.6239448051948051,158
+CB,Verbalized confidence,0.5737012987012986,158

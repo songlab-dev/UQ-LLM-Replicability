@@ -1,0 +1,4 @@
+dataset,method,auc,n
+SSRP,Text-embedding LR,0.846153846153846,21
+SSRP,Self-consistency vote rate,0.8269230769230769,21
+SSRP,Verbalized confidence,0.7884615384615384,21

@@ -1,0 +1,22 @@
+title,study_num,y,proba_in,proba_cv_avg,proba_cv_sd_across_seeds
+Affirmative action policies promote women and do not harm efficiency in the laboratory,3,1,0.8316397907379947,0.4747123993990666,0.23419299808545943
+Analytic thinking promotes religious disbelief,6,0,0.0064536592464355755,0.26431949772697644,0.2656113091212201
+Avoiding overhead aversion in charity,7,1,0.8550472953126845,0.47537494056908247,0.1553679674349606
+"Body cues, not facial expressions, discriminate between intense positive and negative emotions",2,1,0.8842369856890738,0.5789057618683235,0.22892437650526182
+Cooperating with the future,8,1,0.9557609769856552,0.7332181881561445,0.25385221918703765
+Experimental evidence for the influence of group size on cultural complexity,4,1,0.92846261600228,0.738246203855671,0.20177884395652237
+Google effects on memory: cognitive consequences of having information at our fingertips,20,0,0.05872865056426086,0.4438725821659145,0.26390560007367453
+Incidental haptic sensations influence social judgments and decisions,1,0,0.06031403611876017,0.5742772128535714,0.27175009007545303
+Inequality and visibility of wealth in experimental social networks,15,1,0.8878753220290047,0.7009955045058567,0.20463284744550328
+Just think: the challenges of the disengaged mind,21,1,0.8503188199598328,0.1386544150203845,0.14776333585007848
+Lab experiments for the study of social-ecological systems,9,1,0.902324274984311,0.7836084025054455,0.18011865472071703
+Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,5,1,0.9115860294078109,0.584225737414525,0.24863523440997295
+Reading literary fiction improves theory of mind,11,0,0.06054454531639485,0.3606984290708971,0.2258552747801673
+Retrieval practice produces more learning than elaborative studying with concept mapping,10,1,0.9442313482982789,0.7205522059257538,0.2241784495877852
+Some consequences of having too little,19,0,0.049361165905971435,0.46554198533947055,0.1585661496027629
+Spontaneous giving and calculated greed,18,0,0.05387165021875352,0.45527844254429456,0.20478164005924945
+The social sense: susceptibility to others' beliefs in human infants and adults,12,1,0.9250713146528077,0.3871978472480164,0.2499211212497001
+Thought for food: imagined consumption reduces actual consumption,14,1,0.8837741312679634,0.5654192885764104,0.2125935351552234
+Washing away postdecisional dissonance,13,0,0.035246070108324375,0.31089767252430744,0.21444584535994277
+Why testing improves memory: mediator effectiveness hypothesis,16,1,0.8745786793022549,0.5997728580465058,0.23330614991315957
+Writing about testing worries boosts exam performance in the classroom,17,0,0.04045100031634936,0.45700410305277683,0.28477004575761533

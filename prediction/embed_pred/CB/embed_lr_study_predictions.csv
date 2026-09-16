@@ -1,0 +1,159 @@
+title,paper_num,experiment_num,effect_num,y,proba_in,proba_cv_avg,proba_cv_sd_across_seeds
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,3,6,1,0.4466423225536304,0.6343994516300558,0.4114179141495214
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,5,1,0,0.38229871445404595,0.841625319321064,0.30652969714644734
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,3,2,0,0.16162074574472923,0.8659884826361985,0.2637824289761659
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,3,4,0,0.02514924545182777,0.7608423529992551,0.3412662921176272
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,2,4,1,0.8181298703722303,0.6485328008870258,0.3689024676302695
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,3,1,1,0.7833612826538991,0.9311055982887178,0.2168381437996729
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,2,1,0,0.17703670883823797,0.7940738407076473,0.3264329670329342
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,4,5,1,0.8635239979846001,0.9132835948776388,0.22405480337331754
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,4,2,0,0.25814586006452894,0.8535582994137823,0.2626566655110539
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,6,1,1,0.9546699368573498,0.5836518336528236,0.36108110374073094
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,3,5,1,0.504544253098225,0.8949434286561175,0.2308022625104194
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,2,3,1,0.9734972664826644,0.4206253529583899,0.4054563012488541
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,4,1,1,0.6996087553520961,0.9104891871907801,0.2285124713383794
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,4,4,0,0.5949416042771254,0.75695515544153,0.3401473439227842
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,2,2,1,0.6081864037052729,0.5576408909078097,0.39167266544149937
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,2,5,0,0.9377452746686554,0.794208607193667,0.3010127127545256
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,3,3,1,0.8482834293404071,0.5635143869559469,0.419582006378379
+A coding-independent function of gene and pseudogene mRNAs regulates tumour biology,1,4,3,1,0.9440696642652499,0.6508921195911264,0.407473047463336
+BET bromodomain inhibition as a therapeutic strategy to target c-Myc,19,1,1,1,0.9755744983466285,0.7105547996920915,0.35802138849834
+BET bromodomain inhibition as a therapeutic strategy to target c-Myc,19,1,2,1,0.9937124062667014,0.6957093307634343,0.34092416559663713
+BET bromodomain inhibition as a therapeutic strategy to target c-Myc,19,2,1,1,0.9939998027307577,0.5477448081492938,0.3788248801578578
+BET bromodomain inhibition as a therapeutic strategy to target c-Myc,19,2,2,0,0.04505145879679469,0.5478656905837606,0.34793324624264604
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,1,3,0,0.000659925600843359,0.2901226039415091,0.4175377808462384
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,2,2,0,0.0006931688564546375,0.4295077687398653,0.446389357829403
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,1,2,0,0.0017583304330594527,0.31048053508144835,0.4209649849432273
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,2,1,0,0.0009486351214480773,0.3836522388795435,0.4276399036412887
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,1,4,0,0.004877923658360854,0.31294973062319015,0.4146490580931648
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,1,1,0,0.00030505768607052127,0.3642808010933535,0.4476174729899602
+Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis,20,2,3,0,0.000961343138466728,0.4227583328136193,0.4435671757193548
+Coadministration of a Tumor-Penetrating Peptide Enhances the Efficacy of Cancer Drugs,15,2,1,0,0.003458838956871111,0.25410980675674816,0.33062296235546845
+Coadministration of a Tumor-Penetrating Peptide Enhances the Efficacy of Cancer Drugs,15,1,1,0,0.02492133499239172,0.2954493871832292,0.3554975983009137
+Coadministration of a Tumor-Penetrating Peptide Enhances the Efficacy of Cancer Drugs,15,3,1,0,0.029162387511033668,0.23312232075612446,0.33562761597469687
+Coadministration of a Tumor-Penetrating Peptide Enhances the Efficacy of Cancer Drugs,15,2,2,0,5.829233883762342e-06,0.20471074828114588,0.29102484159835373
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,3,0,0.029326628257895716,0.31276683848466597,0.3355979963087499
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,1,1,0,0.006279059862476137,0.7691330481936536,0.24218542097453993
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,6,0,0.5006707816553324,0.4820377701362924,0.3511899811776661
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,2,4,0,1.2559796480385155e-05,0.2519247011708184,0.28116841076534227
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,2,3,0,4.7167426180888527e-07,0.16187802561384748,0.2217555767896647
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,1,1,0.7294138691589901,0.22112882655066013,0.23634749181018314
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,5,1,0.9617074787687733,0.6359105277607064,0.3442930671160693
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,1,4,0,0.0001981277796892133,0.28878999646793724,0.34089533790403237
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,2,1,0.38894861980151785,0.29877614604872865,0.2915826803104828
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,1,3,0,9.576880459783962e-05,0.19491937141497123,0.2308990449851236
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,4,1,0.9321202144589918,0.30593145674344957,0.29024446521419495
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,3,1,0.9393316085994189,0.19177702989256948,0.23791901765113171
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,8,1,0.9296874475643656,0.5079769460572721,0.33875123120450673
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,7,1,0.2829913742155031,0.4395561509182409,0.33384596520691384
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,5,1,0.5271925125951881,0.3849457599434495,0.34471319704040754
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,1,2,0,2.4811247835747655e-05,0.14713465002466852,0.2146488467851191
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,2,0,0.12991762908476207,0.2840852523738261,0.3157702409009375
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,2,1,0,0.001836031416355627,0.6250214877636673,0.3708154963880062
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,7,0,0.5747968417897675,0.3138102307754044,0.29596946689220316
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,2,2,0,4.031717547276092e-07,0.17214540508253653,0.2287849929683463
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,1,5,1,0.3685437274087347,0.31686048829743335,0.2794861577835909
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,4,0,0.09921736973926219,0.3424814361088934,0.34565156165025035
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,8,0,0.0662878772698696,0.30755216704171434,0.3444561830035672
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,9,1,0.9376401645067498,0.23836030429072838,0.220555655380761
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,2,5,0,3.983846540253708e-05,0.21664835186627288,0.2595460137118477
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,3,1,0,0.30207243488141067,0.4443463798449758,0.3498146514402144
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,2,6,0,0.00022062006977259852,0.23190827041158676,0.23601425630297465
+Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs,24,4,6,1,0.9896702561226467,0.3893724193553652,0.36225009273330655
+COT drives resistance to RAF inhibition through MAP kinase pathway reactivation,12,3,2,0,0.05972071098785313,0.6331401007044533,0.4149477382591487
+COT drives resistance to RAF inhibition through MAP kinase pathway reactivation,12,3,1,0,0.09019482093305231,0.6005091372232205,0.43635997417745603
+COT drives resistance to RAF inhibition through MAP kinase pathway reactivation,12,2,2,1,0.9952682458143487,0.4963250808338522,0.4385972180956097
+COT drives resistance to RAF inhibition through MAP kinase pathway reactivation,12,2,1,1,0.9930175035715988,0.5699306945955442,0.42134738051245524
+Discovery and Preclinical Validation of Drug Indications Using Compendia of Public Gene Expression Data,21,1,3,0,0.9882189460234284,0.29552012207548006,0.3486979548908019
+Discovery and Preclinical Validation of Drug Indications Using Compendia of Public Gene Expression Data,21,1,2,1,0.9999366161472072,0.2049868872251835,0.2649721116252636
+Discovery and Preclinical Validation of Drug Indications Using Compendia of Public Gene Expression Data,21,1,1,1,0.9999917324563021,0.4568951669689108,0.413445241295713
+Diverse somatic mutation patterns and pathway alterations in human cancers,6,1,1,1,0.9999111811525492,0.8889319480048959,0.18449125209658596
+Fusobacterium nucleatum infection is prevalent in human colorectal carcinoma,50,1,1,1,0.9868889240917824,0.45854484503607357,0.41263379483814283
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,4,0,0.002728343755197875,0.9185750233118378,0.13442311407317314
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,8,0,0.009198404701619587,0.8849852192236979,0.17390341339733822
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,7,0,0.006121067291523398,0.9199436271878604,0.11090740516540581
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,3,0,0.001169292352776682,0.9352180042947676,0.09686915229123927
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,12,0,0.00023963452049357333,0.9417367159912852,0.10338692808878958
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,9,0,0.004670533970217668,0.9531248445078685,0.09451738544353416
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,1,1,0.8622357507544791,0.9033409233454895,0.14315657222268394
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,10,0,0.007745455471344333,0.954402962778382,0.096550639210112
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,13,0,0.0027383768856405694,0.9453937408567088,0.10867481988585803
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,5,0,0.018935757689745775,0.9414940253040894,0.10322705820170859
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,2,1,0.7919959663159745,0.843913649458124,0.220862230939936
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,11,0,0.0034345677329877225,0.9537106672327228,0.09716468049623493
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,2,1,1,0.8717151847151716,0.8780668060887192,0.1769804855028867
+IDH mutation impairs histone demethylation and results in a block to cell differentiation,47,1,6,0,0.038275483911996255,0.9332762294248933,0.10254699080265926
+Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia,29,1,1,1,0.9974175424479721,0.43427346847320286,0.32529568297872763
+Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia,29,2,3,1,0.8497345761330426,0.5654479217481951,0.39013865626758115
+Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia,29,2,1,1,0.9121760162544966,0.47745956594768807,0.3807620462886898
+Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia,29,2,2,0,0.10431106048944414,0.5275715597110918,0.38425464315035035
+Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia,29,3,1,0,0.09740694460096956,0.5051081080610814,0.35893776649780706
+Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia,29,3,2,0,2.450488151693109e-05,0.23335155888678413,0.24169536929622384
+Intestinal inflammation targets cancer-inducing activity of the microbiota,41,1,1,0,2.4071613731423762e-05,0.4165926534543778,0.41456328903141704
+Intestinal inflammation targets cancer-inducing activity of the microbiota,41,2,1,1,0.7269856231530357,0.30258553717982534,0.3990047656664993
+Kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF,7,1,3,0,0.2907688440867339,0.4053083364702406,0.4274267034865637
+Kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF,7,1,2,1,0.9964860619722952,0.5038635493118189,0.4388944951758675
+Kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF,7,1,1,1,0.9944776326668071,0.3157786702764943,0.3660941159749384
+Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET,42,1,1,1,0.9996598665541987,0.33957227024058473,0.3003256037595554
+Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET,42,2,3,0,0.010665993855283178,0.24848370137415263,0.245487709882535
+Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET,42,2,4,0,0.10797841285805457,0.3153262353642189,0.29777401810044934
+Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET,42,2,2,0,0.03526743082149302,0.34917943017972347,0.3141583229599082
+Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET,42,2,1,0,0.02938082314617963,0.26467014114029563,0.2650268433080552
+Melanoma genome sequencing reveals frequent PREX2 mutations,44,1,1,0,0.18169962677142434,0.4193131949508599,0.40073427538169015
+Melanoma genome sequencing reveals frequent PREX2 mutations,44,1,2,0,0.12172561226122006,0.39449831644201067,0.39509801147617546
+Melanoma genome sequencing reveals frequent PREX2 mutations,44,1,3,0,0.0588914854738837,0.3166492394853591,0.38134729373308895
+Melanoma genome sequencing reveals frequent PREX2 mutations,44,1,4,0,0.04808523737570368,0.31584128208586565,0.3750492113068553
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,1,5,1,0.9830196933378922,0.6109633914950726,0.3251984828488986
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,1,4,1,0.7724167528708707,0.7180226372727638,0.2629098146079454
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,2,1,0,0.2738662652910513,0.5857607585548522,0.2982815765172938
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,1,2,1,0.9780212072429609,0.5489548090684039,0.34596662755679725
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,1,3,0,0.11170828006984077,0.6432873291371719,0.33108018700266123
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,2,4,0,0.2334093953899532,0.48096871953745807,0.37040780894178665
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,2,2,1,0.3038829846333736,0.527508038609536,0.36800195037365885
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,1,1,1,0.9958358746099414,0.6332763865667049,0.33280822262264437
+RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth,8,2,3,1,0.2157510151342375,0.46375122279066405,0.34575617986970686
+Systematic identification of genomic markers of drug sensitivity in cancer cells,37,1,1,0,0.528269336810103,0.727746075734009,0.3562442403428327
+Systematic identification of genomic markers of drug sensitivity in cancer cells,37,2,1,0,0.012487576842324277,0.7007621757205384,0.3736841964728867
+Systematic identification of genomic markers of drug sensitivity in cancer cells,37,3,1,0,0.005958241033316424,0.7031739657934424,0.3593674555566031
+Systematic identification of genomic markers of drug sensitivity in cancer cells,37,2,2,0,0.0010003394636743472,0.6890952906916075,0.39470322637362804
+The CD47-signal regulatory protein alpha (SIRPa) interaction is a therapeutic target for human solid tumors,39,1,2,1,0.9999950821045684,0.4771285499686071,0.3582324806771856
+The CD47-signal regulatory protein alpha (SIRPa) interaction is a therapeutic target for human solid tumors,39,1,1,0,0.6684911220209755,0.747717575954878,0.2881298852032678
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,3,2,1,0.9797194245554922,0.5623306653481511,0.3249832755952347
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,1,2,0,0.5644709474164588,0.731046517626605,0.2677873291825488
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,1,4,1,0.5807715454239017,0.4510743179968243,0.33033666012913165
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,1,1,1,0.7885631786950729,0.6736472959595792,0.28368677626066807
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,1,3,0,0.20683134285977556,0.6625903491512742,0.2895210703285919
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,3,3,1,0.9986283481913071,0.5523134910793496,0.3247646982802695
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,2,1,1,0.9973459524858173,0.6480909986404162,0.28506137021010086
+The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate,16,3,1,1,0.9935230698892891,0.5500454915815511,0.2974580267681228
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,2,3,0,0.07247914852762476,0.27178971869307755,0.29260580708454625
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,1,1,1,0.9965950764091173,0.37232092725082877,0.33317583752272867
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,3,1,0,0.001084975249487729,0.2689978646883907,0.2760760025506678
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,2,1,0,0.02973277687135433,0.22848724986938002,0.2614998679484329
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,2,2,0,0.7762976393703624,0.3441978964122104,0.32509353517623674
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,1,2,0,0.926461988990621,0.38555675756443736,0.3509398689525961
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,3,2,0,0.010503581608170259,0.30843874968025203,0.3112210345730788
+The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44,28,3,3,0,0.011646209966296138,0.2716247799830259,0.29800382253186986
+Transcriptional amplification in tumor cells with elevated c-Myc,48,1,1,0,0.17634596809072173,0.7345000661077281,0.3084363404080093
+Transcriptional amplification in tumor cells with elevated c-Myc,48,2,1,1,0.9446407737440382,0.569261069845221,0.3185394487289886
+Transcriptional amplification in tumor cells with elevated c-Myc,48,2,2,1,0.9567925895132013,0.6048465503721718,0.3795806632396464
+Transcriptional amplification in tumor cells with elevated c-Myc,48,2,3,1,0.7332419266336618,0.6125961119640759,0.3408237767539679
+Transcriptional amplification in tumor cells with elevated c-Myc,48,2,4,1,0.4687408253371056,0.506562918898813,0.3763209122099323
+Transcriptional amplification in tumor cells with elevated c-Myc,48,2,5,1,0.7987217250326704,0.5924441642163342,0.36414529789374117
+Transcriptional amplification in tumor cells with elevated c-Myc,48,2,6,0,0.1177948991473601,0.5303547124393341,0.37772803901908536
+Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells,5,1,1,1,0.6210118488538732,0.49483020727349664,0.42915001104921224
+Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells,5,1,3,0,0.005286357554916202,0.3876301948775145,0.3896289676748924
+Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells,5,1,2,1,0.860602266092572,0.5217548850416261,0.41663967861848017
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,2,4,1,0.5846784514710157,0.9242451781857948,0.23587235222713698
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,1,3,1,0.7487622422546721,0.8623881130600255,0.28008099540554765
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,3,2,0,0.1651054723824431,0.7950013477497365,0.36431253897441035
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,1,2,1,0.9057630342924307,0.8555033945159651,0.3115774876522237
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,2,6,0,0.14857920613890863,0.9126394977356306,0.2495410618366134
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,1,1,1,0.920884559202003,0.8686633056968981,0.2834801854861739
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,2,2,0,0.3103835060240948,0.9197838294881338,0.23586510950283004
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,2,5,1,0.9526870928360659,0.9324049729146852,0.19805355373100295
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,2,1,1,0.6872616295481923,0.8785342154826269,0.2784491334209087
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,3,1,0,0.11004932322340934,0.8178521799003823,0.3503819562865786
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,1,5,1,0.9902701817840264,0.9053932142234407,0.253304712986134
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,1,4,0,0.217148758597675,0.842206948034446,0.3081967405197708
+Wnt activity defines colon cancer stem cells and is regulated by the microenvironment,9,2,3,1,0.6032459473671183,0.8619104120035969,0.2900208547764682

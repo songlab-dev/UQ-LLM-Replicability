@@ -1,0 +1,234 @@
+pid,treatment,active,position,since,gender,residence,research
+,m2,0,,,,,
+AFKFA,m3,1,PostDoc,2,Male,Europe,Economics
+AGNPX,m2,1,Associate Professor,7,Female,Northern America,Psychology
+AIRBM,m2,1,Assistant Professor,1,Female,Northern America,Psychology
+ARLEI,m2,1,PhD Candidate,0,Male,Northern America,Economics
+AYJQH,m3,1,Associate Professor,10,Male,Europe,Economics
+BBECX,m2,1,Professor,28,Male,Europe,Economics
+BGRYT,m3,1,PostDoc,1.5,Male,Northern America,Economics
+BHPTI,m2,1,PhD Candidate,0,Male,Northern America,
+BIYDE,m2,1,PhD Candidate,,Male,Europe,Psychology
+BKCFP,m2,1,PhD Candidate,0,Male,Northern America,Economics
+BNPKB,m2,1,PhD Candidate,9,Male,Asia,Psychology
+BNSRX,m3,0,Associate Professor,10,Female,Northern America,
+BRCTI,m3,1,PostDoc,1.5,Male,Europe,Psychology
+BUTQG,m3,1,Associate Professor,10,Female,Northern America,Psychology
+BXBPO,m3,1,PhD Candidate,0,Male,Europe,Psychology
+BYUFT,m3,1,PostDoc,1,Male,Northern America,Economics
+BZRFC,m2,1,PhD Candidate,0,Male,Northern America,Economics
+CHIBT,m2,1,,,,,
+CHJWI,m2,1,Professor,28,Male,Asia,Economics
+COGEW,m2,0,PhD Candidate,0,Male,Northern America,Economics
+CQEXW,m3,0,PhD Candidate,0,Male,Northern America,Economics
+CTDTP,m3,1,PhD Candidate,,Female,Europe,Psychology
+CTPQT,m3,1,PhD Candidate,,Male,Northern America,Psychology
+CUCGB,m2,1,Professional with PhD,0,Male,Europe,Economics
+CYLLX,m2,1,Professor,8,Female,Europe,Economics
+CYWGM,m2,1,PhD Candidate,,Male,Northern America,Psychology
+DBEOL,m2,0,PhD Candidate,0,Male,Australia,Psychology
+DCRKI,m2,1,Associate Professor,13,Male,Europe,Economics
+DDLIA,m3,1,Assistant Professor,5,Male,Northern America,Economics
+DLIYI,m2,1,PhD Candidate,,Male,Europe,Psychology
+DMIIF,m3,1,Assistant Professor,6,Female,Northern America,Psychology
+DOPFI,m2,0,Professor,37,Male,Northern America,Psychology
+DOPUB,m3,1,Professor,16,Male,Europe,Psychology
+DPJYN,m2,1,PostDoc,.3,Male,Northern America,Psychology
+DRIUI,m2,1,Assistant Professor,2,Male,Northern America,Psychology
+DSMMR,m2,1,Associate Professor,6,Male,Northern America,Economics
+DUYEG,m2,1,PostDoc,1,Male,Europe,Economics
+EALGQ,m3,1,PostDoc,.5,Male,Australia,Psychology
+EDRGS,m2,1,PhD Candidate,0,Male,Europe,Psychology
+EFVYH,m2,1,Assistant Professor,7,Male,Northern America,Economics
+EMHKN,m2,1,Professor,20,Male,Europe,Economics
+EXHNR,m3,0,PhD Candidate,,Male,Europe,Psychology
+FDEEF,m2,1,PostDoc,1,Male,Northern America,Psychology
+FFVHW,m3,1,PostDoc,3,Female,Europe,Psychology
+FGOQM,m2,1,Professional with PhD,0,Male,Europe,Natural/Computer Science
+FJTDI,m3,1,Professional with PhD,4,Male,Northern America,Economics
+FOMBY,m3,1,PhD Candidate,0,Male,Northern America,Psychology
+FRHWQ,m3,1,PhD Candidate,0,Male,Northern America,Psychology
+FTHMZ,m2,1,Assistant Professor,5,Male,Northern America,Economics
+FZDWW,m2,1,Assistant Professor,5,Male,Northern America,Psychology
+FZMNK,m2,1,Assistant Professor,10,Female,Europe,Economics
+GCPKB,m3,1,PhD Candidate,0,Male,Europe,Psychology
+GFHGK,m3,1,Assistant Professor,4,Male,Europe,Psychology
+GLFJZ,m2,1,PhD Candidate,0,Male,Northern America,Economics
+GLYRR,m3,1,Professor,35,Male,Northern America,Economics
+GOQTH,m3,1,PhD Candidate,,Female,Northern America,Psychology
+GZRWQ,m2,1,PhD Candidate,,Female,Europe,Economics
+HARNQ,m2,1,PhD Candidate,0,Male,Northern America,Economics
+HBEWR,m2,0,Assistant Professor,2.4,Female,Northern America,Psychology
+HBQXZ,m2,1,PhD Candidate,,Male,Northern America,Other
+HDWQD,m3,1,Assistant Professor,1,Male,Southern America,Economics
+HEJKB,m2,1,Assistant Professor,3,Male,Northern America,Psychology
+HFNSC,m2,1,Professional with PhD,0,Male,Northern America,Psychology
+HJBDQ,m2,1,PhD Candidate,0,Male,Southern America,Psychology
+HJEZS,m2,1,PhD Candidate,0,Male,Europe,Psychology
+HKTWT,m3,1,PostDoc,4,Male,Australia,Economics
+HSACH,m3,1,Assistant Professor,6,Male,Europe,Economics
+HWAXH,m3,1,Professional with PhD,2,Male,Northern America,Economics
+HWHKM,m3,1,PhD Candidate,0,Other,Northern America,Economics
+HXXGB,m3,1,Professional with PhD,6,Male,Northern America,Psychology
+IBCCH,m2,1,PhD Candidate,,Male,Northern America,Economics
+IEZOP,m3,1,PhD Candidate,,Male,Europe,Economics
+IKPCK,m3,1,PostDoc,1,Female,Northern America,Economics
+ITXLG,m2,1,Assistant Professor,1,Male,Northern America,Other
+IXIJM,m3,1,PhD Candidate,,Female,Europe,Psychology
+IXRCJ,m2,1,PostDoc,2,Male,Europe,Economics
+JAYYJ,m2,1,Professor,13,Male,Northern America,Psychology
+JDMRD,m3,1,Professor,19,Male,Northern America,Psychology
+JDVOM,m2,1,PhD Candidate,,Male,Europe,Psychology
+JERHM,m3,1,PhD Candidate,0,Male,Europe,Psychology
+JFFDX,m2,1,PostDoc,2,Female,Europe,Economics
+JJAGL,m2,1,Associate Professor,8,Male,Europe,Economics
+JJWQH,m3,1,Professional with PhD,7,Male,Europe,Other
+JUSNB,m2,1,PostDoc,5,Male,Europe,Psychology
+JVWRC,m2,1,PostDoc,5,Female,Europe,Economics
+JXCTF,m2,1,PostDoc,5,Male,Northern America,Psychology
+KBPUC,m2,1,PhD Candidate,0,Male,Northern America,Psychology
+KCPRJ,m2,1,Professional with PhD,22,Male,Northern America,Economics
+KGDEO,m3,1,Assistant Professor,11,Male,Northern America,Other
+KIYTT,m2,1,PhD Candidate,,Male,Northern America,Psychology
+KMTVC,m3,1,Assistant Professor,5,Male,Europe,Economics
+KPQUF,m3,1,Professor,24,Male,Europe,Psychology
+KRWHP,m2,0,PostDoc,5,Male,Northern America,Psychology
+KSQVW,m2,1,Professor,21,Male,Northern America,Psychology
+KXHZX,m3,1,Lecturer,1,Male,Europe,Psychology
+KYQVB,m3,1,PhD Candidate,,Male,Northern America,Economics
+LCSDI,m3,1,Assistant Professor,2,Female,Northern America,Psychology
+LFMEQ,m2,0,Professional with PhD,16,Female,Northern America,Other
+LJPBD,m3,1,PhD Candidate,0,Male,Northern America,Psychology
+LMKYB,m3,1,Professor,7,Male,Europe,Economics
+LVFGB,m3,1,Assistant Professor,4,Female,Northern America,Psychology
+LXMYX,m3,1,Professional with PhD,5,Male,Europe,Economics
+LYFOV,m2,1,Professor,21,Male,Europe,Psychology
+LYXBB,m3,1,Associate Professor,9,Male,Northern America,Psychology
+MHKGW,m2,1,PhD Candidate,,Female,Northern America,Psychology
+MLVJZ,m3,0,PostDoc,4,Female,Northern America,Psychology
+MLXQY,m2,1,PhD Candidate,,Female,Europe,Natural/Computer Science
+MMOYA,m3,1,PhD Candidate,,Male,Northern America,Psychology
+MNRLM,m3,0,PostDoc,5,Female,Europe,Economics
+MPQVV,m2,1,Assistant Professor,7,Male,Northern America,Psychology
+MQOED,m3,1,Professional with PhD,1,Male,Northern America,Political Science
+MREFB,m3,0,Assistant Professor,15,Male,Asia,Economics
+MUPMA,m3,1,Associate Professor,10,Male,Northern America,Economics
+MWDSM,m2,1,Assistant Professor,1,Male,Europe,Psychology
+MWTSC,m2,1,Professional with PhD,3,Male,Europe,Psychology
+MXZEG,m2,1,Professor,13,Male,Northern America,Economics
+MYWHH,m3,1,PhD Candidate,0,Male,Europe,Psychology
+NDNSG,m2,0,PhD Candidate,,Male,Europe,Psychology
+NERZB,m2,1,Professor,9,Male,Europe,Economics
+NLTVU,m3,1,Professional with PhD,2,Female,Northern America,Other
+NQYQN,m3,1,Assistant Professor,13,Female,Asia,Economics
+OAKPV,m3,1,Assistant Professor,5,Male,Northern America,Economics
+OCSVL,m3,1,Lecturer,6,Male,Europe,Economics
+ODNWH,m3,0,PhD Candidate,,Female,Northern America,Economics
+OEXJH,m2,1,PostDoc,4,Male,Europe,Economics
+OJYDQ,m2,1,PhD Candidate,,Male,Northern America,Economics
+OLPSA,m2,1,Professor,24,Male,Europe,Economics
+OOJMX,m3,1,Lecturer,0,Female,Northern America,Natural/Computer Science
+OPAXV,m3,1,Assistant Professor,11,Male,Northern America,Psychology
+OPSPN,m2,1,Professor,12,Male,Europe,Other
+OTJYA,m2,1,PostDoc,1,Male,Europe,Psychology
+PDSGL,m2,1,Assistant Professor,6,Male,Northern America,Psychology
+PEOLU,m3,1,PhD Candidate,0,Female,Europe,Psychology
+PGVWP,m2,1,PhD Candidate,0,Male,Europe,Economics
+PHTZT,m3,1,PhD Candidate,,Male,Northern America,Natural/Computer Science
+POXNY,m3,1,PhD Candidate,,Female,Australia,Psychology
+PPZPY,m2,0,Associate Professor,11,Female,Europe,Economics
+PVBVQ,m2,1,PhD Candidate,0,Male,Northern America,Psychology
+PWJJQ,m2,1,Professor,32,Male,Europe,Economics
+PYBWP,m3,1,PhD Candidate,,Male,Europe,Psychology
+PZCZV,m3,1,PostDoc,8,Male,Europe,Economics
+QCTQV,m2,0,PhD Candidate,0,Male,Asia,Other
+QECXS,m3,1,Assistant Professor,6,Female,Northern America,Psychology
+QHNUD,m3,1,Professional with PhD,1,Male,Northern America,Natural/Computer Science
+QKAZU,m3,1,PostDoc,10,Female,Europe,Economics
+QRNNV,m2,1,Associate Professor,1,Male,Europe,Psychology
+QRVVY,m3,1,Professor,28,Male,Northern America,Economics
+QVBAP,m3,1,PhD Candidate,,Male,Northern America,Psychology
+QXEPS,m3,1,PhD Candidate,0,Male,Europe,Economics
+QYBZC,m2,1,PhD Candidate,,Male,Northern America,Psychology
+REAVM,m3,1,PhD Candidate,0,Male,Europe,Psychology
+RJKJF,m2,1,PostDoc,1,Male,Northern America,Psychology
+RKDZV,m2,1,PhD Candidate,,Female,Northern America,Psychology
+RKTOH,m2,1,PhD Candidate,,Male,Northern America,Economics
+RLFXE,m3,1,Assistant Professor,6,Male,Northern America,Psychology
+RQOBK,m2,0,PhD Candidate,,Male,Northern America,Economics
+RRFWI,m3,1,PhD Candidate,0,Male,Europe,Psychology
+RRKTM,m3,1,Assistant Professor,7,Male,Europe,Psychology
+RSFYN,m3,1,PostDoc,0,Male,Northern America,Psychology
+RTXTZ,m2,1,Assistant Professor,6,Female,Europe,Psychology
+RZIII,m2,1,PhD Candidate,,Male,Northern America,Economics
+SIBYL,m3,1,PhD Candidate,,Female,Northern America,Psychology
+SKXRF,m2,1,PostDoc,0,Male,Northern America,Psychology
+SLETN,m3,1,Associate Professor,13,Female,Europe,Psychology
+SLKSA,m3,1,Professor,15,Male,Northern America,Psychology
+SNJRM,m3,0,Lecturer,4,Male,Asia,Psychology
+SNNRO,m2,1,PhD Candidate,,Male,Northern America,Psychology
+SOOYS,m2,1,PhD Candidate,,Male,Europe,Economics
+SVOWQ,m2,1,PostDoc,3,,Asia,Political Science
+SXMNT,m2,1,PhD Candidate,0,Male,Northern America,Economics
+TDFNU,m2,0,PhD Candidate,,Female,Northern America,Psychology
+TDLLY,m2,1,PhD Candidate,,Female,Europe,Economics
+TICTG,m2,0,PhD Candidate,,Male,Europe,Psychology
+TLEEF,m2,1,Assistant Professor,7,Male,Europe,Economics
+TNUTC,m2,1,PhD Candidate,0,Male,Asia,Economics
+TPCGC,m3,0,PhD Candidate,,Female,Northern America,Psychology
+TPMTB,m2,1,Assistant Professor,6,Male,Europe,Psychology
+TQUSO,m2,1,PostDoc,3,Male,Northern America,Economics
+TVNAD,m2,1,PhD Candidate,,Male,Europe,Psychology
+TYDLF,m2,1,Professor,12,Male,Europe,Psychology
+TZHAK,m2,1,PhD Candidate,0,Male,Northern America,Psychology
+UFEYS,m2,1,PhD Candidate,0,Male,Asia,Psychology
+UONRK,m2,1,PostDoc,3,Female,Europe,Economics
+USYLJ,m3,0,Lecturer,0,Male,Northern America,Economics
+UUYLF,m3,1,PhD Candidate,,Male,Europe,Psychology
+UWXVV,m3,1,Associate Professor,7,Male,Europe,Psychology
+UXMBH,m2,1,Assistant Professor,8,Male,Northern America,Psychology
+UYSCS,m2,1,Assistant Professor,6,Male,Australia,Economics
+VBFGR,m2,1,Associate Professor,5,Male,Northern America,Economics
+VEOXL,m2,1,Assistant Professor,4,Male,Europe,Economics
+VHWFI,m2,1,PostDoc,1,Male,Australia,Economics
+VQQGL,m2,1,Assistant Professor,1,Male,Northern America,Economics
+VSYYJ,m2,1,PhD Candidate,,Female,Europe,Economics
+VTIEK,m3,1,Lecturer,11,Male,Europe,Economics
+VTWWG,m3,1,PhD Candidate,0,Male,Northern America,Psychology
+VWIIZ,m3,0,Associate Professor,12,Male,Northern America,Psychology
+VWQJN,m3,1,PhD Candidate,0,Male,Northern America,Economics
+VWTHZ,m3,1,PostDoc,3,Male,Australia,Other
+WEESC,m2,1,Lecturer,1,Male,Northern America,Economics
+WEZFA,m2,1,Professor,25,Male,Northern America,Psychology
+WOVCG,m2,0,Professor,8,Male,Europe,Economics
+WOZHY,m3,1,Assistant Professor,2,Male,Europe,Economics
+WSKMW,m3,1,PostDoc,4,Male,Europe,Economics
+WTOCY,m2,1,PostDoc,1.5,Female,Northern America,Psychology
+WTZSC,m3,0,Associate Professor,1,Female,Europe,Economics
+WUKAA,m2,1,PhD Candidate,,Female,Europe,Psychology
+WVBUA,m3,1,PhD Candidate,0,Female,Northern America,Psychology
+XCRTP,m3,1,PhD Candidate,0,Female,Europe,Economics
+XDCSW,m2,1,Associate Professor,11,Female,Northern America,Psychology
+XEPOZ,m2,1,Professor,26,Male,Australia,Psychology
+XJMAV,m2,1,Assistant Professor,3,Male,Northern America,Psychology
+XMREM,m2,1,Professor,20,Male,Northern America,Psychology
+XPQFY,m2,1,Professor,23,Male,Europe,Psychology
+XYJIX,m3,1,PostDoc,3,Male,Europe,Economics
+YEXRD,m3,1,Assistant Professor,3,Male,Northern America,Psychology
+YGDVU,m3,1,PostDoc,1,Female,Northern America,Psychology
+YHEMK,m3,1,Lecturer,3,Male,Europe,Other
+YHGBZ,m3,1,PhD Candidate,,Male,Europe,Economics
+YIPBA,m3,1,Professional with PhD,0,Male,Northern America,Economics
+YIQTI,m2,1,PhD Candidate,0,Male,Europe,Psychology
+YJPRG,m2,0,PhD Candidate,,Female,Europe,Economics
+YKWAH,m2,1,Associate Professor,16,Female,Europe,Economics
+YMKYG,m2,1,Lecturer,6,Male,Northern America,Psychology
+YPCFD,m2,1,Associate Professor,9,Male,Northern America,Psychology
+YQXIE,m2,1,Associate Professor,12,Male,Northern America,Psychology
+YSSFZ,m3,1,Assistant Professor,1,Male,Europe,Economics
+YUMWF,m2,1,PhD Candidate,,Male,Northern America,Psychology
+YYYQL,m2,1,Assistant Professor,2,Male,Northern America,Economics
+ZCZJN,m3,1,Assistant Professor,9,Male,Northern America,Psychology
+ZDOYC,m3,1,PostDoc,2,Male,Northern America,Psychology
+ZHMDL,m2,1,PhD Candidate,0,Male,Northern America,Psychology
+ZJGNP,m2,1,PhD Candidate,0,Male,Northern America,Psychology

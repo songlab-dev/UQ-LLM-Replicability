@@ -1,0 +1,209 @@
+{
+  "spec_id": "dml_theta_v1",
+  "created": "2026-09-10",
+  "revised": "2026-09-10",
+  "status": "frozen",
+  "revision_note": "Revised before any commit, following clarification of the estimand (W_m varies over (i,r); h_m is one fixed function per m; theta_m is a scalar; h_0(X_i) = pbar_i a.s.; sum_m theta_m + theta_res = E_i[V_i]). No estimate had been produced under the earlier draft, and the earlier draft was never committed, so this is a revision of v1 rather than a v2. Any change AFTER this file is committed must bump spec_id instead.",
+  "purpose": "Pre-specified estimation and inference plan for the cross-fitted stage-attribution parameters theta_m of Appendix C (orthogonal score, exact empirical telescoping). Frozen BEFORE any theta estimate is evaluated against replication outcomes Y.",
+
+  "estimand": {
+    "population": "Two-stage law. Draw a study from the study population, which fixes its context X_i; then draw a run as a fresh realization of the model randomness U, which generates the stage outputs and the score given that context. One pooled observation is one (study, run) pair.",
+    "score_output": "P = q_6, the model's own Q_HAT on a single run",
+    "W_m": "A random vector whose realization at observation (i, r) is (X_i, p_{i,1:m}^{(r)}). It varies over BOTH studies and runs.",
+    "h_m": "h_m(w) = E[P | W_m = w] under the two-stage law: one fixed measurable function per stage, indexed by neither i nor r. Under cross-fitting, one fitted function per fold, h_hat_m^{(-k)}.",
+    "key_identity": "X_i sits inside every W_m, so conditioning on W_m recovers the per-study Doob mean of Proposition 4.1: h_m(W_m) = h_{i,m}^{(r)} almost surely, and in particular h_0(X_i) = pbar_i.",
+    "theta_m": "A SCALAR, one number per stage: theta_m = E_i{ E_U[D_{i,m}^2] }, the study-averaged stage-m contribution. Not indexed by anything but m.",
+    "theta_res": "E_i{ E_U[(P - h_{s-1})^2] }, the study-averaged irreducible residual",
+    "adding_up": "sum_{m<s} theta_m + theta_res = E_i[V_i], the study-averaged run-to-run variance of the score",
+    "pooling_role": "Pooling across (i, r) is purely an estimation device. It does not change the estimand.",
+    "orthogonal_scores": {
+      "phi_m": "2*(h_m - h_{m-1})*P - h_m^2 + h_{m-1}^2",
+      "phi_res": "(P - h_{s-1})^2"
+    },
+    "telescoping_identity": "sum_m phi_m + phi_res == (P - h_0)^2 per observation, for ANY fitted nuisances (Proposition C.1). Asserted to 1e-10 on every run."
+  },
+
+  "chain": {
+    "s": 5,
+    "stages": [
+      {"m": 1, "unit": 1, "name": "Extraction", "prefix_col": "q_1"},
+      {"m": 2, "unit": 3, "name": "Statistical review", "prefix_col": "q_3"},
+      {"m": 3, "unit": 4, "name": "Researcher DoF concern", "prefix_col": "q_4"},
+      {"m": 4, "unit": 5, "name": "Theory and context", "prefix_col": "q_5"}
+    ],
+    "residual": {"name": "Residual (Scoring given upstream)", "col": "q_6"},
+    "note": "theta_1..theta_4 are the four upstream stage attributions; the fifth increment of the existing chain code (D5 = q_6 - h_4) IS theta_res, not a stage. Unit 2 (Credibility) is unscored; unit 7 (Verdict) is a deterministic function of q_6 and contributes a zero increment by construction."
+  },
+
+  "nuisance_conditioning": {
+    "X_i_is": "the study's full context (the paper text and everything else the generating model sees), which is study-identifying. It is NOT a low-dimensional covariate vector.",
+    "consequence": "Because X_i identifies the study, h_m is a WITHIN-STUDY conditional expectation. The estimation resource for the study-level location is that study's own R = 100 runs; the estimation resource for anything shared across studies is the n studies.",
+    "h_0_estimator": "h_hat_0,i = study i's mean of q_6 over the runs OUTSIDE the current run-fold. This is the saturated nonparametric fit of the fixed function h_0 at the observed X values: on a study-identifying X, the only functions of X are 'a number per study', and the study's own run mean is that number.",
+    "h_m_estimator": "h_hat_m^{(-k)}(X_i, prefix) = h_hat_0,i + g_hat_m^{(-k)}(prefix centered within study). g_hat_m is a POOLED map from the within-study-centered prefix to the within-study score deviation, fit off-fold across studies. g_hat_m is one function per fold, indexed by neither i nor r, as the estimand requires.",
+    "additivity_assumption": "The primary spec assumes the prefix-to-score map is additive and common across studies, with all study context entering through h_hat_0,i. Neyman orthogonality makes the error from this approximation enter only quadratically. Sensitivity arm S6 relaxes it with covariate-by-prefix interactions.",
+    "rejected_option_coarse_X": {
+      "what": "Estimating h_0 by a cross-fitted pooled regression of the score on a low-dimensional covariate vector (log original N, |r|, indicator p < .001, plus missingness indicators) instead of the study's own runs. This was the earlier draft of this spec.",
+      "why_rejected": "The identity h_0(X_i) = pbar_i requires X_i to pin down the study. A coarse X_i does not, and the shortfall does not vanish: it is added to the total, so the thetas would sum to E_i[V_i] PLUS the between-study residual E_i[(pbar_i - h_0_coarse)^2] rather than to E_i[V_i] alone. Measured on the actual runs (temp 0.7, GroupKFold over clusters), the coarse regression has NEGATIVE cross-fitted R-squared in all three corpora, i.e. it predicts a study's mean score worse than the grand mean does.",
+      "measured": {
+        "RPP":   {"within_E_V_i": 0.00307, "between_var_pbar": 0.01120, "cv_r2": -0.033, "leakage": 0.01144, "leakage_over_within": 3.7, "coarse_total_inflation_pct": 373},
+        "CB":    {"within_E_V_i": 0.00473, "between_var_pbar": 0.01029, "cv_r2": -0.115, "leakage": 0.01140, "leakage_over_within": 2.4, "coarse_total_inflation_pct": 241},
+        "SSRP":  {"within_E_V_i": 0.00361, "between_var_pbar": 0.01279, "cv_r2": -0.185, "leakage": 0.01443, "leakage_over_within": 4.0, "coarse_total_inflation_pct": 399}
+      },
+      "richest_available_X_also_fails": "Substituting the embedding-LR out-of-fold probability (the richest study-level text summary in this repo, and itself outcome-trained) gives cross-fitted R-squared of -0.009 on RPP, leaving leakage at 3.6x the within-study target. No study-generalizing X_i available here can recover pbar_i.",
+      "status": "Retained as diagnostic arm S7, reported as a demonstration of why h_0 is estimated within-study, never as a headline estimate."
+    }
+  },
+
+  "crossfitting": {
+    "two_layers": "Both are required, and they remove different biases.",
+    "study_folds": {
+      "K": 5,
+      "splitter": "GroupKFold over cluster_key (all runs and all claims of a cluster stay together)",
+      "seed": 2024,
+      "removes": "the pooled map g_hat_m having seen the study it is scoring",
+      "sensitivity_K": [2, 10, "leave-one-cluster-out"]
+    },
+    "run_folds": {
+      "K_run": 5,
+      "splitter": "runs partitioned within each study",
+      "seed": 2024,
+      "removes": "h_hat_0,i containing the very run being scored, which would bias theta_res down by roughly V_i / R"
+    },
+    "finite_R_correction": "E[(P - h_hat_0,i)^2] = V_i * (1 + 1/R_train) with R_train the runs used per study fit, so the raw residual term is inflated by 1/R_train. The reported theta_res multiplies by R_train/(R_train + 1); the uncorrected value is reported alongside. At R_train = 80 the correction is about 1.25%.",
+    "prediction_clipping": "[0, 1] (h_m is a conditional expectation of a [0,1]-valued output)"
+  },
+
+  "nuisance_learner": {
+    "primary": {
+      "class": "ordinary least squares",
+      "form": "g_m ~ within-study-centered prefix scores, entered linearly, no interactions",
+      "rationale": "Deliberately simple and pre-specified, as the appendix requires. Neyman orthogonality makes nuisance error enter phi_m only quadratically, and the effective sample size is 21-88 clusters."
+    },
+    "robustness": {
+      "class": "gradient boosting, max_depth=3, n_estimators=200, learning_rate=0.05",
+      "seed": 2024,
+      "folds": "identical fold assignment to the primary"
+    },
+    "rate_condition": {
+      "requirement": "the DML second-order bias term sqrt(n) * ||h_hat - h||^2 must be negligible",
+      "for_h_0": "||h_hat_0 - h_0||^2 is approximately E_i[V_i] / R, so the bias term is sqrt(n) * E_i[V_i] / R. It is driven by R, not by n.",
+      "computed": {"RPP": 0.00029, "CB": 0.00023, "SSRP": 0.00017},
+      "verdict": "negligible in all three corpora at R = 100; the within-study estimator comfortably satisfies the condition, which a study-generalizing regression on coarse covariates would not."
+    },
+    "no_truncation": "Negative theta_hat_m are reported as estimated. No clipping at zero before inference."
+  },
+
+  "corpora": {
+    "RPP": {
+      "predictions": "llm_uq/LLM_Reasoning/RPP/text_predictions_high_temp0.7.csv",
+      "claim_key": "altmejd_id",
+      "n_claims": 90,
+      "cluster_key": "Study Title (O)",
+      "n_clusters": 88,
+      "R_per_claim": 100,
+      "known_structure": "Two paper clusters carry two claims each. rpp.49/rpp.50 have genuinely distinct 100-run prediction vectors (two different effects). rpp.148/rpp.149 have byte-identical prediction vectors (one generation set surfaced under two ids). Both pairs are kept as two claims to preserve the n=90 convention used by predict_embed_lr.py / predict_rf_replicability.py; the within-paper dependence is absorbed by the paper-level cluster in both fold assignment and the variance estimator.",
+      "deviation_from_existing_code": "uq_bound/common.py groups runs by 'Study Title (O)', which pools rpp.49 and rpp.50's two distinct effect run-sets into one 200-run claim. This spec keys claims by altmejd_id instead."
+    },
+    "CB": {
+      "predictions": "llm_uq/LLM_Reasoning/CB/text_predictions_high_temp0.7.csv",
+      "claim_key": "claim_id = (Paper #, Experiment #, Effect #)",
+      "n_claims": 158,
+      "cluster_key": "Paper #",
+      "n_clusters": 23,
+      "R_per_claim": 100,
+      "known_structure": "158 effects nested in 23 papers; each effect has its own independent 100 runs. The cluster is the PAPER, not the effect: 23 is the effective sample size for inference."
+    },
+    "SSRP": {
+      "predictions": "llm_uq/LLM_Reasoning/SSRP/text_predictions_high_temp0.7.csv",
+      "claim_key": "Study Num",
+      "n_claims": 21,
+      "cluster_key": "Study Num",
+      "n_clusters": 21,
+      "R_per_claim": 100,
+      "known_structure": "One study per paper; claim and cluster coincide."
+    }
+  },
+
+  "missing_data": {
+    "CB_primary": "Complete-chain effects only: an effect is in scope when q_1..q_6 are jointly non-null on at least one run, and only its complete runs enter the fit (the current dropna behaviour of common_cb.py, stated rather than incidental). Expected n is roughly 104 of 158 effects; the realized count is reported.",
+    "CB_sensitivity": "All 158 effects, q_1 imputed at its within-study mean with an availability dummy entering the prefix from stage 1 onward.",
+    "RPP_SSRP": "No chain-level missingness rule needed; realized run counts are reported."
+  },
+
+  "inference": {
+    "estimated_quantity": "the five SCALARS theta_1..theta_4 and theta_res. Inference attaches to these and to nothing else.",
+    "point_estimate": "theta_hat_m = n^-1 sum_i R_i^-1 sum_r phi_{ir,m}, i over claims",
+    "cluster_unit": "cluster_key of the corpus (paper for RPP and CB, study for SSRP)",
+    "standard_error": {
+      "method": "cluster-robust: {n(n-1)}^-1/2 * {sum_i (phibar_{i,m} - theta_hat_m)^2}^1/2 over clusters, normal critical values -- applied identically to all three corpora, exactly as the appendix's Cross-fitting and inference paragraph states it. No small-G variant (jackknife, CR3, wild-cluster) is part of the request; none is used.",
+      "reported_alongside": "a study-cluster bootstrap interval (from the same multiplier-bootstrap draws as the simultaneous band below), per the appendix's own 'at n=90 we report study-cluster bootstrap intervals alongside' -- applied to all three corpora, not RPP only."
+    },
+    "simultaneous_bands": {
+      "method": "multiplier bootstrap over clusters",
+      "statistic": "sup_m |sum_i xi_i (phibar_{i,m} - theta_hat_m)| / se_hat_m over the 5 scalars jointly",
+      "weights": "Rademacher",
+      "B": 10000,
+      "seed": 0,
+      "alpha": 0.05
+    },
+    "per_claim_profiles": {
+      "definition": "theta_hat_{i,m} = the within-claim average of phi_{ir,m}, obtained by evaluating the fitted h_hat_m on claim i's own runs",
+      "status": "DESCRIPTIVE ONLY. These are estimates, not exact per-claim decompositions, and carry no confidence intervals. Every figure and table showing them must be labeled descriptive.",
+      "rationale": "theta_m is a scalar estimand; the per-claim profile is a diagnostic view of the same fitted nuisances, not a second estimand with its own inference."
+    }
+  },
+
+  "adding_up_check": {
+    "what": "sum_m theta_hat_m + theta_hat_res must reproduce the study-averaged run-to-run variance E_i[V_i], which is directly computable from the runs as the mean within-claim sample variance of q_6.",
+    "targets": {"RPP": 0.00307, "CB": 0.00473, "SSRP": 0.00361},
+    "tolerance": "agreement to within the finite-R correction (about 1.25%) after that correction is applied; a larger gap means the nuisances are not respecting h_0 = pbar_i and the run fails loudly.",
+    "note": "This check is what distinguishes a correct within-study h_0 from the rejected coarse-X option, which would overshoot these targets by 241 to 399 percent."
+  },
+
+  "coverage_simulation": {
+    "source": "the TODO's literal text: 'the n=90, R=100 coverage simulation' -- a single validation exercise, not a multi-arm design. No misspecification check, null-stage check, unequal-cluster check, or R-sweep is requested; none is run.",
+    "n": 90,
+    "R": 100,
+    "replicates": 2000,
+    "seed": 7,
+    "dgp": "Two-stage, matching the clarified law: draw a study-level context that fixes pbar_i, then draw R runs given that context, with a correctly-specified additive linear prefix map (the estimator's own assumed functional form). The study-level location is deliberately NOT predictable from any observed covariate, matching the measured cross-fitted R-squared of about zero in all three corpora.",
+    "checks": "whether the cluster-robust pointwise CI and the multiplier-bootstrap simultaneous band (the same two intervals reported on the real corpora) achieve their nominal 95% coverage at this n and R",
+    "reported": ["per-stage bias", "pointwise CI coverage", "simultaneous band coverage", "mean band width", "adding-up error"]
+  },
+
+  "reporting": {
+    "per_corpus_table": ["theta_hat_m for the four stages and the residual", "share of total", "cluster-robust SE", "95% pointwise CI", "95% simultaneous band", "adding-up check against E_i[V_i]"],
+    "outputs": [
+      "llm_uq/uq_bound/results/{RPP,CB,SSRP}/dml_theta.csv",
+      "llm_uq/uq_bound/results/{RPP,CB,SSRP}/dml_theta_per_claim.csv",
+      "llm_uq/uq_bound/results/coverage_sim.csv",
+      "llm_uq/doc/table_dml_theta.tex",
+      "llm_uq/uq_bound/figures/dml_theta_attribution.pdf"
+    ],
+    "scope_guard": "Section 4.1's per-claim plug-in v_hat_i in freedman_bound.py and validation_plot*.py is NOT modified by this work. The cross-fitted theta layer is added alongside, and the gap between the summed cross-fitted stage attributions and the mean plug-in v_hat_i is reported as a diagnostic of the plug-in's in-sample optimism."
+  },
+
+  "implementation": {
+    "shared_module": "llm_uq/uq_bound/dml_theta.py",
+    "adapters": "corpus-specific claim key, cluster key and prediction path supplied by common.py, common_cb.py, common_ssrp.py; no estimator logic duplicated per corpus",
+    "parity_check": "each corpus's phi matrix is hashed and the hash recorded in the run log, so a later refactor of the adapters can be shown to be inert",
+    "assertions": [
+      "Proposition C.1 holds per observation to 1e-10 on all three corpora",
+      "no cluster appears in both the fit and evaluation side of any study fold",
+      "no run appears in both the fit and evaluation side of its run fold",
+      "g_hat_m is a single fitted object per fold, never indexed by claim",
+      "the adding-up check matches E_i[V_i] within tolerance",
+      "realized R_i and claim counts match this spec's corpora block, or the run fails loudly"
+    ]
+  },
+
+  "sensitivity_arms": {
+    "S1": "study-fold K in {2, 10, leave-one-cluster-out}",
+    "S2": "gradient-boosting prefix map",
+    "S3": "run-fold K_run in {2, 10, leave-one-run-out}",
+    "S4": "CB all-158 imputation arm",
+    "S5": "temperature 0.2 prediction files in place of 0.7",
+    "S6": "study-covariate-by-prefix interactions in g_m, relaxing additivity",
+    "S7": "the rejected coarse-X h_0, reported only as the diagnostic that motivates the within-study estimator"
+  }
+}

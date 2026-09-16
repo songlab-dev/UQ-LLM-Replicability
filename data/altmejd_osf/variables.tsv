@@ -1,0 +1,81 @@
+v	v_n	d
+aggregated	Aggregated	True if observation is based on aggregated data (ML1,3)
+author_citations_avg.o	Avg. Author Citations (O)	Average nr of citation of authors in original study
+author_citations_avg.r	Avg. Author Citations (R)	Average nr of citation of authors in replication
+author_citations_max.o	Max Author Citations (O)	Nr of citation of the author in the original study with the highest citation count
+author_citations_max.r	Max Author Citations (R)	Nr of citation of the author in the original study with the highest citation count
+authors.o	Authors (O)	Names of original authors
+authors.r	Authors (R)	Names of replication authors
+authors_male.o	Ratio of male authors (O)	Ratio of male authors in original study
+authors_male.r	Ratio of male authors (R)	Ratio of male authors in replication
+citations	Citations (O)	Number of citations of original paper
+compensation.o	Compensation (O)	Compensation in original experiment. One of the following: nothing, cash, credit, mixed
+compensation.ocash	Compensation (O): Cash	Subjects were compensated with cash in original experiment
+compensation.ocredit	Compensation (O): Credit	Subjects were compensated with course credits in original experiment
+compensation.omixed	Compensation (O): Mixed	Subject were compensated with both cash and credits in original experiment.
+compensation.onothing	Compensation (O): Nothing	No compensation in original experiment
+compensation.r	Compensation (R)	Compensation in replication. One of the following: nothing, cash, credit, mixed
+compensation.rcash	Compensation (R): Cash	Subjects were compensated with cash in replication
+compensation.rcredit	Compensation (R): Credit	Subjects were compensated with course credits in replication
+compensation.rmixed	Compensation (R): Mixed	Subject were compensated with both cash and credits in replication.
+compensation.rnothing	Compensation (R): Nothing	No compensation in replication
+discipline	Discipline	Discipline of original paper. One of the following: social, cognitive, economics.
+disciplineCognitive	Discipline: Cognitive Psych.	Cognitive Psychology
+disciplineEconomics	Discipline: Economics	Economics
+disciplineSocial	Discipline: Social Psych.	Social Psychology
+drop	drop	Drop observation due to errors
+effect_size.o	Effect Size (O)	Standardized effect size of original paper
+effect_size.r	Effect Size (R)	Standardized effect size of replication
+effect_type	Effect Type	Type of effect tested. One of the following: main effect, correlation, interaction
+effect_type.ocorrelation	Effect: Correlation	Experiment tests a correlation effect
+effect_type.ointeraction	Effect: Interaction	Experiment tests an interaction effect
+effect_type.omain.effect	Effect: Main	Experiment tests a main effect
+endprice	Prediction Market Price	Final market price in prediction market
+es_80power	ES at 80% power	Standardized effect size required in replication to achieve 80% power.
+experiment_country.o	Experiment Country (O)	Country where original experiment was conducted
+experiment_country.r	Experiment Country (R)	Country where replication is to be conducted
+experiment_language.o	Experiment Language (O)	Language used with subjects in original experiment
+experiment_language.r	Experiment Language (R)	Language to be used with subjects in replication
+id	id	Unique id for each O/R pair
+issue	Journal Issue (O)	Volume of the journal that published the original paper
+journal	Journal (O)	Name of the journal that published the original paper
+lab_id	Replication Lab ID	Unique id for each replication lab
+length	Paper Length (O)	Number of pages of original paper
+n.o	Sample Size (O)	Sample size of original paper
+n.r	Sample Size (R)	Sample size of replication
+n_authors.o	Number of Authors (O)	Number of authors in original study
+n_authors.r	Number of Authors (R)	Number of authors in replication
+n_planned.r	Planned Sample Size (R)	Planned sample size of replication
+online.o	Online (O)	If the original experiment was conducted online
+online.r	Online (R)	If the replication was conducted online
+p_value.o	P-Value (O)	P-value of original paper
+p_value.r	P-Value (R)	P-value of replication
+power.o	Post-Hoc Power (O)	Post hoc power based on original effect size
+power.r	Post-Hoc Power (R)	Post hoc power based on replication effect size
+power_planned.r	Planned Power (R)	Planned power of replication based on planned N and original ES
+project	Replication Project	The replication project that the study was in. One of either: EE, RPP, ML1, ML3
+pub_year	Publication year (O)	Original paper publication year
+relative_es	Relative Effect Size	The continuous outcome variable; the standardized replication effect size relative to the original effect.
+replicated	Replicated	Binary outcome variable, study is replicated if p<=0.05 and effect goes in the same direction as the original.
+same_country	Same Country	Original study and replication are in the same country
+same_language	Same Language	Original study and replication are in the same language
+same_online	Same Online	Original study and replication are both conducted online
+same_subjects	Same Subjects	Original study and replication use same type of subjects
+seniority.o	Highest Author Seniority (O)	Most senior author in original paper (Professor, Associate Prof., ...)
+seniority.oAssistant.Professor	Seniority (O): Assistant Prof.	Highest seniority in original study is Assistant Professor (rank 3/4)
+seniority.oAssociate.Professor	Seniority (O): Associate Prof.	Highest seniority in original study is Associate Professor (rank 2/4)
+seniority.oProfessor	Seniority (O): Professor	Highest seniority in original study is Professor (rank 1/4)
+seniority.oResearcher	Seniority (O): Researcher	Highest seniority in original study is Researcher (rank 4/4)
+seniority.r	Highest Author Seniority (R)	Most senior author in original paper (Professor, Associate Prof., ...)
+seniority.rAssistant.Professor	Seniority (R): Assistant Prof.	Highest seniority in replication is Assistant Professor (rank 3/4)
+seniority.rAssociate.Professor	Seniority (R): Associate Prof.	Highest seniority in replication is Associate Professor (rank 2/4)
+seniority.rProfessor	Seniority (R): Professor	Highest seniority in replication is Professor (rank 1/4)
+seniority.rResearcher	Seniority (R): Researcher	Highest seniority in replication is Researcher (rank 4/4)
+subjects.o	Type of subjects (O)	Type of subjects in original experiment. One of the following: students, community, anyone, online
+subjects.r	Type of subjects (R)	Type of subjects in replication. One of the following: students, community, anyone, online
+title	Title (O)	Title of the original paper
+trading_volume	PM Trading Volume	Total volume of traded stocks in prediction market
+transactions	Number of PM transactions	Number of transactions in prediction market
+us_lab.o	US Lab (O)	Original experiment lab in the US
+us_lab.r	US Lab (R)	Replication experiment lab in the US
+volume	Journal Volume (O)	Volume of the journal that published the original paper

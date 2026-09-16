@@ -1,0 +1,2 @@
+model,evaluation,n,AUC,AUC_SD,Accuracy,Accuracy_SD
+"gpt-5.4-mini qbar (verbalized confidence, CB full scope)",zero-shot,158,0.5939935064935066,0.045699725896201346,0.6012658227848101,0.038953496547345035

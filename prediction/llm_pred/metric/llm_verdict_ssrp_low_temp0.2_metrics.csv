@@ -1,0 +1,2 @@
+model,evaluation,n,AUC,AUC_SD,Accuracy,Accuracy_SD
+"gpt-5.4-mini vbar (mean verdict rate, SSRP)",zero-shot,21,0.841346153846154,0.08658873845240463,0.7142857142857143,0.0985807941917649

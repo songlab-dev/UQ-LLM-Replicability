@@ -1,0 +1,2 @@
+model,evaluation,n,AUC,AUC_SD,Accuracy,Accuracy_SD
+"gpt-5.4-mini vbar (mean verdict rate, high-quality RPP subset)",zero-shot,90,0.6201508620689655,0.06308076717324057,0.6444444444444445,0.050457441084226375

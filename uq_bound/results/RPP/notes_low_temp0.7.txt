@@ -1,0 +1,3 @@
+Panels B and C select claims closest to the 5%/95% v_i percentiles for RPP (low, temp=0.7).
+Low id=rpp.86, v_i=0.004988, delta=0.484101
+High id=rpp.145, v_i=0.063475, delta=0.307538

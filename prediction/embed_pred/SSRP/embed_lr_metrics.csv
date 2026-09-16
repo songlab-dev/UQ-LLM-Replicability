@@ -1,0 +1,5 @@
+model,evaluation,n,AUC,Brier,Accuracy,AUC_SD,Accuracy_SD,dispersion_mean_proba_sd
+"Text-embedding LR (SSRP, study-level)",in-sample,21,1.0,0.008530522623557382,1.0,,,
+"Text-embedding LR (SSRP, study-level)","nested CV, 20-seed avg prediction",21,0.846153846153846,0.19895918504364843,0.7619047619047619,0.08526623454837545,0.0929428640903365,0.22214055658721274
+"Text-embedding LR (SSRP, study-level)","nested CV, per-seed (mean of 20)",21,0.6610576923076923,0.24972474267891814,0.6166666666666666,,,
+"Text-embedding LR (SSRP, study-level)","nested CV, per-seed (sd of 20)",21,0.12872543290149524,0.04970328579155042,0.11084524822285503,,,

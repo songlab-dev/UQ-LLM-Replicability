@@ -1,0 +1,22 @@
+study_num,probe_verdict,recognized_replicable,recognized_unreplicable,ground_truth,claimed_recall,any_hit_recall,correct_recognized_runs,K_i,five_hit_recall,recall_score,recall_vbar,claim_correct,correct_recall,title,q_bar,v_bar,outcome,majority_correct,y,embed_lr_probability,embed_lr_correct
+1,,0,5,no,False,True,5,5,True,-0.5,0.25,,False,Incidental haptic sensations influence social judgments and decisions,0.3,0.0,no,1.0,0,0.5742772128535714,False
+2,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,"Body cues, not facial expressions, discriminate between intense positive and negative emotions",0.43060000000000004,0.37,yes,0.0,1,0.5789057618683235,True
+3,,1,0,yes,False,True,1,1,False,0.1,0.55,,False,Affirmative action policies promote women and do not harm efficiency in the laboratory,0.5479999999999999,0.88,yes,1.0,1,0.4747123993990666,False
+4,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,Experimental evidence for the influence of group size on cultural complexity,0.5182000000000001,0.71,yes,1.0,1,0.738246203855671,True
+5,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,Memory's penumbra: episodic memory decisions induce lingering mnemonic biases,0.43870000000000003,0.37,yes,0.0,1,0.584225737414525,True
+6,unreplicable,0,7,no,True,True,7,7,True,-0.7,0.15000000000000002,1.0,True,Analytic thinking promotes religious disbelief,0.3532,0.0,no,1.0,0,0.2643194977269764,True
+7,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,Avoiding overhead aversion in charity,0.6923999999999999,1.0,yes,1.0,1,0.4753749405690824,False
+8,,0,1,yes,False,False,0,0,False,-0.1,0.45,,False,Cooperating with the future,0.5984,1.0,yes,1.0,1,0.7332181881561445,True
+9,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,Lab experiments for the study of social-ecological systems,0.5637000000000001,0.93,yes,1.0,1,0.7836084025054455,True
+10,,3,0,yes,False,True,3,3,False,0.3,0.65,,False,Retrieval practice produces more learning than elaborative studying with concept mapping,0.6054,0.97,yes,1.0,1,0.7205522059257538,True
+11,unreplicable,0,10,no,True,True,10,10,True,-1.0,0.0,1.0,True,Reading literary fiction improves theory of mind,0.33460000000000006,0.0,no,1.0,0,0.3606984290708971,True
+12,,0,1,yes,False,False,0,0,False,-0.1,0.45,,False,The social sense: susceptibility to others' beliefs in human infants and adults,0.2955,0.0,yes,0.0,1,0.3871978472480164,False
+13,,0,4,no,False,True,4,4,False,-0.4,0.3,,False,Washing away postdecisional dissonance,0.3861,0.03,no,1.0,0,0.3108976725243074,True
+14,,1,0,yes,False,True,1,1,False,0.1,0.55,,False,Thought for food: imagined consumption reduces actual consumption,0.3596000000000001,0.01,yes,0.0,1,0.5654192885764104,True
+15,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,Inequality and visibility of wealth in experimental social networks,0.4353,0.06,yes,0.0,1,0.7009955045058567,True
+16,,0,0,yes,False,False,0,0,False,0.0,0.5,,False,Why testing improves memory: mediator effectiveness hypothesis,0.5151,0.65,yes,1.0,1,0.5997728580465058,True
+17,,1,1,no,False,True,1,1,False,0.0,0.5,,False,Writing about testing worries boosts exam performance in the classroom,0.336,0.0,no,1.0,0,0.4570041030527768,True
+18,unreplicable,0,8,no,True,True,8,8,True,-0.8,0.09999999999999998,1.0,True,Spontaneous giving and calculated greed,0.47920000000000007,0.4,no,1.0,0,0.4552784425442945,True
+19,,0,0,no,False,False,0,0,False,0.0,0.5,,False,Some consequences of having too little,0.559,0.87,no,0.0,0,0.4655419853394705,True
+20,,2,0,no,False,False,0,0,False,0.2,0.6,,False,Google effects on memory: cognitive consequences of having information at our fingertips,0.3828999999999999,0.04,no,1.0,0,0.4438725821659145,True
+21,,0,1,yes,False,False,0,0,False,-0.1,0.45,,False,Just think: the challenges of the disengaged mind,0.5486,0.89,yes,1.0,1,0.1386544150203845,False

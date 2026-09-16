@@ -1,0 +1,13 @@
+sid,study,measure,e,se,order
+1,ssrp,replicated p < 0.05,.61904764,.10858814,1
+1,ssrp,relative effect size,.4624711,.092214666,2
+1,ssrp,market beliefs,.63361692,.046394479,3
+1,ssrp,survey beliefs,.60563695,.036490481,4
+2,eerp,replicated p < 0.05,.6111111,.1149044,1
+2,eerp,relative effect size,.65665168,.1369838,2
+2,eerp,market beliefs,.75143802,.025862399,3
+2,eerp,survey beliefs,.71089351,.0221474,4
+3,rpp,replicated p < 0.05,.3608247,.048760999,1
+3,rpp,relative effect size,.44497699,.053846002,2
+3,rpp,market beliefs,.55064321,.0311529,3
+3,rpp,survey beliefs,.53734022,.0160376,4

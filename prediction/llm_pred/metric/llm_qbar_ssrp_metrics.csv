@@ -1,0 +1,2 @@
+model,evaluation,n,AUC,AUC_SD,Accuracy,Accuracy_SD
+"gpt-5.4-mini qbar (verbalized confidence, SSRP)",zero-shot,21,0.7884615384615384,0.09956501176422543,0.7142857142857143,0.0985807941917649

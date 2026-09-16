@@ -1,0 +1,5 @@
+model,evaluation,n,AUC,Brier,Accuracy,AUC_SD,Accuracy_SD
+Text-embedding LR (high-quality RPP subset),in-sample,90,1.0,0.0024724260166906413,1.0,,
+Text-embedding LR (high-quality RPP subset),"nested CV, 20-seed avg prediction",90,0.7677801724137931,0.18524909994528108,0.7222222222222222,0.055094865579091046,0.047213143644377634
+Text-embedding LR (high-quality RPP subset),"nested CV, per-seed (mean of 20)",90,0.6890625000000001,0.24174647818635867,0.6583333333333332,,
+Text-embedding LR (high-quality RPP subset),"nested CV, per-seed (sd of 20)",90,0.04460364995697813,0.026908023494340398,0.040924183851503156,,

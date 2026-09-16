@@ -1,0 +1,2 @@
+model,evaluation,n,AUC,AUC_SD,Accuracy,Accuracy_SD
+"gpt-5.4-mini vbar (mean verdict rate, CB full scope)",zero-shot,158,0.7039772727272726,0.04222502117048853,0.6835443037974683,0.03700081153262454
