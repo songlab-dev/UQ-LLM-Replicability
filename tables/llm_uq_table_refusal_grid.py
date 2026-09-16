@@ -1,5 +1,5 @@
 """Refusal / parse-failure rate across the reasoning-effort x temperature
-grid, all three corpora, sourced from llm_uq/prediction/llm_pred/metric/llm_batch_quality.csv
+grid, all three corpora, sourced from prediction/llm_pred/metric/llm_batch_quality.csv
 (built by llm_uq_batch_quality.py from each corpus's text_predictions_*.csv
 and batch_errors_*.jsonl). "Failure" here means one of the three things
 established when that script was built:
@@ -30,8 +30,8 @@ code was not captured (batch_errors.jsonl, untagged submission) -- reported
 separately in the caption rather than silently merged into either the
 credit-balance count or the failure count, since its cause is unknown.
 
-Usage: rep_env/bin/python llm_uq/tables/llm_uq_table_refusal_grid.py
-Writes: llm_uq/tables/table6_refusal_grid.tex
+Usage: rep_env/bin/python tables/llm_uq_table_refusal_grid.py
+Writes: tables/table6_refusal_grid.tex
 """
 import os
 

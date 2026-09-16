@@ -2,8 +2,8 @@
 
 Usage: rep_env/bin/python uq_bound/dml/dml_theta_outputs.py
 Writes: uq_bound/dml/table_dml_theta.tex
-        uq_bound/figures/dml_theta_attribution_cluster_robust.pdf/.png
-        uq_bound/figures/dml_theta_attribution_bootstrap.pdf/.png
+        uq_bound/dml/figures/dml_theta_attribution_cluster_robust.pdf/.png
+        uq_bound/dml/figures/dml_theta_attribution_bootstrap.pdf/.png
 """
 import os
 

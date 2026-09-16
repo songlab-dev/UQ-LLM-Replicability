@@ -15,9 +15,9 @@ where V_i is the sample variance of p_ir and
 
 is the finite-R corrected squared-bias estimate.
 
-Usage: rep_env/bin/python llm_uq/uq_bound/aggregate_vs_plugin.py
-Writes: llm_uq/uq_bound/results/tier3_aggregate_vs_plugin.csv
-        llm_uq/uq_bound/figures/tier3_aggregate_vs_plugin.pdf/.png
+Usage: rep_env/bin/python uq_bound/aggregate_vs_plugin.py
+Writes: uq_bound/results/tier3_aggregate_vs_plugin.csv
+        uq_bound/figures/tier3_aggregate_vs_plugin.pdf/.png
 """
 from pathlib import Path
 import sys
@@ -31,7 +31,7 @@ import pandas as pd
 
 
 HERE = Path(__file__).resolve().parent  # uq_bound/
-REPO_ROOT = HERE.parent  # llm_uq/
+REPO_ROOT = HERE.parent  # repository root
 sys.path.insert(0, str(HERE))
 import common  # noqa: E402
 

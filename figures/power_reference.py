@@ -11,8 +11,8 @@ effect size at the replication's planned sample size.
 
 Studies whose report is missing/unparseable get NaN (dropped from unit 3).
 
-Run:  rep_env/bin/python llm_uq/figures/power_reference.py
-Writes llm_uq/prediction/LLM_Reasoning/RPP/power_reference.csv, read by pstar.py.
+Run: rep_env/bin/python figures/power_reference.py
+Writes prediction/LLM_Reasoning/RPP/power_reference.csv, read by pstar.py.
 """
 import os
 import re
@@ -29,12 +29,9 @@ try:
 except Exception:  # pragma: no cover
     docx = None
 
-# Anchored to this file, not the CWD: the RPP data moved under llm_uq/ after
-# this script was last run, so it could no longer find its input. Output goes
-# next to the rest of RPP's artifacts (where pstar.py reads it and the README
-# says it lives), not into a "results" dir -- those are being retired.
-HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # llm_uq/
-ROOT = os.path.dirname(HERE)                               # repo root
+# Paths are anchored to the repository root, rather than the working directory.
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repository root
+ROOT = HERE
 RPP_CSV = os.path.join(HERE, "data", "rpp_data_cleaned.csv")
 OUT_CSV = os.path.join(HERE, "prediction", "LLM_Reasoning", "RPP", "power_reference.csv")
 FILE_DIR = os.path.join(ROOT, "file")

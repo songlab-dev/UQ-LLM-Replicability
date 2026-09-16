@@ -17,10 +17,10 @@ different fold-split seeds, same fix as that script's paper-grouped CV. The
 final per-study prediction is the average out-of-fold probability across
 seeds.
 
-Usage: rep_env/bin/python llm_uq/prediction/embed_pred/predict_embed_lr_ssrp.py
-Writes: llm_uq/prediction/embed_pred/SSRP/embed_lr_metrics.csv,
-        llm_uq/prediction/embed_pred/SSRP/embed_lr_per_seed.csv,
-        llm_uq/prediction/embed_pred/SSRP/embed_lr_study_predictions.csv
+Usage: rep_env/bin/python prediction/embed_pred/predict_embed_lr_ssrp.py
+Writes: prediction/embed_pred/SSRP/embed_lr_metrics.csv,
+        prediction/embed_pred/SSRP/embed_lr_per_seed.csv,
+        prediction/embed_pred/SSRP/embed_lr_study_predictions.csv
 """
 import os
 
@@ -47,7 +47,7 @@ def hanley_mcneil_auc_sd(auc, n_pos, n_neg):
            + (n_neg - 1) * (q2 - auc ** 2)) / (n_pos * n_neg)
     return np.sqrt(var)
 
-LLM_UQ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # llm_uq/
+LLM_UQ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
 EMB_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "SSRP", "embeddings_text-embedding-3-large_query")
 OUT_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "SSRP")
 OUT_CSV = os.path.join(OUT_DIR, "embed_lr_metrics.csv")

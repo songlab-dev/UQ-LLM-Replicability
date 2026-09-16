@@ -1,5 +1,7 @@
-"""Text-embedding Logistic Regression predictor for RPP replicability -- the
-first part of llm_uq/embeddings_LR.ipynb (load embeddings, fit an L1-penalized
+"""Text-embedding Logistic Regression predictor for RPP replicability.
+
+This is the standalone implementation of the embedding-regression analysis:
+it loads embeddings, fits an L1-penalized
 logistic regression via GridSearchCV, report AUC/Brier/Accuracy), rewritten as
 a standalone script and row-aligned to Altmejd et al.'s 90-row RPP
 `drop == False` scope. Random-forest, SVM, and XGBoost generators are archived
@@ -41,10 +43,10 @@ match the original RANDOM_STATE=0/RANDOM_STATE+1=1 exactly) and the new
 bound chain reads "proba_cv" and make_roc_figures.py's load_rpp() does too,
 so neither needed to change to pick up this rewrite.
 
-Usage: rep_env/bin/python llm_uq/prediction/embed_pred/predict_embed_lr.py
-Writes: llm_uq/prediction/embed_pred/RPP/embed_lr_metrics.csv,
-        llm_uq/prediction/embed_pred/RPP/embed_lr_per_seed.csv,
-        llm_uq/prediction/embed_pred/RPP/embed_lr_study_predictions.csv
+Usage: rep_env/bin/python prediction/embed_pred/predict_embed_lr.py
+Writes: prediction/embed_pred/RPP/embed_lr_metrics.csv,
+        prediction/embed_pred/RPP/embed_lr_per_seed.csv,
+        prediction/embed_pred/RPP/embed_lr_study_predictions.csv
 """
 import os
 import re
@@ -72,7 +74,7 @@ def hanley_mcneil_auc_sd(auc, n_pos, n_neg):
     return np.sqrt(var)
 
 
-REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # llm_uq/
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
 sys.path.insert(0, REPO)
 sys.path.insert(0, os.path.join(REPO, "data"))
 from rpp_outcomes import attach_canonical_rpp_outcomes  # noqa: E402

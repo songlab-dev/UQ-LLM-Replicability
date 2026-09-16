@@ -1,4 +1,4 @@
-"""Two paper artifacts, both read from llm_uq/prediction/llm_pred/metric/llm_uq_grid_summary.csv
+"""Two paper artifacts, both read from prediction/llm_pred/metric/llm_uq_grid_summary.csv
 (itself built by llm_uq_grid_summary.py from the per-cell metric CSVs) so
 neither can carry a stale number without the source CSV also being stale:
 
@@ -20,9 +20,9 @@ paragraph (ECE / dispersion / entropy / agreement prose); that paragraph is
 no longer used in the paper (Table 5 covers the same numbers) and has been
 archived to archive/paper_writeups/calibration_paragraph.py.
 
-Usage: rep_env/bin/python llm_uq/tables/llm_uq_table_grid_calibration.py
-Writes: llm_uq/tables/table4_grid.tex
-        llm_uq/tables/table5_calibration_grid.tex
+Usage: rep_env/bin/python tables/llm_uq_table_grid_calibration.py
+Writes: tables/table4_grid.tex
+        tables/table5_calibration_grid.tex
 """
 import os
 

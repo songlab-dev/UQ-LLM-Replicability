@@ -429,7 +429,7 @@ the Step 11 adding-up error.
 - `results/{RPP,CB,SSRP}/dml_theta_per_claim.csv` — the descriptive
   $\hat\theta_{i,m}$ profiles from Step 12
 - `results/coverage_sim.csv` — the Step 13 validation results
-- `table_dml_theta.tex` and `../figures/dml_theta_attribution_cluster_robust.pdf` — the
+- `table_dml_theta.tex` and `figures/dml_theta_attribution_cluster_robust.pdf` — the
   corpus-by-stage table and figure built from the first file
 
 Section 4.1's existing plug-in $\hat v_i$ in `freedman_bound.py` and

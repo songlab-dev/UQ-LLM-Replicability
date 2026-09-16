@@ -7,9 +7,9 @@ RPP/SSRP layout.
 
 Examples::
 
-    python llm_uq/prediction/embed_pred/embed_text_batch.py --corpus rpp --mode sync
-    python llm_uq/prediction/embed_pred/embed_text_batch.py --corpus cb --limit 5
-    python llm_uq/prediction/embed_pred/embed_text_batch.py --corpus ssrp --mode submit
+    rep_env/bin/python prediction/embed_pred/embed_text_batch.py --corpus rpp --mode sync
+    rep_env/bin/python prediction/embed_pred/embed_text_batch.py --corpus cb --limit 5
+    rep_env/bin/python prediction/embed_pred/embed_text_batch.py --corpus ssrp --mode submit
 """
 
 import argparse

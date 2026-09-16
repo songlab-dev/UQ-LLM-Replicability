@@ -9,7 +9,7 @@ For claim i, prompt stage m, over R Monte-Carlo runs r:
 C_tilde is the variance-corrected squared bias of unit m's mean score relative
 to the target p_star_{i,m} (an unbiased estimate of the true squared bias).
 
-Run from the repo root:  python llm_uq/metrics.py
+Run from the repository root: rep_env/bin/python uq_bound/metrics.py
 """
 import os
 import sys
@@ -21,8 +21,8 @@ import scoring     # noqa: E402
 import pstar       # noqa: E402
 import validation  # noqa: E402
 
-_HERE = os.path.dirname(os.path.abspath(__file__))  # llm_uq/uq_bound
-_REPO = os.path.dirname(_HERE)  # llm_uq/
+_HERE = os.path.dirname(os.path.abspath(__file__))  # uq_bound/
+_REPO = os.path.dirname(_HERE)  # repository root
 RPP_CSV = os.path.join(_REPO, "data", "rpp_data_cleaned.csv")
 _RPP_DIR = os.path.join(_REPO, "prediction", "LLM_Reasoning", "RPP")
 # Defaults point to the canonical RPP text-prediction run.

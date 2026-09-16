@@ -27,10 +27,10 @@ use. AUC/Accuracy on the seed-averaged probability get closed-form binomial
 SDs (Hanley & McNeil 1982 / Wald); the per-effect across-seed SD is reported
 as this run's label-free dispersion.
 
-Usage: rep_env/bin/python llm_uq/prediction/embed_pred/predict_embed_lr_cb.py
-Writes: llm_uq/prediction/embed_pred/CB/embed_lr_metrics.csv,
-        llm_uq/prediction/embed_pred/CB/embed_lr_per_seed.csv,
-        llm_uq/prediction/embed_pred/CB/embed_lr_study_predictions.csv
+Usage: rep_env/bin/python prediction/embed_pred/predict_embed_lr_cb.py
+Writes: prediction/embed_pred/CB/embed_lr_metrics.csv,
+        prediction/embed_pred/CB/embed_lr_per_seed.csv,
+        prediction/embed_pred/CB/embed_lr_study_predictions.csv
 """
 import os
 
@@ -43,7 +43,7 @@ from sklearn.model_selection import GridSearchCV, StratifiedGroupKFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-LLM_UQ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # llm_uq/
+LLM_UQ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
 EMB_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "CB", "embeddings_text-embedding-3-large_query")
 OUT_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "CB")
 OUT_CSV = os.path.join(OUT_DIR, "embed_lr_metrics.csv")

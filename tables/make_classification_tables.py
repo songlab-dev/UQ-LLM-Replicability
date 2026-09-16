@@ -31,18 +31,18 @@ corpus-specific llm_uq_table_embed_*.py generators:
             already draws for CB/SSRP; RPP gets the same treatment here. No
             effort variant here -- embed_pred doesn't depend on the LLM at all.
 
-Usage: rep_env/bin/python llm_uq/tables/make_classification_tables.py
-Writes: llm_uq/tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar,qbar_low,vbar_low}.md
-        llm_uq/tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar}_[low_]temp0.2.md --
+Usage: rep_env/bin/python tables/make_classification_tables.py
+Writes: tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar,qbar_low,vbar_low}.md
+        tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar}_[low_]temp0.2.md --
             each corpus's temp=0.2 comparison pair (predict_text_batch{,_cb,
             _ssrp}.py: RPP 2026-08-21, SSRP 2026-08-26, CB 2026-09-06)
-        llm_uq/tables/llm_uq/summary_{qbar,vbar}.md -- all corpora/efforts for
+        tables/llm_uq/summary_{qbar,vbar}.md -- all corpora/efforts for
             one method, effort and temp as explicit columns instead of baked
             into the filename/caption (q-bar and v-bar kept as separate
             tables, not merged into one with a Method column); every
             corpus's temp0.2 pair is included here too, grouped with that
             corpus's other rows
-        llm_uq/tables/embed_pred/{RPP,CB,SSRP}/{per_seed_mean,mean_probability}.md
+        tables/embed_pred/{RPP,CB,SSRP}/{per_seed_mean,mean_probability}.md
         tables/table_embed_cross_corpus.tex
 """
 import os

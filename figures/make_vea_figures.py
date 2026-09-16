@@ -178,9 +178,8 @@ def save_ssrp(df, effort, temp="0.7", ylim=None):
 
 
 if __name__ == "__main__":
-    # Compute both effort variants before plotting either, per corpus, so
-    # each corpus's high/low pair shares one y-axis scale (see
-    # make_vea_score_comparison_figures.py's identical rationale for RPP's VEA_RUNS).
+    # Compute all effort variants before plotting so each corpus's panels
+    # share one y-axis scale.
     cb_dfs = {(effort, temp): run_cb(effort, temp)
               for effort, temp in (("high", "0.7"), ("low", "0.7"),
                                     ("high", "0.2"), ("low", "0.2"))}

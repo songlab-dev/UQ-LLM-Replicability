@@ -1,5 +1,5 @@
 """Two-row-per-corpus embed_pred comparison table, styled like
-llm_uq/tables/table_predictor_comparison.tex (bare Predictor/Evaluation/AUC/
+tables/table_predictor_comparison.tex (bare Predictor/Evaluation/AUC/
 Accuracy, no Brier/ECE/dispersion) -- NOT the SD/ECE/dispersion table
 make_classification_tables.py builds, and not a zero-shot-LLM table either
 (no gpt-5.4-mini q-bar/v-bar rows -- SSRP has no zero-shot LLM run yet, only
@@ -30,8 +30,8 @@ fold-assignment noise. Both rows are kept side by side rather than picking
 one, so the gap itself is visible instead of hidden.
 
 Reads:
-    llm_uq/prediction/embed_pred/CB/embed_lr_metrics.csv
-    llm_uq/prediction/embed_pred/SSRP/embed_lr_metrics.csv
+    prediction/embed_pred/CB/embed_lr_metrics.csv
+    prediction/embed_pred/SSRP/embed_lr_metrics.csv
 
 Usage: rep_env/bin/python tables/table_predictor_comparison_cross_corpus.py
 Writes: tables/table_predictor_comparison_cross_corpus.tex
