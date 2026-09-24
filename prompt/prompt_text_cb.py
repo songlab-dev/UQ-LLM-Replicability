@@ -1,20 +1,18 @@
-"""Single source of truth for the RP:CB text-condition prompt.
+"""Single source of truth for the CB text-condition prompt.
 
 Imported by the CB modes of predict_text_batch.py and embed_text_batch.py, so the text that gets embedded
 is exactly the text the model saw. Side-effect free -- no argparse, no API
 client, no file I/O at import time.
 
-RECOVERED 2026-09-09 after the .py source was lost. SYSTEM_PROMPT is verified
-byte-identical to the sent prompt (2964 chars), cross-checked against the untouched
-CPython-3.10 bytecode in __pycache__/prompt_text_cb.cpython-310.pyc. The function bodies were
-rebuilt from the bytecode's disassembly and reproduce the original's output on
-every probe case. Original comments and formatting did not survive.
+Paper texts are read from file_CB/<dir>/OriginalAnony.txt under the repository
+root. The source papers are not included in this repository for copyright
+reasons.
 """
 import os
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent.parent / "file_CB"
+ROOT = Path(__file__).resolve().parent.parent / "file_CB"
 
 SYSTEM_PROMPT = (
     'You assess whether a focal effect in a scientific study will replicate. Important '
@@ -80,7 +78,7 @@ def read_paper_text(dirname, max_chars=0):
 def build_locator(title, paper_num, experiment_num=None, effect_num=None, description=None):
     """The focal-effect locator block: paper title, experiment/effect
     number, and a description of the effect under evaluation. Papers with
-    no completed RP:CB effect (30/53) just get the title line -- there's
+    no completed CB effect (30/53) just get the title line -- there's
     no focal effect to point at."""
     loc = [f"Focal study to evaluate: {title} (RP:CB paper {int(paper_num)})."]
     if pd.notna(experiment_num) and pd.notna(effect_num):

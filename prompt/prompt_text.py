@@ -3,11 +3,15 @@
 Imported by predict_text_batch.py (LLM predictions) and embed_text_batch.py
 (embeddings), so the text that gets embedded is exactly the text the model saw.
 Side-effect free — no argparse, no API client, no file I/O at import time.
+
+Paper texts are read from file/<title>/OriginalAnony.txt under the repository
+root. The source papers are not included in this repository for copyright
+reasons.
 """
 import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent.parent / "file"
+ROOT = Path(__file__).resolve().parent.parent / "file"
 
 SYSTEM_PROMPT = (
     "You assess whether a focal effect in a scientific study will replicate. "

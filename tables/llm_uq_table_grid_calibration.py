@@ -3,22 +3,12 @@
 neither can carry a stale number without the source CSV also being stale:
 
   1. Table 4 -- the full 3-corpus x 2-effort x 2-temp AUC grid (Hanley-McNeil
-     SE), all 12 cells. The draft version of this table already had RPP and
-     CB temp=0.7 filled in, but from an earlier vintage of the R=100
-     runs -- this script's own values differ from those (see the printed
-     diff against DRAFT_TABLE4 below), not just from filling in the blank
-     temp=0.2 columns for CB/SSRP the draft explicitly deferred.
+     SE), all 12 cells.
 
-  2. Table 5 -- the same calibration/dispersion metrics as a full effort x
-     temperature grid (same 4-column layout as Table 4) instead of just the
-     canonical cell. AUC(agreement -> correct) is recomputed per cell here,
-     not reused from the canonical cell alone -- each of the 12
-     llm_selfconsistency*_dispersion.csv files supports it.
-
-This script originally also wrote a canonical-cell-only calibration
-paragraph (ECE / dispersion / entropy / agreement prose); that paragraph is
-no longer used in the paper (Table 5 covers the same numbers) and has been
-archived to archive/paper_writeups/calibration_paragraph.py.
+  2. Table 5 -- calibration/dispersion metrics over the same effort x
+     temperature grid (same 4-column layout as Table 4). AUC(agreement ->
+     correct) is recomputed per cell from that cell's
+     llm_selfconsistency*_dispersion.csv.
 
 Usage: rep_env/bin/python tables/llm_uq_table_grid_calibration.py
 Writes: tables/table4_grid.tex
@@ -42,10 +32,8 @@ GRID_CELLS = [("high", "0.7"), ("low", "0.7"), ("high", "0.2"), ("low", "0.2")]
 CORPORA = ["RPP", "CB", "SSRP"]
 CORPUS_ROW_LABEL = {"RPP": "RPP", "CB": "CB", "SSRP": "SSRP"}
 
-# What the draft's Table 4 already showed for temp=0.7 (AUC, SD), transcribed
-# from the submitted image -- kept here only so main() can print a diff
-# against this script's numbers and flag any cell that moved, not just the
-# ones that were previously blank.
+# Reference temp=0.7 values (AUC, SD); main() prints a diff against the
+# recomputed numbers and flags any cell that moved.
 DRAFT_TABLE4 = {
     ("RPP", "vbar", "high", "0.7"): (0.704, 0.060), ("RPP", "vbar", "low", "0.7"): (0.656, 0.062),
     ("RPP", "qbar", "high", "0.7"): (0.659, 0.062), ("RPP", "qbar", "low", "0.7"): (0.631, 0.063),
@@ -108,9 +96,7 @@ def print_draft_diff(df):
 
 def auc_agree_per_cell():
     """{(corpus, effort, temp): AUC(pairwise_agreement -> correct)}, one per
-    cell, from that cell's own llm_selfconsistency*_dispersion.csv -- not
-    reused from the canonical cell, since dispersion (and what it predicts)
-    is exactly the thing this table is checking across the grid."""
+    cell, from that cell's own llm_selfconsistency*_dispersion.csv."""
     out = {}
     for corpus, infix in CORPUS_DISP_INFIX.items():
         for effort, temp in GRID_CELLS:

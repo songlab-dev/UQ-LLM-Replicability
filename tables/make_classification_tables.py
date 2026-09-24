@@ -1,25 +1,19 @@
 """Data-specific classification-metrics tables (AUC/Accuracy) for the two
 prediction sources this repo scores against RPP/CB/SSRP -- the LLM zero-shot
-pipeline ("llm_uq") and the embedding-LR baseline ("embed_pred"). One folder
-per corpus under tables/{llm_uq,embed_pred}/{RPP,CB,SSRP}/, two tables per
-corpus per source. Written as .md only -- not used in the paper, so the
-.tex half of the pair was dropped (see write_pair()). This script also owns
-the publication-level CB/SSRP embedding summary formerly split across the
-corpus-specific llm_uq_table_embed_*.py generators:
+pipeline (tables/llm_uq/) and the embedding-LR baseline (tables/embed_pred/).
+One folder per corpus under tables/{llm_uq,embed_pred}/{RPP,CB,SSRP}/, two
+tables per corpus per source, written as .md only (see write_pair()). This
+script also writes the CB/SSRP embedding summary and the RPP predictor
+comparison:
 
   table_embed_cross_corpus.tex: embedding-LR uncertainty metrics for CB and SSRP.
+  table_predictor_comparison.tex: RPP embedding-LR vs. q-bar/v-bar.
 
   llm_uq:   q-bar (verbalized confidence) and v-bar (self-consistency vote
             rate) -- the two label-free elicitation methods used throughout
-            this repo's other table_*.tex files. Each at both reasoning_effort
-            variants (temp=0.7 both; CB uses the full 158-effect scope, not
-            the 23-paper first-effect subset). RPP/CB's low-effort metrics
-            needed the RPP and CB predict_llm_uq.py / predict_llm_verdict.py
-            variants (since consolidated into one script per task, taking
-            --corpus rpp/cb/ssrp) to gain REASONING_EFFORT parameterization
-            first (2026-08-20, matching the SSRP variant's pre-existing
-            pattern) -- before that only SSRP had a low-effort variant to
-            report.
+            the other table_*.tex files. Each at both reasoning_effort
+            variants and both temperatures (CB uses the full 158-effect
+            scope).
 
   embed_pred: per-seed mean (mean +/- SD of the 20 individual per-seed
             AUC/Accuracy values -- what one run of the pipeline looks like)
@@ -33,17 +27,12 @@ corpus-specific llm_uq_table_embed_*.py generators:
 
 Usage: rep_env/bin/python tables/make_classification_tables.py
 Writes: tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar,qbar_low,vbar_low}.md
-        tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar}_[low_]temp0.2.md --
-            each corpus's temp=0.2 comparison pair (predict_text_batch{,_cb,
-            _ssrp}.py: RPP 2026-08-21, SSRP 2026-08-26, CB 2026-09-06)
-        tables/llm_uq/summary_{qbar,vbar}.md -- all corpora/efforts for
-            one method, effort and temp as explicit columns instead of baked
-            into the filename/caption (q-bar and v-bar kept as separate
-            tables, not merged into one with a Method column); every
-            corpus's temp0.2 pair is included here too, grouped with that
-            corpus's other rows
+        tables/llm_uq/{RPP,CB,SSRP}/{qbar,vbar}_[low_]temp0.2.md
+        tables/llm_uq/summary_{qbar,vbar}.md -- all datasets/efforts/temps for
+            one method, with effort and temp as explicit columns
         tables/embed_pred/{RPP,CB,SSRP}/{per_seed_mean,mean_probability}.md
         tables/table_embed_cross_corpus.tex
+        tables/table_predictor_comparison.tex
 """
 import os
 
@@ -52,7 +41,7 @@ import pandas as pd
 from sklearn.metrics import brier_score_loss
 
 PACKAGE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS = os.path.join(PACKAGE_DIR, "prediction", "llm_pred", "metric")  # predict_llm_uq*.py output
+RESULTS = os.path.join(PACKAGE_DIR, "prediction", "llm_pred", "metric")  # predict_llm_*.py output
 OUT_DIR = os.path.join(PACKAGE_DIR, "tables")
 DOC_DIR = OUT_DIR
 N_SEEDS = 20
@@ -67,11 +56,7 @@ LLM_VBAR_CSV = {
     "CB": os.path.join(RESULTS, "llm_verdict_cb_full_metrics.csv"),
     "SSRP": os.path.join(RESULTS, "llm_verdict_ssrp_metrics.csv"),
 }
-# Low-effort comparison variant -- now computed for all three corpora
-# (the per-corpus predict_llm_uq.py/predict_llm_verdict.py variants, since
-# consolidated into one script per task with --corpus, gained
-# REASONING_EFFORT parameterization for RPP/CB 2026-08-20, matching SSRP's
-# existing pattern).
+# Low-effort variant, temp=0.7.
 LLM_QBAR_LOW_CSV = {
     "RPP": os.path.join(RESULTS, "llm_qbar_low_metrics.csv"),
     "CB": os.path.join(RESULTS, "llm_qbar_cb_full_low_metrics.csv"),
@@ -82,9 +67,7 @@ LLM_VBAR_LOW_CSV = {
     "CB": os.path.join(RESULTS, "llm_verdict_cb_full_low_metrics.csv"),
     "SSRP": os.path.join(RESULTS, "llm_verdict_ssrp_low_metrics.csv"),
 }
-# RPP temp=0.2 comparison pair (predict_text_batch.py submitted both efforts
-# alongside the canonical temp=0.7 runs, 2026-08-21; boosted R=25->100
-# 2026-08-25).
+# temp=0.2 comparison pairs, one per corpus.
 LLM_QBAR_RPP_TEMP02_CSV = {
     "high": os.path.join(RESULTS, "llm_qbar_temp0.2_metrics.csv"),
     "low": os.path.join(RESULTS, "llm_qbar_low_temp0.2_metrics.csv"),
@@ -93,7 +76,6 @@ LLM_VBAR_RPP_TEMP02_CSV = {
     "high": os.path.join(RESULTS, "llm_verdict_temp0.2_metrics.csv"),
     "low": os.path.join(RESULTS, "llm_verdict_low_temp0.2_metrics.csv"),
 }
-# SSRP temp=0.2 comparison pair (predict_text_batch.py --corpus ssrp, 2026-08-26).
 LLM_QBAR_SSRP_TEMP02_CSV = {
     "high": os.path.join(RESULTS, "llm_qbar_ssrp_temp0.2_metrics.csv"),
     "low": os.path.join(RESULTS, "llm_qbar_ssrp_low_temp0.2_metrics.csv"),
@@ -102,7 +84,6 @@ LLM_VBAR_SSRP_TEMP02_CSV = {
     "high": os.path.join(RESULTS, "llm_verdict_ssrp_temp0.2_metrics.csv"),
     "low": os.path.join(RESULTS, "llm_verdict_ssrp_low_temp0.2_metrics.csv"),
 }
-# CB temp=0.2 comparison pair (predict_text_batch.py --corpus cb, 2026-09-06).
 LLM_QBAR_CB_TEMP02_CSV = {
     "high": os.path.join(RESULTS, "llm_qbar_cb_full_temp0.2_metrics.csv"),
     "low": os.path.join(RESULTS, "llm_qbar_cb_full_low_temp0.2_metrics.csv"),
@@ -128,9 +109,8 @@ FULL_NAME = {"RPP": "RPP", "CB": "CB", "SSRP": "SSRP"}
 
 
 def write_pair(basename, out_dir, tex_lines, md_lines):
-    # .md only: these per-corpus breakdown tables aren't used in the paper,
-    # so the .tex half of the pair is dropped rather than kept alongside a
-    # redundant .md. tex_lines stays a parameter so callers don't change.
+    # Per-corpus breakdown tables are written as .md only; tex_lines is
+    # accepted but not written.
     os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, f"{basename}.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(md_lines) + "\n")
@@ -314,7 +294,7 @@ def embed_cross_corpus_summary():
 
 
 def rpp_predictor_comparison():
-    """Replace the retired notebook-generated RPP comparison table."""
+    """RPP predictor comparison: embedding LR vs. q-bar/v-bar vs. base rate."""
     embed_metrics = pd.read_csv(EMBED_LR_CSV["RPP"])
     embed = embed_metrics[
         embed_metrics["evaluation"].str.contains(f"{N_SEEDS}-seed avg")
@@ -377,20 +357,11 @@ def rpp_predictor_comparison():
 
 def llm_summary_table(basename, method_label, method_symbol, method_name, high_csv, low_csv,
                        temp02_csv=None):
-    """One table across all (corpus, effort) combinations for a single
-    elicitation method, with effort and temperature as explicit columns --
-    unlike the per-file tables under tables/llm_uq/{corpus}/, which bake
-    effort into the filename and caption instead. temp was always 0.7 when
-    this table was first built, included as a literal column anyway since a
-    future low-temp/high-temp comparison would slot in the same way effort
-    did -- RPP's (2026-08-21), SSRP's (2026-08-26), and CB's (2026-09-06)
-    temp=0.2 comparison pairs are exactly that case, passed via temp02_csv=
-    {corpus: {"high": ..., "low": ...}} and each corpus's pair inserted
-    right after that corpus's canonical temp=0.7 rows so all of a corpus's
-    rows stay grouped; a corpus absent from temp02_csv would be unaffected
-    (all three now have an entry). q-bar and v-bar are kept as two separate
-    tables/files rather than one combined table with a Method column, since
-    they're different quantities, not different rows of the same measurement."""
+    """One table across all (corpus, effort, temp) combinations for a single
+    elicitation method, with effort and temperature as explicit columns.
+    temp02_csv={corpus: {"high": ..., "low": ...}} adds each corpus's
+    temp=0.2 pair right after its temp=0.7 rows. q-bar and v-bar get
+    separate tables since they are different quantities."""
     temp02_csv = temp02_csv or {}
     rows = []
     for corpus in CORPORA:

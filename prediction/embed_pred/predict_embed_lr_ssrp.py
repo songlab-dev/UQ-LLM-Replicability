@@ -1,5 +1,5 @@
 """Text-embedding Logistic Regression predictor for SSRP replicability --
-the file_SSRP counterpart of predict_embed_lr_cb.py, minus the paper-grouped
+the SSRP counterpart of predict_embed_lr_cb.py, minus the paper-grouped
 CV: SSRP's embeddings index is already one row per STUDY (no CB-style
 several-effects-per-paper clustering to protect against, since a study IS a
 paper here), so plain StratifiedKFold is enough -- the same as
@@ -10,10 +10,9 @@ grid would let the selector pick nearly as many features as there are
 studies. GRID instead restricts the candidate feature counts to
 [5, 10, 15, 20].
 
-At this n, a single 5-fold split is noisy (predict_embed_lr_cb_gee.py found
-+/-0.1 AUC swings from fold assignment alone), so the nested CV -- inner
-hyperparameter search AND outer evaluation -- is repeated under N_SEEDS=20
-different fold-split seeds, same fix as that script's paper-grouped CV. The
+At this n, a single 5-fold split is noisy (AUC can swing by about 0.1 from
+fold assignment alone), so the nested CV -- inner hyperparameter search AND
+outer evaluation -- is repeated under N_SEEDS=20 different fold-split seeds. The
 final per-study prediction is the average out-of-fold probability across
 seeds.
 
@@ -47,9 +46,9 @@ def hanley_mcneil_auc_sd(auc, n_pos, n_neg):
            + (n_neg - 1) * (q2 - auc ** 2)) / (n_pos * n_neg)
     return np.sqrt(var)
 
-LLM_UQ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
-EMB_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "SSRP", "embeddings_text-embedding-3-large_query")
-OUT_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "SSRP")
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+EMB_DIR = os.path.join(REPO, "prediction", "embed_pred", "SSRP", "embeddings_text-embedding-3-large_query")
+OUT_DIR = os.path.join(REPO, "prediction", "embed_pred", "SSRP")
 OUT_CSV = os.path.join(OUT_DIR, "embed_lr_metrics.csv")
 OUT_PERSEED_CSV = os.path.join(OUT_DIR, "embed_lr_per_seed.csv")
 OUT_STUDY_CSV = os.path.join(OUT_DIR, "embed_lr_study_predictions.csv")

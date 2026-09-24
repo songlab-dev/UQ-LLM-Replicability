@@ -47,7 +47,7 @@ SSRP_PRED_CSV = os.path.join(REPO, "prediction", "LLM_Reasoning", "SSRP", "text_
 SSRP_EMBED_LR_CSV = os.path.join(REPO, "prediction", "embed_pred", "SSRP", "embed_lr_study_predictions.csv")
 
 # ---------------------------------------------------------------------------
-# Constants shared identically across all three corpora
+# Constants shared identically across all three datasets
 # ---------------------------------------------------------------------------
 CHAIN = [1, 3, 4, 5, 6]  # chain-of-action steps in generation order:
                          # Extraction, Stat review, Researcher DoF concern,

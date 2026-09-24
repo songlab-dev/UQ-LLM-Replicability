@@ -1,8 +1,7 @@
 """Refusal / parse-failure rate across the reasoning-effort x temperature
-grid, all three corpora, sourced from prediction/llm_pred/metric/llm_batch_quality.csv
+grid, all three datasets, sourced from prediction/llm_pred/metric/llm_batch_quality.csv
 (built by llm_uq_batch_quality.py from each corpus's text_predictions_*.csv
-and batch_errors_*.jsonl). "Failure" here means one of the three things
-established when that script was built:
+and batch_errors_*.jsonl). "Failure" here means one of:
 
   1. Null response          -- the completion text itself is empty.
   2. Refuses to answer      -- explicit refusal language ("I can't assess...",
@@ -23,9 +22,8 @@ established when that script was built:
                                 cannot be explained that way.
 
 Excludes credit_balance_exhausted (8392 requests: 6966 CB + 863 RPP high/0.7
-+ 563 RPP high/0.2) per explicit instruction -- those are billing rejections
-the API returned before the model ever saw the request, not anything the
-model did. Also excludes one further RPP API-level rejection whose error
++ 563 RPP high/0.2) -- billing rejections the API returned before the model
+ever saw the request, not anything the model did. Also excludes one further RPP API-level rejection whose error
 code was not captured (batch_errors.jsonl, untagged submission) -- reported
 separately in the caption rather than silently merged into either the
 credit-balance count or the failure count, since its cause is unknown.

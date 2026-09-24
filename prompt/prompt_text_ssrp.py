@@ -4,17 +4,14 @@ Imported by the SSRP modes of predict_text_batch.py and embed_text_batch.py, so 
 is exactly the text the model saw. Side-effect free -- no argparse, no API
 client, no file I/O at import time.
 
-RECOVERED 2026-09-09 after the .py source was lost. SYSTEM_PROMPT is verified
-byte-identical to the sent prompt (2982 chars), matching the length recorded from the
-original bytecode before it was lost. The function bodies were
-rebuilt from the bytecode's disassembly and reproduce the original's output on
-every probe case. Original comments and formatting did not survive.
+Paper texts are read from file_SSRP/ under the repository root. The source
+papers are not included in this repository for copyright reasons.
 """
 import os
 import glob
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent.parent / "file_SSRP"
+ROOT = Path(__file__).resolve().parent.parent / "file_SSRP"
 
 SYSTEM_PROMPT = (
     'You assess whether a focal effect in a scientific study will replicate. Important '

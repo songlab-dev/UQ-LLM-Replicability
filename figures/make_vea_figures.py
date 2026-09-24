@@ -5,7 +5,7 @@ reference targets are, respectively, a perfect extraction score, analytic
 replication power, held-out embedding-model probability, and the observed
 outcome. CB original-study statistics come from ``RP_CB_eff.csv``; SSRP
 stores them in its cleaned table. Researcher-DoF and Theory/context are not
-shown because these corpora lack corresponding reference targets.
+shown because these datasets lack corresponding reference targets.
 
 Usage: rep_env/bin/python figures/make_vea_figures.py
 Writes: figures/{CB,SSRP}/vea_analysis_{high,low}_temp{0.7,0.2}.{png,csv}
@@ -103,7 +103,7 @@ def run_cb(effort="high", temp="0.7"):
 
     pred_csv = os.path.join(REPO, "prediction", "LLM_Reasoning", "CB", f"text_predictions_{effort}_temp{temp}.csv")
     pred = pd.read_csv(pred_csv)
-    unit_scores = common.compute_unit_scores_cb(pred, scope)  # now includes q_1
+    unit_scores = common.compute_unit_scores_cb(pred, scope)
 
     p1 = {cid: 1.0 for cid in scope["claim_id"]}  # Extraction target: always match
     p3 = scope.set_index("claim_id")["p_star_3"].to_dict()
@@ -134,11 +134,9 @@ def save_cb(df, effort, temp="0.7", ylim=None):
 
 
 def run_ssrp(effort="high", temp="0.7"):
-    """effort="low"/temp!="0.7" scores a reasoning-effort/temperature
-    comparison run (see llm_uq_table_ssrp_effort_comparison.py) instead of
-    the canonical high/temp0.7 run -- built directly rather than via
-    common.SSRP_PRED_CSV (which stays pinned to "high"/temp0.7, the
-    canonical config every other SSRP script reads)."""
+    """Score one effort/temperature cell. The predictions path is built here
+    rather than taken from common.SSRP_PRED_CSV, which is pinned to the
+    canonical high/temp0.7 cell."""
     scope = common.load_scope_ssrp().reset_index(drop=True)
     scope["p_star_6"] = common.load_pstar4_ssrp(scope)
     # Unit 3 (Statistics): analytic power of the replication to detect the

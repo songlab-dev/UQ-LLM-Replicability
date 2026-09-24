@@ -4,6 +4,9 @@ Rows are keyed by paper, experiment, and effect. Internal replications of an
 effect are collapsed with a majority outcome; the first effect description is
 retained as its locator. The resulting table contains 158 completed effects.
 
+file_CB/_manifest.csv maps each paper to its text directory; like the paper
+texts themselves, it is not included in this repository for copyright reasons.
+
 Run from repo root: python prompt/build_cb_data.py
 Writes: data/cb_data_cleaned.csv
 """

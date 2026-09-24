@@ -78,9 +78,9 @@ def tau_star_and_ub(metrics_df, tau=TAU):
                     = min(1, (sum_m a_{i,m}^{1/3})^3 / tau^2)   [closed form]
 
     Units with no valid target p* (C_tilde is NaN) are excluded from the sum over m.
-    Returns internal numeric-stage allocations and per-claim bounds. Public
-    ``tau_star`` outputs are migrated by ``claim_stage_output`` to stable
-    claim ids and named stages before they are written.
+    Returns internal numeric-stage allocations and per-claim bounds;
+    ``claim_stage_output`` maps them to claim ids and stage names before
+    they are written.
     """
     alloc, ub_rows = [], []
     for (claim_id, title), g in metrics_df.groupby(["altmejd_id", "Study Title (O)"]):
@@ -128,7 +128,7 @@ def claim_summary(metrics_df, ub_df, rpp, n_predictors):
 
 
 def claim_stage_output(frame, claim_keys):
-    """Replace legacy numeric unit identifiers in public claim outputs."""
+    """Replace numeric unit identifiers with stage names in claim outputs."""
     stage = pd.DataFrame.from_dict(
         scoring.STAGES, orient="index", columns=["stage_id", "stage_label", "stage_order"]
     ).rename_axis("unit").reset_index()

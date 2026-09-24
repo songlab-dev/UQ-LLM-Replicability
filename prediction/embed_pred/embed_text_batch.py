@@ -2,7 +2,7 @@
 
 RPP and SSRP share the one-study-per-paper pipeline. CB retains its
 paper-level chunk sharing and effect-level context vectors. Synchronous mode
-works for all corpora; asynchronous Batch API modes work for the single-study
+works for all datasets; asynchronous Batch API modes work for the single-study
 RPP/SSRP layout.
 
 Examples::

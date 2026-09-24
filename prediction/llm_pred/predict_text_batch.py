@@ -1,8 +1,8 @@
 """Submit, inspect, and collect text-prediction batches for RPP, CB, or SSRP.
 
-This data-driven entry point replaces the former corpus-specific
-``predict_text_batch_{cb,ssrp}.py`` scripts while retaining their prompts,
-output schemas, resume keys, and legacy batch-metadata compatibility.
+Prompts come from prompt/prompt_text*.py, which read the anonymized paper
+texts from file/, file_CB/, and file_SSRP/ under the repository root. The
+source papers are not included in this repository for copyright reasons.
 
 Run from any directory::
 

@@ -1,15 +1,10 @@
 """The three UQ methods computable on gpt-5.4-mini's zero-shot responses,
-generalized across RPP/CB/SSRP with one --dataset flag (see
-predict_llm_verdict.py's docstring for why the other UQ families in the
-related-work paragraph -- white-box token/logit/hidden-state methods, Duan
-et al. 2025 token->task propagation -- are NOT computable: gpt-5.4-mini is
-closed-weight and the Chat Completions API rejects `logprobs` outright for
-this model, confirmed empirically).
+for RPP, CB, or SSRP (--dataset). White-box token/logit/hidden-state methods
+(e.g. Duan et al. 2025 token->task propagation) are not computable:
+gpt-5.4-mini is closed-weight and the Chat Completions API rejects
+`logprobs` for this model.
 
-Formerly three separate, near-identical scripts: predict_llm_uq.py (RPP),
-predict_llm_uq_cb_full.py (CB, all 158 completed effects), and
-predict_llm_uq_ssrp.py (SSRP, all 21 studies). RPP needs its own scope/outcome
-loader (Altmejd et al.'s `drop == False` subset defines the 90-claim scope;
+RPP needs its own scope/outcome loader (Altmejd et al.'s `drop == False` subset defines the 90-claim scope;
 the original OSF `data/rpp_data.csv` supplies outcomes via
 `data/rpp_outcomes.py`, not the predictions file's own `ground_truth`); CB
 and SSRP read `ground_truth` directly off the predictions file and group by
@@ -24,8 +19,7 @@ their own claim keys.
    has no matching closed form.)
 
 2. Black-box resampling / self-consistency (Wang 2023, SelfCheckGPT/Manakul
-   2023): per-claim dispersion across the R independent runs (R=100 as of
-   2026-09-09; was 25 in the pilot) -- q_hat SD, binary entropy of the
+   2023): per-claim dispersion across the R=100 independent runs -- q_hat SD, binary entropy of the
    verdict split, and finite-sample pairwise verdict-agreement rate.
    Reported as their distribution across claims, plus the standard
    SelfCheckGPT-style validation: does higher agreement (lower disagreement)

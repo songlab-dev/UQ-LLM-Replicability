@@ -1,4 +1,4 @@
-"""Analyze the replication-outcome contamination probe across three corpora.
+"""Analyze the replication-outcome contamination probe across three datasets.
 
 Each effect/claim has 10 responses from predict_contamination_probe.py. Recall
 is outcome-conditional and any-hit: a unit is recalled if at least one run
@@ -36,7 +36,7 @@ from scipy.stats import binomtest, fisher_exact, pearsonr, spearmanr
 import statsmodels.api as sm
 
 SYNTH_DIR = os.path.dirname(os.path.abspath(__file__))
-LLM_UQ = os.path.dirname(os.path.dirname(SYNTH_DIR))
+REPO = os.path.dirname(os.path.dirname(SYNTH_DIR))
 OUT_DIR = SYNTH_DIR
 
 KEY_COLS = {
@@ -59,9 +59,9 @@ FAMILIARITY_LEVELS = ("recognized", "unsure", "unfamiliar", "missing")
 VERDICT_LEVELS = ("replicable", "unreplicable", "unknown", "missing")
 MIN_STRICT_STRATUM_N = 5
 EMBED_PRED_CSV = {
-    "RPP": os.path.join(LLM_UQ, "prediction", "embed_pred", "RPP", "embed_lr_study_predictions.csv"),
-    "CB": os.path.join(LLM_UQ, "prediction", "embed_pred", "CB", "embed_lr_study_predictions.csv"),
-    "SSRP": os.path.join(LLM_UQ, "prediction", "embed_pred", "SSRP", "embed_lr_study_predictions.csv"),
+    "RPP": os.path.join(REPO, "prediction", "embed_pred", "RPP", "embed_lr_study_predictions.csv"),
+    "CB": os.path.join(REPO, "prediction", "embed_pred", "CB", "embed_lr_study_predictions.csv"),
+    "SSRP": os.path.join(REPO, "prediction", "embed_pred", "SSRP", "embed_lr_study_predictions.csv"),
 }
 
 
@@ -86,7 +86,7 @@ def exact_error(successes, n):
 def probe_per_unit(corpus):
     key_cols = KEY_COLS[corpus]
     path = os.path.join(
-        LLM_UQ, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
+        REPO, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
     )
     df = pd.read_csv(path)
     rows = []
@@ -152,7 +152,7 @@ def probe_per_unit(corpus):
 def response_distribution(corpus, column, levels):
     """Counts and proportions of raw probe responses for one corpus/field."""
     path = os.path.join(
-        LLM_UQ, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
+        REPO, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
     )
     values = pd.read_csv(path)[column].fillna("missing").astype(str).str.strip().str.lower()
     counts = values.value_counts().reindex(levels, fill_value=0)
@@ -170,7 +170,7 @@ def recognition_verdict_by_outcome():
     rows = []
     for corpus in ("RPP", "CB", "SSRP"):
         path = os.path.join(
-            LLM_UQ, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
+            REPO, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
         )
         df = pd.read_csv(path)
         df["ground_truth"] = df["ground_truth"].astype(str).str.strip().str.lower()
@@ -198,7 +198,7 @@ def outcome_verdict_tests():
     rows = []
     for corpus in ("RPP", "CB", "SSRP"):
         path = os.path.join(
-            LLM_UQ, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
+            REPO, "prediction", "LLM_Reasoning", corpus, "contamination_probe_high_temp0.7.csv"
         )
         df = pd.read_csv(path)
         observed_replicable = df["ground_truth"].astype(str).str.strip().str.lower().eq("yes")
@@ -235,7 +235,7 @@ def main_predictions_per_unit(corpus):
     """Aggregate the 100-run main pipeline to one row per study/effect."""
     key_cols = MAIN_KEY_COLS[corpus]
     path = os.path.join(
-        LLM_UQ, "prediction", "LLM_Reasoning", corpus, "text_predictions_high_temp0.7.csv"
+        REPO, "prediction", "LLM_Reasoning", corpus, "text_predictions_high_temp0.7.csv"
     )
     df = pd.read_csv(path)
     rows = []

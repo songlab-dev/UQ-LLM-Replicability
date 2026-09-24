@@ -1,7 +1,7 @@
 """Emit the appendix section documenting the zero-shot prompt, generated from
 the prompt modules themselves so it cannot drift from what was actually sent.
 
-All three corpora share one prompt. Diffing the modules shows the system
+All three datasets share one prompt. Diffing the modules shows the system
 prompt is byte-identical across RPP, CB and SSRP except for a single
 clause naming the reference population for the 40% base rate, and the user
 turn is identical except for the locator block that names the focal unit.
@@ -12,20 +12,10 @@ really are equal before writing anything) and emits:
   - the shared user-turn template
   - a table of the two corpus-specific slots
 
-Hand-copying a prompt into a paper is exactly how an appendix ends up
-describing a prompt nobody ran; generating it keeps the appendix and the
-sent text on one source.
-
 Requires \\usepackage{listings} in the paper preamble (lstlisting with
-breaklines, so no line of the prompt is silently truncated in the margin).
-Deliberately not fancyvrb's Verbatim: that environment's "breaklines" key
-only exists if fancyvrb is loaded LAST among any package defining a
-same-named environment (moreverb's Verbatim shadows it silently, and the
-resulting "Package keyval Error: breaklines undefined" gives no hint that
-the fix is a load-order issue rather than a typo) -- hit exactly this when
-pasting the generated .tex into the paper. listings is already loaded in
-nearly every ML-paper template for code blocks, so this needs one less new
-package dependency and one less thing to get the load order right for.
+breaklines, so no line of the prompt is truncated in the margin). fancyvrb's
+Verbatim is avoided because its breaklines key breaks if another package
+(e.g. moreverb) defines a same-named environment and loads after it.
 
 Usage: rep_env/bin/python prediction/llm_pred/llm_uq_appendix_prompt.py
 Writes: tables/appendix_prompt.tex
@@ -43,16 +33,12 @@ import prompt_text_ssrp     # noqa: E402
 
 MODULES = [("RPP", prompt_text), ("CB", prompt_text_cb), ("SSRP", prompt_text_ssrp)]
 
-# The calibration sentence is the one system-prompt line that varies -- but
-# not uniformly: "roughly 40%" itself is BYTE-IDENTICAL across all three
-# (verified, not just numerically equal), so it's shown as fixed text rather
-# than folded into a per-corpus substitution. What actually varies on either
-# side of it: the named reference population before it, and a short outcome
-# phrase after it (RPP: "replicate successfully"; CB/SSRP, identical to each
-# other: "of tested effects replicated successfully") -- two real
-# differences (a population choice and a tense/wording one), not one, so
-# they get two placeholders rather than pretending the whole clause is a
-# single opaque swap the way the previous version of this appendix did.
+# The calibration sentence is the one system-prompt line that varies.
+# "roughly 40%" itself is byte-identical across all three, so it is shown as
+# fixed text. What varies on either side of it: the named reference
+# population before it, and a short outcome phrase after it (RPP: "replicate
+# successfully"; CB/SSRP: "of tested effects replicated successfully") --
+# hence two placeholders.
 FIXED_OPENER = "You assess whether a focal effect in a scientific study will replicate. "
 CAL_HEAD = "Important calibration: across "
 CAL_PCT = "roughly 40%"
@@ -85,20 +71,12 @@ def split_prompt(text):
 
 
 def ascii_safe(text):
-    """Map the prompt's two non-ASCII characters (em dash x9, en dash x3 --
-    checked, nothing else) to ASCII before it goes inside \\begin{lstlisting}.
-    listings renders each byte literally with no font-encoding layer of its
-    own, so a real em/en dash there needs an explicit `literate=...` mapping
-    per engine/font or it fails to compile at all ("Invalid UTF-8 byte
-    sequence") -- hit exactly this after switching Verbatim->lstlisting for
-    the fancyvrb load-order issue. Substituting here, not in prompt_text*.py:
-    those modules must stay byte-identical to what the API actually received,
-    but the appendix's typeset copy owes the reader an accurate prompt, not
-    an identical byte stream -- and in a monospaced listing "--"/"-" already
-    render indistinguishably from the dash glyphs they replace.
-    Checked against every prompt_text*.py module (see the docstring above) --
-    if a new non-ASCII character shows up later, this raises rather than
-    silently drop it."""
+    """Map the prompt's non-ASCII characters (em and en dashes) to ASCII
+    before it goes inside \\begin{lstlisting}, which otherwise fails to
+    compile ("Invalid UTF-8 byte sequence") without a per-font `literate=`
+    mapping. The substitution happens here, not in prompt_text*.py, which
+    must stay byte-identical to what the API received. Raises on any other
+    non-ASCII character."""
     out = text.replace("—", "--").replace("–", "-")
     bad = {ch for ch in out if ord(ch) > 127}
     assert not bad, f"unhandled non-ASCII character(s) in prompt text: {bad!r}"
@@ -110,9 +88,8 @@ def main():
     for label, mod in MODULES:
         populations[label], outcomes[label], remainders[label] = split_prompt(mod.SYSTEM_PROMPT)
 
-    # The whole point of the appendix is that one prompt covers three corpora;
-    # if that stops being true outside the two named substitutions, say so
-    # loudly rather than print a false claim.
+    # The appendix claims one prompt covers all three datasets; fail if they
+    # differ outside the two named substitutions.
     shared_remainder = remainders["RPP"]
     for label in remainders:
         assert remainders[label] == shared_remainder, (
@@ -122,17 +99,8 @@ def main():
     user_tmpl = prompt_text.build_user_message.__doc__  # sanity: modules present
     assert user_tmpl
 
-    # ASCII placeholder markers, not <angle-bracket Unicode>: these three
-    # tokens are my own authorial addition to mark substitution points, not
-    # part of the sent prompt, so there's no accuracy cost to keeping them
-    # plain-ASCII -- and lstlisting/pdflatex can choke on non-ASCII glyphs
-    # inside a verbatim-like environment without a matching fontenc/literate
-    # setup, which is exactly the kind of silent portability trap this
-    # appendix should not add on top of the prompt text's own real em-dash.
-    # "roughly 40%" is shown as literal fixed text, not a third placeholder --
-    # it's byte-identical across all three corpora (verified in split_prompt's
-    # caller data, not just numerically equal), so there's nothing to
-    # substitute there. What genuinely varies is on either side of it.
+    # Placeholder markers are plain ASCII so lstlisting compiles without a
+    # fontenc/literate setup. "roughly 40%" is shared text, not a placeholder.
     body = ascii_safe(
         FIXED_OPENER + CAL_HEAD + "<REFERENCE POPULATION>, " + CAL_PCT +
         " <OUTCOME PHRASING>." + shared_remainder)

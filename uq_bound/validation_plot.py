@@ -1,8 +1,8 @@
 """Validation plots for RPP, CB, and SSRP uncertainty bounds.
 
-The three former validation-plot scripts shared Panels A--C and differed in
-their corpus adapter and Panel B design.  This entry point keeps those
-differences explicit while sharing the plotting, bootstrap, and bound logic.
+All datasets share Panels A--C; they differ in their corpus adapter and Panel B
+design, which are kept explicit while the plotting, bootstrap, and bound
+logic is shared.
 
 Examples (run from any directory)::
 
@@ -10,8 +10,8 @@ Examples (run from any directory)::
     python uq_bound/validation_plot.py --corpus cb --effort high
     python uq_bound/validation_plot.py --corpus all
 
-By default, all four existing effort/temperature combinations are rendered,
-matching the former scripts. Outputs remain under uq_bound/results/{RPP,CB,SSRP}.
+By default, all four effort/temperature combinations are rendered. Outputs
+are written under uq_bound/results/{RPP,CB,SSRP}.
 """
 
 import argparse
@@ -262,8 +262,8 @@ def plot_panel_c(corpus, claims, chain, lo_claim, hi_claim, outputs):
 
 def run(corpus, effort="high", temp="0.7"):
     suffix = f"{effort}_temp{temp}"
-    llm_uq_dir = Path(common.REPO)
-    pred_csv = llm_uq_dir / "prediction" / "LLM_Reasoning" / {
+    repo_dir = Path(common.REPO)
+    pred_csv = repo_dir / "prediction" / "LLM_Reasoning" / {
         "rpp": "RPP", "cb": "CB", "ssrp": "SSRP"
     }[corpus] / f"text_predictions_{suffix}.csv"
     output_dir = HERE / "results" / {"rpp": "RPP", "cb": "CB", "ssrp": "SSRP"}[corpus]

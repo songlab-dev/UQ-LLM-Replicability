@@ -1,6 +1,5 @@
-"""Step 13 (dml_spec.md): "the n=90, R=100 coverage simulation" -- the
-request's own words, a single validation exercise. Checks whether the two
-intervals reported on the real corpora (Step 9's cluster-robust pointwise CI
+"""Step 13 (dml_spec.md): the n=90, R=100 coverage simulation. Checks whether the two
+intervals reported on the real datasets (Step 9's cluster-robust pointwise CI
 and Step 10's multiplier-bootstrap simultaneous band) achieve their nominal
 95% coverage at this n and R, on data with a known answer.
 
@@ -18,8 +17,8 @@ By construction (independent mean-zero increments), h_m(W_m) = p_{i,m}^(r)
 exactly and h_0(X_i) = mu_i exactly, so E[D_m^2] = theta_m exactly -- this
 DGP has a known, closed-form ground truth.
 
-Usage: rep_env/bin/python uq_bound/dml_coverage_sim.py
-Writes: uq_bound/results/coverage_sim.csv
+Usage: rep_env/bin/python uq_bound/dml/dml_coverage_sim.py
+Writes: uq_bound/dml/results/coverage_sim.csv
 """
 import os
 import sys
@@ -31,12 +30,11 @@ from scipy import stats
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import llm_uq.uq_bound.dml.dml_theta as dt  # noqa: E402
+import dml_theta as dt  # noqa: E402
 
-N_CLUSTERS = 90     # request: n=90
-R = 100             # request: R=100
-REPS = 2000         # pre-registered value; replicate count is not specified
-                     # by the request, so the pre-registered default is used
+N_CLUSTERS = 90
+R = 100
+REPS = 2000         # pre-registered replicate count
 B_BOOT_SIM = dt.B_BOOT
 ALPHA = 0.05
 TRUE_THETA = {"phi1": 0.0006, "phi2": 0.0016, "phi3": 0.0003, "phi4": 0.0002, "phi_res": 0.0020}
@@ -44,8 +42,8 @@ PHI_COLS = dt.PHI_COLS
 
 
 def simulate_obs(n_clusters, R, true_theta, seed):
-    """One claim per cluster (n=90 studies, matching the request), R runs
-    each, correctly-specified additive stage map."""
+    """One claim per cluster (n=90 studies), R runs each,
+    correctly-specified additive stage map."""
     rng = np.random.default_rng(seed)
     sqrt_theta = {c: np.sqrt(max(true_theta[c], 0.0)) for c in PHI_COLS}
     rows = []

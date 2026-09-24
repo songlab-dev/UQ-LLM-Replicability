@@ -1,22 +1,19 @@
 """Three related tables built from the same per-corpus q-bar/v-bar metrics,
 selected with --table:
 
-  main     (default) All three corpora (RPP, CB, SSRP) side by side, two
+  main     (default) All three datasets (RPP, CB, SSRP) side by side, two
            rows each: gpt-5.4-mini's two computable *probability estimators*
            -- verbalized confidence (q-bar) and self-consistency vote rate
            (v-bar) -- no baselines. -> table_llm_uq.tex
 
   cb       CB only, three rows: q-bar, v-bar, and the text-embedding Lasso
-           LR baseline (20-seed nested-CV average) -- the current full-scope
-           CB predictor comparison. -> table_llm_uq_cb.tex
+           LR baseline (20-seed nested-CV average). -> table_llm_uq_cb.tex
 
   cross_corpus  CB + SSRP side by side, two rows each (q-bar, v-bar only -- no
            embedding-LR row here; that's covered by table_embed_cross_corpus.tex
            and table_predictor_comparison_cross_corpus.tex). CB uses the full
-           158-effect scope, not the retired 23-paper first-mentioned-effect
-           subset (see archive/percorpus_scripts/README.md). SSRP uses all
-           21 studies directly -- already one row per paper, no subsetting
-           needed. -> table_llm_uq_cross_corpus.tex
+           158-effect scope; SSRP uses all 21 studies (one row per paper).
+           -> table_llm_uq_cross_corpus.tex
 
 Row label is "elicitation method", not "UQ signal": q-bar and v-bar are both
 just point estimates of p(replicates), scored identically to any other
@@ -39,13 +36,12 @@ undifferentiated row of numbers, columns are split into two groups:
                         pairwise agreement (different statistics because
                         one elicits a continuous number, the other a vote).
 
-R is read from each corpus's predictions file rather than hardcoded (all
-three are at R=100 as of 2026-09-09). ECE is recomputed from the stored
+R is read from each corpus's predictions file rather than hardcoded (R=100
+for all three). ECE is recomputed from the stored
 reliability rows: RPP and CB use five fixed-size quantile bins; SSRP uses
 three; scores are ordered with explicit NumPy quicksort before
 ``array_split`` assigns the bins, preserving the stored RPP tie convention.
-CB uses the "_cb_full" metric files (158 effects, the current scope), not
-the retired 23-paper "_cb" ones.
+CB uses the "_cb_full" metric files (158 effects).
 
 Reads the four CSVs per corpus that predict_llm_uq.py/predict_llm_verdict.py
 already wrote (plus the embedding-LR CSVs for --table cb):

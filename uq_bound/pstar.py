@@ -1,10 +1,10 @@
 """Target p_hat*_{i,m} for the calibration term in metrics.py.
 
 p* is the out-of-sample (5-fold CV) logistic-regression replication probability
-on human-rated RPP features — the same construction used in the llm_direct task.
+on human-rated RPP features.
 Two predictor sets are supported:
 
-  ``post_replication_similarity``: the legacy specification, which adds the
+  ``post_replication_similarity``: an alternative specification, which adds the
       replication-rated Effect/Findings similarity fields and is not suitable
       as a deployment proxy because those fields are unavailable ex ante.
   ``original_covariates``: the primary specification, using only fields known
@@ -34,7 +34,7 @@ _BASE_FEATURES = ['Type of effect (O)', 'p_cat_O', 'Surprising result (O)', 'Dis
 
 FEATURES_POST_REPLICATION = ['Effect similarity (R)', 'Findings similarity (R)'] + _BASE_FEATURES
 FEATURES_ORIGINAL = _BASE_FEATURES
-# Backward-compatible aliases for existing scripts; prefer semantic names above.
+# Short aliases for the two feature sets.
 FEATURES_6 = FEATURES_POST_REPLICATION
 FEATURES_4 = FEATURES_ORIGINAL
 

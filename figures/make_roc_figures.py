@@ -17,12 +17,8 @@ that is how the prediction and embed_pred files key their rows; see each
 load_* function.
 
 Output filenames carry the reasoning_effort/temperature suffix (matching
-the text_predictions_{effort}_temp{temp}.csv convention) since SSRP now has
-both a high and a low effort run; RPP/CB only ever have "high" but are
-suffixed too for naming consistency. roc_auc_summary.csv stays scoped to
-the "high" row per corpus (each corpus's canonical config) -- SSRP's low
-variant is a standalone reference point, not folded into the cross-corpus
-summary (matches table_ssrp_effort_comparison.tex's own framing).
+the text_predictions_{effort}_temp{temp}.csv convention).
+roc_auc_summary.csv is scoped to each corpus's canonical high/0.7 config.
 
 Usage: rep_env/bin/python figures/make_roc_figures.py
 Writes: figures/{RPP,CB,SSRP}/roc_comparison_high_temp0.7.png,
@@ -45,8 +41,7 @@ METHODS = [
     ("v_bar", "Self-consistency vote rate"),
     ("q_bar", "Verbalized confidence"),
 ]
-# dataviz skill's default categorical palette, slots 1-3 (validated all-pairs
-# CVD-safe in both light and dark modes).
+# Categorical palette, CVD-safe for all pairs.
 COLORS = {
     "Text-embedding LR": "#2a78d6",
     "Self-consistency vote rate": "#eb6834",
@@ -97,16 +92,8 @@ def load_cb(effort="high", temp="0.7"):
 
 
 def load_ssrp(effort="high", temp="0.7"):
-    """21 SSRP studies, keyed by study_num. text_predictions_{effort}_temp0.7.csv
-    is the calibrated-prior (40%, matching RPP/CB) rerun -- renamed from the
-    bare text_predictions.csv to the same reasoning-effort/temperature-
-    encoding convention CB's file uses (prior and R are deliberately NOT in
-    the name: prior is always 40% now, and R is about to move from 25 to 100,
-    so the name only tracks what actually varies between runs); the pre-rerun
-    file is archived at archive/text_predictions_uncalibrated_prior_OLD.csv
-    for reference only. effort="low" reads the reasoning-effort comparison run instead
-    (see llm_uq_table_ssrp_effort_comparison.py) -- same 21 studies, same
-    embed-LR reference, only the LLM predictions differ."""
+    """21 SSRP studies, keyed by study_num. Other effort/temp cells use the
+    same 21 studies and embed-LR reference; only the LLM predictions differ."""
     pred = pd.read_csv(os.path.join(
         REPO, "prediction", "LLM_Reasoning", "SSRP", f"text_predictions_{effort}_temp{temp}.csv"))
     embed = pd.read_csv(os.path.join(REPO, "prediction", "embed_pred", "SSRP", "embed_lr_study_predictions.csv"))
@@ -119,9 +106,7 @@ def load_ssrp(effort="high", temp="0.7"):
     return df.rename(columns={"proba_cv_avg": "embed_proba"})
 
 
-# (corpus, effort, temp) triples to render. All three corpora now have a
-# temp=0.2 comparison pair alongside the canonical temp=0.7 high/low, via
-# predict_text_batch{,_cb,_ssrp}.py's reasoning-effort/temperature runs.
+# (corpus, effort, temp) cells to render.
 RUNS = [("RPP", "high", "0.7", load_rpp), ("RPP", "low", "0.7", load_rpp),
         ("RPP", "high", "0.2", load_rpp), ("RPP", "low", "0.2", load_rpp),
         ("CB", "high", "0.7", load_cb), ("CB", "low", "0.7", load_cb),

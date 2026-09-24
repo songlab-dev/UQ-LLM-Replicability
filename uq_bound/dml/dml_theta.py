@@ -227,8 +227,7 @@ def aggregate_theta(phibar):
 
 
 # ── Step 9: cluster-robust standard error (applied identically to all three
-# corpora -- the request asks for "cluster-robust and bootstrap bands", not
-# a small-G-specific variant, so none is used here) ──────────────────────────
+# datasets; no small-G correction) ────────────────────────────────────────────
 
 def cluster_robust_se(phibar, theta_hat):
     """Two-level cluster-robust SE, generalizing the appendix's single-claim-
@@ -248,7 +247,7 @@ def multiplier_bootstrap(phibar, theta_hat, se, B=B_BOOT, seed=BOOT_SEED, alpha=
     multiplier bootstrap over clusters -- 'a multiplier bootstrap over
     studies', per the appendix. The same draws also give the per-scalar
     'study-cluster bootstrap intervals' the appendix says to report
-    alongside the normal-based ones, for all three corpora."""
+    alongside the normal-based ones, for all three datasets."""
     n = len(phibar)
     resid = phibar[PHI_COLS] - theta_hat[PHI_COLS]
     cluster_sum = resid.groupby(phibar["cluster_id"]).sum().values  # (G, 5)

@@ -2,16 +2,12 @@
 elicitation methods (verbalized confidence q-bar, self-consistency vote
 rate v-bar) as table_llm_uq_cross_corpus.tex (llm_uq_table.py --table cross_corpus),
 but rows are effort variants of the SAME corpus instead of different
-corpora. Duplicates that script's ece_from_table() logic (same shape as
-llm_uq_table.py's load_corpus(), generic over a
-prediction/llm_pred/metric/llm_{qbar,verdict,calibration,selfconsistency}_{prefix}_*.csv
-prefix), so "ssrp_low" (predict_llm_uq.py/predict_llm_verdict.py --dataset
-ssrp, run with REASONING_EFFORT=low) slots in exactly like "ssrp" (high) does.
+datasets. Reuses llm_uq_table.py's load_corpus(), so "_ssrp_low"
+(predict_llm_uq.py/predict_llm_verdict.py --dataset ssrp with
+REASONING_EFFORT=low) loads exactly like "_ssrp" (high).
 
-High is still the paper's canonical config (temp=0.7, effort=high, R=100);
-this table exists to characterize the effort tradeoff, not to replace it --
-nothing else in the pipeline (validation plots, VEA/ROC figures) reads the
-low-effort file.
+High effort is the canonical config (temp=0.7, R=100); this table
+characterizes the effort tradeoff.
 
 Reads:
     prediction/llm_pred/metric/llm_qbar_ssrp_metrics.csv, llm_verdict_ssrp_metrics.csv,

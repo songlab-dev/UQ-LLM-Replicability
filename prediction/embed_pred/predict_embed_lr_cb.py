@@ -1,5 +1,5 @@
 """Text-embedding Logistic Regression predictor for CB replicability --
-the file_CB counterpart of predict_embed_lr.py.
+the CB counterpart of predict_embed_lr.py.
 
 RPP validates against an external table (Altmejd et al.'s 90-study RF
 benchmark) and needs title-normalization to bridge the two sources. CB
@@ -19,11 +19,9 @@ and inflating the CV score. Both the inner (hyperparameter) and outer
 StratifiedGroupKFold, not the plain StratifiedKFold RPP uses (RPP has one
 effect per paper, so it never faced this).
 
-n=158 over 23 clusters still makes any single fold-split noisy (same issue
-predict_embed_lr_cb_firsteffect.py's n=23 faced, just from paper-clustering
-instead of raw sample size), so the nested CV is repeated under N_SEEDS=20
-different fold-split seeds, same fix as that script and predict_embed_lr_ssrp.py
-use. AUC/Accuracy on the seed-averaged probability get closed-form binomial
+n=158 over 23 clusters still makes any single fold-split noisy, so the
+nested CV is repeated under N_SEEDS=20 different fold-split seeds, as in
+predict_embed_lr_ssrp.py. AUC/Accuracy on the seed-averaged probability get closed-form binomial
 SDs (Hanley & McNeil 1982 / Wald); the per-effect across-seed SD is reported
 as this run's label-free dispersion.
 
@@ -43,9 +41,9 @@ from sklearn.model_selection import GridSearchCV, StratifiedGroupKFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-LLM_UQ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
-EMB_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "CB", "embeddings_text-embedding-3-large_query")
-OUT_DIR = os.path.join(LLM_UQ, "prediction", "embed_pred", "CB")
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+EMB_DIR = os.path.join(REPO, "prediction", "embed_pred", "CB", "embeddings_text-embedding-3-large_query")
+OUT_DIR = os.path.join(REPO, "prediction", "embed_pred", "CB")
 OUT_CSV = os.path.join(OUT_DIR, "embed_lr_metrics.csv")
 OUT_PERSEED_CSV = os.path.join(OUT_DIR, "embed_lr_per_seed.csv")
 OUT_STUDY_CSV = os.path.join(OUT_DIR, "embed_lr_study_predictions.csv")
@@ -117,8 +115,8 @@ def main():
     print(f"n = {n} effects used for training ({y.sum()} yes / {(1 - y).sum()} no), "
           f"{len(set(groups))} paper groups")
 
-    # in-sample: fit on all data, evaluate on the same data (optimistic; matches
-    # the "best hyperparameter" cell of embeddings_LR.ipynb / predict_embed_lr.py)
+    # in-sample: fit on all data, evaluate on the same data (optimistic; as in
+    # predict_embed_lr.py)
     inner0 = StratifiedGroupKFold(5, shuffle=True, random_state=0)
     grid = GridSearchCV(make_pipe(), GRID, cv=list(inner0.split(X, y, groups)),
                         scoring="roc_auc", n_jobs=-1)

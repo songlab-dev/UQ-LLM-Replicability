@@ -1,14 +1,11 @@
 """gpt-5.4-mini zero-shot verdict-rate (v-bar) predictor for RPP/CB/SSRP
-replicability, generalized across corpora with one --dataset flag. v-bar is
+replicability, for RPP, CB, or SSRP (--dataset). v-bar is
 each claim's fraction of R=100 independent zero-shot runs whose verdict was
 "replicable". Unlike the embedding/RF models, this predictor is never fit on
 outcomes, so there is no in-sample/nested-CV distinction -- one row,
 "zero-shot", evaluated on all matched claims directly.
 
-Formerly three separate, near-identical scripts: predict_llm_verdict.py
-(RPP), predict_llm_verdict_cb_full.py (CB, all 158 completed effects), and
-predict_llm_verdict_ssrp.py (SSRP, all 21 studies). RPP needs its own
-scope/outcome loader: Altmejd's `drop == False` field defines the analysis
+RPP needs its own scope/outcome loader: Altmejd's `drop == False` field defines the analysis
 scope, while outcomes come from the original OSF `data/rpp_data.csv` via
 `data/rpp_outcomes.py`, not the predictions file's own `ground_truth`.
 Matching: Altmejd title -> normalized -> `data/rpp_data_cleaned.csv`
@@ -61,7 +58,7 @@ UNIT_NAME = {"rpp": "studies", "cb": "effects", "ssrp": "studies"}
 
 
 def normalize_title(s):
-    """Match llm_uq's title-cleaning: lowercase, strip punctuation with no
+    """Title normalization: lowercase, strip punctuation with no
     space inserted (so hyphens/apostrophes/slashes/colons just vanish)."""
     s = re.sub(r"[^a-z0-9\s]", "", str(s).lower())
     return re.sub(r"\s+", " ", s).strip()

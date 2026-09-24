@@ -2,8 +2,7 @@
 tables/table_predictor_comparison.tex (bare Predictor/Evaluation/AUC/
 Accuracy, no Brier/ECE/dispersion) -- NOT the SD/ECE/dispersion table
 make_classification_tables.py builds, and not a zero-shot-LLM table either
-(no gpt-5.4-mini q-bar/v-bar rows -- SSRP has no zero-shot LLM run yet, only
-the embedding baseline).
+(no gpt-5.4-mini q-bar/v-bar rows; those are in table_llm_uq_cross_corpus.tex).
 
 Each corpus gets two rows, because "the AUC" of a 20-seed repeated nested CV
 is ambiguous between two different quantities that can disagree a lot at
@@ -11,8 +10,7 @@ small n:
 
   per-seed mean    mean and SD of the 20 individual per-seed AUC/Accuracy
                    values -- what a single nested-CV run would actually look
-                   like, and how much it swings run to run. This is the
-                   honest "what should I expect if I run this once" number.
+                   like, and how much it swings run to run.
   mean probability AUC/Accuracy of the per-effect/per-study AVERAGE
                    out-of-fold probability across the 20 seeds, with the
                    closed-form Hanley-McNeil (1982)/Wald SD of that single

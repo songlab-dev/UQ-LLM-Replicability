@@ -1,27 +1,22 @@
 """Text-embedding Logistic Regression predictor for RPP replicability.
 
-This is the standalone implementation of the embedding-regression analysis:
-it loads embeddings, fits an L1-penalized
-logistic regression via GridSearchCV, report AUC/Brier/Accuracy), rewritten as
-a standalone script and row-aligned to Altmejd et al.'s 90-row RPP
-`drop == False` scope. Random-forest, SVM, and XGBoost generators are archived
-and are not part of the current paper pipeline.
+Loads the text embeddings, fits an L1-penalized logistic regression via
+GridSearchCV, and reports AUC/Brier/Accuracy, row-aligned to Altmejd et al.'s
+90-row RPP `drop == False` scope.
 
 Their 90 rows are at the study-*replicated-effect* level, not one-per-paper:
 2 papers ("The Best Men Are (Not Always) Already Taken", "Increasing and
 decreasing motor and cognitive output") each had two different effects
 independently replicated, so each contributes two rows with the same title.
 The embeddings index is one row per *paper*, so those two papers' embedding
-is duplicated across their two rows here (unlike the RF script, where the
-two rows differ on effect_size.o/p_value.o/etc.; the text embedding can't
+is duplicated across their two rows here (the text embedding can't
 distinguish between two effects tested in the same paper). Both rows of each
 duplicated pair share the same `replicated` value in Altmejd's data (checked
 directly), so this does not create a label conflict.
 
-Matching is by normalized paper title (llm_uq's title-cleaning strips
-punctuation without inserting spaces, e.g. "1/f noise" -> "1f noise",
-"action-based" -> "actionbased"; matching mirrors that). One of the 90 rows,
-All 90 analysis rows have a corresponding embedded study. The
+Matching is by normalized paper title (punctuation is stripped without
+inserting spaces, e.g. "1/f noise" -> "1f noise", "action-based" ->
+"actionbased"). All 90 analysis rows have a corresponding embedded study. The
 analysis scope and covariates come from Altmejd et al., while the outcome
 comes from the original RPP OSF export (data/rpp_data.csv). The
 Altmejd-derived outcome is retained as `replicated_altmejd` for auditing.
@@ -35,13 +30,9 @@ per-study average out-of-fold probability across seeds, with the closed-form
 Hanley-McNeil/Wald SD of that point estimate) -- see predict_embed_lr_ssrp.py's
 docstring for the fuller rationale.
 
-The study_predictions.csv output keeps BOTH "proba_cv" (seed 0's single-seed
-out-of-fold prediction -- byte-identical to what this script produced before
-the 20-seed rewrite, since seed 0's inner/outer random states, 0 and 1,
-match the original RANDOM_STATE=0/RANDOM_STATE+1=1 exactly) and the new
-"proba_cv_avg"/"proba_cv_sd_across_seeds": uq_bound/common.py's Freedman
-bound chain reads "proba_cv" and make_roc_figures.py's load_rpp() does too,
-so neither needed to change to pick up this rewrite.
+The study_predictions.csv output has both "proba_cv" (seed 0's single-seed
+out-of-fold prediction, read by uq_bound/common.py and make_roc_figures.py)
+and the 20-seed "proba_cv_avg"/"proba_cv_sd_across_seeds".
 
 Usage: rep_env/bin/python prediction/embed_pred/predict_embed_lr.py
 Writes: prediction/embed_pred/RPP/embed_lr_metrics.csv,
@@ -104,7 +95,7 @@ PIPE = Pipeline([
 
 
 def normalize_title(s):
-    """Match llm_uq's title-cleaning: lowercase, strip punctuation with no
+    """Title normalization: lowercase, strip punctuation with no
     space inserted (so hyphens/apostrophes/slashes/colons just vanish)."""
     s = re.sub(r"[^a-z0-9\s]", "", str(s).lower())
     return re.sub(r"\s+", " ", s).strip()
@@ -160,8 +151,7 @@ def main():
     n = len(y)
     print(f"n = {n} studies used for training")
 
-    # Primary: single reference fit on all data (optimistic; matches the
-    # "best hyperparameter" cell of embeddings_LR.ipynb)
+    # Primary: single reference fit on all data (optimistic).
     inner0 = StratifiedKFold(5, shuffle=True, random_state=0)
     grid0 = GridSearchCV(PIPE, GRID, cv=inner0, scoring="roc_auc", n_jobs=N_JOBS)
     grid0.fit(X, y)
@@ -227,9 +217,8 @@ def main():
     results.to_csv(OUT_CSV, index=False)
     print(f"\nWrote {OUT_CSV}")
 
-    # study-level predictions: proba_cv is seed 0's out-of-fold prediction
-    # (backward-compatible with existing consumers -- see module docstring),
-    # proba_cv_avg/proba_cv_sd_across_seeds are the new 20-seed aggregate.
+    # study-level predictions: proba_cv is seed 0's out-of-fold prediction;
+    # proba_cv_avg/proba_cv_sd_across_seeds are the 20-seed aggregate.
     study_preds = pd.DataFrame({
         "altmejd_id": rpp["id"].values,
         "title": rpp["title"].values,

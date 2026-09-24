@@ -1,8 +1,7 @@
 """Study-cluster bootstrap metrics from the stored default/grid predictions.
 
-This is the repository-native counterpart to the external audit script.  It
-uses the canonical RPP OSF outcomes (rather than the legacy embedding-file
-label) and the ECE convention used by the active calibration generators:
+It uses the canonical RPP OSF outcomes and the same ECE convention as the
+calibration tables:
 scores are ordered with NumPy quicksort and split into fixed-size quantile
 bins.  No API requests are made.
 

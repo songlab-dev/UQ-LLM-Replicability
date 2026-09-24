@@ -2,7 +2,8 @@
 
 The output reports expected and collected requests, null fields, refusal
 phrases, and API errors. Contamination probes are excluded. ``missing`` is
-the current post-backfill gap; API errors include archived batch-error files.
+the number of requests with no collected response; API errors include
+archived batch-error files.
 
 Usage: rep_env/bin/python prediction/llm_pred/llm_uq_batch_quality.py
 Writes: prediction/llm_pred/metric/llm_batch_quality.csv
@@ -112,11 +113,9 @@ def main():
                         n_null = int(d[col].isna().sum())
                         row[f"{col}_null"] = n_null
                         row[f"{col}_null_pct"] = round(100 * n_null / len(d), 2)
-                # "Nothing came back that we could use" -- every prompted field
-                # null at once. This is the refusal-shaped statistic: a single
-                # null field is usually the paper not reporting that value
-                # (see the caveat above), but an all-null row means the
-                # completion yielded no parsable content at all.
+                # Every prompted field null at once. A single null field is
+                # usually the paper not reporting that value, but an all-null
+                # row means the completion yielded no parsable content.
                 tracked = [c for c in PARSED_FIELDS if c in d.columns] + ["q_hat", "verdict"]
                 none_parsed = int(d[tracked].isna().all(axis=1).sum())
                 row["none_fields_parsed"] = none_parsed

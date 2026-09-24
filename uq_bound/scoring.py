@@ -1,4 +1,4 @@
-"""Per-unit scores q_hat_{i,m}^{(r)} in [0,1] for the llm_uq pipeline.
+"""Per-unit scores q_hat_{i,m}^{(r)} in [0,1] for the LLM prediction pipeline.
 
 Unit ids match the LLM's own 7-step generation order, which is also Table 2's
 numbering in the paper -- unit m IS prompt step m, no translation needed:
@@ -29,11 +29,11 @@ import pandas as pd
 # Columns of the original (O) RPP record used as extraction ground truth.
 REC_N_COL   = "N (O)"
 REC_P_COL   = "Reported P-value (O)"
-REC_D_COL   = "Effect size (O)"   # legacy: mixed metrics (eta^2, dz, ...); predict_pdf path
+REC_D_COL   = "Effect size (O)"   # mixed metrics (eta^2, dz, ...); fallback extraction target
 REC_R_COL   = "T_r..O."           # clean correlation r; preferred extraction target
 REC_TYPE_COL = "Type of effect (O)"
 
-# Match tolerances for unit 1 (configurable; user may tune).
+# Match tolerances for unit 1.
 P_ABS_TOL = 0.01    # p-value: |extracted - record| <= P_ABS_TOL
 D_REL_TOL = 0.15    # effect size: relative difference <= D_REL_TOL
 
@@ -153,7 +153,7 @@ def compute_unit_scores(pred_df, rpp):
     """Map raw per-run predictions to per-unit scores q_hat_{i,m}^{(r)}.
 
     pred_df: rows from predict_*.py (one per study x run) with columns
-             extract_N, extract_p, extract_r (or legacy extract_d), stat_score, q_hat.
+             extract_N, extract_p, extract_r (or extract_d), stat_score, q_hat.
     rpp:     data/rpp_data_cleaned.csv loaded as a DataFrame.
     """
     rec = rpp.set_index("Study Title (O)")
@@ -164,7 +164,7 @@ def compute_unit_scores(pred_df, rpp):
         rr = rr.iloc[0] if isinstance(rr, pd.DataFrame) else rr
 
         # Prefer the correlation-r extraction (extract_r vs T_r..O.); fall back to the
-        # legacy mixed-metric column (extract_d vs Effect size (O)) for the pdf pipeline.
+        # mixed-metric column (extract_d vs Effect size (O)) when extract_r is absent.
         if "extract_r" in r and not np.isnan(to_float(r.get("extract_r"))):
             rec_es, ext_es = to_float(rr.get(REC_R_COL)), to_float(r.get("extract_r"))
         else:
@@ -174,7 +174,7 @@ def compute_unit_scores(pred_df, rpp):
             to_float(r.get("extract_N")), to_float(r.get("extract_p")), ext_es,
         )
         q3 = to_float(r.get("stat_score"))
-        # qrp_severity (0-3 int) takes priority; fall back to legacy qrp_flags string
+        # qrp_severity (0-3 int) takes priority; fall back to the qrp_flags string
         sev = r.get("qrp_severity")
         if sev is not None and not (isinstance(sev, float) and np.isnan(sev)):
             q4 = 1.0 - float(sev) / 3.0

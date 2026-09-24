@@ -1,6 +1,6 @@
 """Contamination probe: query gpt-5.4-mini for verbatim recall of a study's
 replication outcome from its title plus a one-line locator for the specific
-finding being asked about (all three corpora -- see prompt_contamination.py's
+finding being asked about (all three datasets -- see prompt_contamination.py's
 module docstring for each corpus's locator field, and for why CB specifically
 needs effect-level, not paper-level, granularity: 17/23 CB papers mix
 replicable and unreplicable outcomes across their own effects). No paper
@@ -8,21 +8,13 @@ text is included anywhere in this script -- a correct, confident answer
 indicates the model already "knows" the outcome from training data, not from
 reasoning over text the main pipeline feeds it.
 
-One corpus-agnostic script (unlike predict_text_batch{,_cb,_ssrp}.py, which
-fork three ways to handle each corpus's own paper-text format) -- this probe
-needs no paper-text handling at all, so there's no reason to fork it.
-
-Fixed at this project's canonical config (reasoning_effort=high, temp=0.7)
-and a light R=10 repeated queries per unit -- this is a robustness/validity
-check, not a headline result, so it doesn't need the main pipeline's full
-effort x temp grid or R=100. (REASONING_EFFORT is still read from the env,
-same knob predict_text_batch*.py exposes, in case a future run wants to
-compare effort levels; temp is not parameterized here at all since gpt-5.4-mini
-ignores it as a reasoning model, same as elsewhere in this repo.)
+Fixed at the canonical config (reasoning_effort=high, temp=0.7) with R=10
+repeated queries per unit -- this is a robustness/validity check, so it
+does not use the main pipeline's full effort x temp grid or R=100.
+REASONING_EFFORT is read from the environment, as in predict_text_batch.py.
 
 Three phases via --mode, same submit/status/collect shape as
-predict_text_batch.py --corpus cb, including its custom_id-assigned-before-chunking
-and skip/resume-on-valid-rows fixes:
+predict_text_batch.py:
 
   submit   Build .jsonl request file(s), upload, create the batch(es).
   status   Print current state of all submitted batches (or one, with --batch-id).
@@ -102,9 +94,7 @@ KEY_COLS = UNIT_KEY_COLS[args.corpus]
 def _json_safe(v):
     """numpy int64/float64 (from pandas) aren't JSON-serializable -- .item()
     converts to native Python types; plain str/already-native values pass
-    through unchanged. Same fix predict_text_batch.py --corpus cb applies via
-    explicit int(...) casts, generalized here since KEY_COLS types vary
-    (RPP's unit_id is a string, CB/SSRP's are ints)."""
+    through unchanged (RPP's unit_id is a string, CB/SSRP's are ints)."""
     return v.item() if hasattr(v, "item") else v
 
 
@@ -146,9 +136,8 @@ def parse_response(text, key_tuple, run_id):
     return rec
 
 
-# Kept for safety, matching predict_text_batch.py --corpus cb's fix for the same
-# 200MB-per-batch-file cap -- unlikely to ever trigger here since these
-# requests carry no paper text (~880/1580/210 tiny requests per corpus).
+# Split requests to stay under the 200MB-per-batch-file cap (as in
+# predict_text_batch.py).
 MAX_CHUNK_BYTES = int(os.getenv("MAX_CHUNK_BYTES", 180_000_000))
 
 
@@ -180,10 +169,9 @@ def do_submit():
         except pd.errors.EmptyDataError:
             pass
 
-    # custom_id assigned from a GLOBAL running count here, BEFORE
-    # _chunk_requests() splits requests across batches -- the exact bug
-    # predict_text_batch{,_cb}.py's do_submit hit and fixed twice this
-    # session, avoided from the start here.
+    # custom_id is assigned from a global running count BEFORE
+    # _chunk_requests() splits requests across batches, so ids stay unique
+    # across batches.
     index = []   # index[i] = [custom_id, *key_values, run_id]
     requests = []
     for _, row in tqdm(UNITS.iterrows(), total=len(UNITS), desc="Building requests"):

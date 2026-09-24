@@ -17,7 +17,7 @@ REASONING = os.path.join(REPO, "prediction", "LLM_Reasoning")
 OUT_CSV = os.path.join(RES, "llm_uq_grid_summary.csv")
 
 # slug is the infix the predict_* scripts give their per-corpus files; CB uses
-# the 158-effect "_cb_full" scope, not the retired 23-paper "_cb" one.
+# the 158-effect "_cb_full" scope.
 CORPORA = [("RPP", "", "RPP", "studies"),
            ("CB", "_cb_full", "CB", "effects"),
            ("SSRP", "_ssrp", "SSRP", "studies")]

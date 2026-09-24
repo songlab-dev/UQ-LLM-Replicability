@@ -10,6 +10,8 @@ effect size at the replication's planned sample size.
   - Power: correlation power via Fisher's z at alpha=0.05 (two-tailed).
 
 Studies whose report is missing/unparseable get NaN (dropped from unit 3).
+The replication reports are not included in this repository for copyright
+reasons; the resulting power_reference.csv is.
 
 Run: rep_env/bin/python figures/power_reference.py
 Writes prediction/LLM_Reasoning/RPP/power_reference.csv, read by pstar.py.
@@ -31,10 +33,9 @@ except Exception:  # pragma: no cover
 
 # Paths are anchored to the repository root, rather than the working directory.
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repository root
-ROOT = HERE
 RPP_CSV = os.path.join(HERE, "data", "rpp_data_cleaned.csv")
 OUT_CSV = os.path.join(HERE, "prediction", "LLM_Reasoning", "RPP", "power_reference.csv")
-FILE_DIR = os.path.join(ROOT, "file")
+FILE_DIR = os.path.join(HERE, "file")
 ALPHA = 0.05
 
 # Original test statistic: t(df)=v  or  F(1,df2)=v
