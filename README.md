@@ -72,6 +72,7 @@ The package is organized around the pipeline's actual stages:
 | `tables/` | LaTeX/Markdown table generators and their output. |
 | `figures/` | Cross-corpus figure generators and their output. |
 | `prompt/` | Shared prompt definitions (used by both the LLM and embedding pipelines) and the CB/SSRP data builders. |
+| `ablation/` | RPP robustness experiments: a Step-3 prompt intervention ("Spurious stats") with gpt-5.4-mini, and a cross-model replication with Qwen3.8-Flash. See [ablation/README.md](ablation/README.md). |
 
 ## Reproducing results
 

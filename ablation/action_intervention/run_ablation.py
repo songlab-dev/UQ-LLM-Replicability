@@ -42,8 +42,7 @@ STEP3_SPURIOUS = (
     "for replication in this task.\n"
 )
 # arm -> [(baseline passage, replacement), ...]. The earlier arms (n_only, n_only_nohint, claim_only,
-# p_only, no_stats, stats_jargon) are retired; their code is in results/archive/run_ablation_retired_arms.py
-# (stats_jargon: see git history / the scratchpad backup).
+# p_only, no_stats, stats_jargon) are retired; their code is in archive/archive/run_ablation_retired_arms.py.
 VARIANTS = {
     "spurious_stats": [(STEP3_BASE, STEP3_SPURIOUS)],
 }
