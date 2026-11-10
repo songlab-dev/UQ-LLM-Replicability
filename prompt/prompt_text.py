@@ -11,7 +11,7 @@ reasons.
 import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent / "file"
+ROOT = Path(__file__).resolve().parent.parent.parent / "file" 
 
 SYSTEM_PROMPT = (
     "You assess whether a focal effect in a scientific study will replicate. "

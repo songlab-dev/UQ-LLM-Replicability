@@ -263,6 +263,7 @@ class BatchJob:
                 "model": self.model,
                 "max_completion_tokens": budget.get(self.effort, 4096),
                 "reasoning_effort": self.effort,
+                "temperature": args.temperature,
             }
         else:
             self.base_body = {

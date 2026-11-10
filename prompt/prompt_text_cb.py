@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent / "file_CB"
+ROOT = Path(__file__).resolve().parent.parent.parent / "file_CB"  # sibling of llm_uq/
 
 SYSTEM_PROMPT = (
     'You assess whether a focal effect in a scientific study will replicate. Important '

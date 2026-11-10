@@ -11,7 +11,7 @@ import os
 import glob
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent / "file_SSRP"
+ROOT = Path(__file__).resolve().parent.parent.parent / "file_SSRP"  # sibling of llm_uq/
 
 SYSTEM_PROMPT = (
     'You assess whether a focal effect in a scientific study will replicate. Important '

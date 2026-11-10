@@ -1,6 +1,33 @@
+# --- Secrets ------------------------------------------------------------------
 .env
+
+# --- OS / editor --------------------------------------------------------------
 .DS_Store
+.vscode/
+.idea/
+
+# --- Python -------------------------------------------------------------------
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# --- Virtual environments -----------------------------------------------------
 rep_env/
+.venv/
+
+# --- LaTeX build artifacts (sources and PDFs stay tracked) --------------------
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+
+# --- Archived / superseded outputs (any depth) --------------------------------
+archive/
+archive_*/

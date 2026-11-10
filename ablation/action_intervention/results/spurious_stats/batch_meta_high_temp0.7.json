@@ -1,0 +1,67 @@
+{
+  "model": "gpt-5.4-mini",
+  "corpus": "rpp",
+  "runs": 100,
+  "batches": [
+    {
+      "batch_id": "batch_6af14bf4acdc8190a051661c1822723d",
+      "file_id": "file-CMwembEahvEe5u4WzAFSyT",
+      "index": [
+        [
+          "r000000",
+          "rpp.10",
+          "Acrossnotation automatic numerical processing",
+          25
+        ],
+        [
+          "r000001",
+          "rpp.11",
+          "Attractor dynamics and semantic neighborhood density Processing is slowed by near neighbors and speeded by distant neighbors",
+          33
+        ],
+        [
+          "r000002",
+          "rpp.11",
+          "Attractor dynamics and semantic neighborhood density Processing is slowed by near neighbors and speeded by distant neighbors",
+          34
+        ],
+        [
+          "r000003",
+          "rpp.11",
+          "Attractor dynamics and semantic neighborhood density Processing is slowed by near neighbors and speeded by distant neighbors",
+          35
+        ],
+        [
+          "r000004",
+          "rpp.111",
+          "Precision of the anchor influences the amount of adjustment",
+          46
+        ],
+        [
+          "r000005",
+          "rpp.111",
+          "Precision of the anchor influences the amount of adjustment",
+          54
+        ],
+        [
+          "r000006",
+          "rpp.111",
+          "Precision of the anchor influences the amount of adjustment",
+          86
+        ],
+        [
+          "r000007",
+          "rpp.112",
+          "Action dynamics reveal parallel competition in decision making",
+          7
+        ],
+        [
+          "r000008",
+          "rpp.112",
+          "Action dynamics reveal parallel competition in decision making",
+          9
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+% CB sensitivity of the cross-fitted stage attribution to the 55 claims without a scoreable Extraction step (q_1).
+% Source: cross-fitted estimator of uq_bound/dml/dml_theta.py, run on prediction/results/CB/text_predictions_high_temp0.7.csv
+% (high effort, T = 0.7, R = 100). Rows without Extraction set q_1 to 0, so theta_1 = 0 by construction.
+% theta x 1e-3 (cluster-robust SE), for reference:
+%   analysis sample, with q1:    2.42 (0.26)  0.13 (0.06)  0.05 (0.01)  2.06 (0.14)
+%   analysis sample, without q1: 2.42 (0.26)  0.13 (0.06)  0.05 (0.01)  2.06 (0.14)
+%   excluded claims:             2.71 (0.30)  0.07 (0.03)  0.08 (0.02)  2.15 (0.25)
+%   all claims:                  2.53 (0.19)  0.11 (0.03)  0.06 (0.01)  2.07 (0.14)
+% Requires \usepackage{booktabs}.
+\begin{table}[ht]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \caption{Sensitivity of the CB stage attribution to the 55 claims excluded for lacking a scoreable Extraction step.
+    Entries are each stage's share of run-to-run variance.}
+  \label{tab:cb-drop-sensitivity}
+  \begin{tabular}{@{}lcrrrrrrr@{}}
+    \toprule
+    & Incl. & & & & $\theta_2$ & $\theta_3$ & $\theta_4$ & $\theta_{\mathrm{res}}$\\
+    Sample & $q_1$ & $n$ & $G$ & Total & Stat review & Res.\ DoF & Theory & Residual\\
+    \midrule
+    Analysis sample  & Yes & 103 & 20 & 4.65 & 52.0\% & 2.8\% & 1.0\% & 44.2\%\\
+    Analysis sample  & No  & 103 & 20 & 4.65 & 51.9\% & 2.8\% & 1.0\% & 44.2\%\\
+    Excluded claims  & No  &  55 & 14 & 5.01 & 54.1\% & 1.4\% & 1.5\% & 43.0\%\\
+    All claims       & No  & 158 & 23 & 4.77 & 53.1\% & 2.2\% & 1.2\% & 43.4\%\\
+    \bottomrule
+  \end{tabular}
+
+  \smallskip
+  \parbox{\linewidth}{\footnotesize
+    Incl.\ $q_1$: Extraction stage in the chain; $n$: claims; $G$: papers; Total: run-to-run variance ($\times10^{-3}$).
+    Excluded claims (14 papers) report no usable $N$, $p$ or effect size, so $q_1$ is unscored; since
+    $\hat\theta_1\approx0$, $q_1$ is dropped from the chain. All differences are within about one cluster-robust SE.}
+\end{table}

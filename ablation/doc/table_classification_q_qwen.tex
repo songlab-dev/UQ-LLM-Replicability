@@ -1,0 +1,32 @@
+% Classification performance of the single-run q_i^(r) on RPP (90 claims x 100 runs, reasoning effort high,
+% temperature 0.7, run ids 0--99).
+% Rows: gpt-5.4-mini (baseline prompt, the reference model), Qwen3.8-Flash baseline prompt, Qwen3.8-Flash Spurious stats
+% (Step 3, arm spurious_stats). Accuracy uses a 0.5 threshold (no q equals 0.5 exactly).
+% Each metric is computed per run over the 90 claims, mean +- SD across the 100 runs (same convention as
+% table_single_run_q_grid; the gpt row reproduces its RPP high/T=0.7 cell, AUC 0.611, Brier 0.232).
+% Run-averaged q-bar, for reference: gpt 0.626/0.678/0.229; Qwen baseline 0.679/0.700/0.217;
+%   Qwen spurious 0.599/0.678/0.219 (AUC/Acc/Brier).
+% Source: scratchpad single_run_q.py.
+% Requires \usepackage{booktabs}.
+\begin{table}[ht]
+  \centering
+  \small
+  \caption{Classification performance of the single-run verbalized replication probability $q_i^{(r)}$ on RPP
+    ($n=90$ claims, $R=100$ runs per claim).}
+  \label{tab:classification_q_qwen}
+  \begin{tabular}{@{}llccc@{}}
+    \toprule
+    Model & Prompt & AUC $\uparrow$ & Acc.\ $\uparrow$ & Brier $\downarrow$\\
+    \midrule
+    gpt-5.4-mini  & Reference      & $0.611 \pm 0.030$ & $0.659 \pm 0.029$ & $0.232 \pm 0.006$\\
+    Qwen3.8-Flash & Baseline       & $0.652 \pm 0.028$ & $0.678 \pm 0.028$ & $0.221 \pm 0.006$\\
+    Qwen3.8-Flash & Spurious stats & $0.591 \pm 0.033$ & $0.668 \pm 0.021$ & $0.222 \pm 0.006$\\
+    \bottomrule
+  \end{tabular}
+
+  \smallskip
+  \parbox{\linewidth}{\footnotesize
+    Each metric is computed for each run and reported as mean $\pm$ SD across runs (run-to-run spread, not a standard
+    error). All runs use reasoning effort high and temperature 0.7; accuracy uses a 0.5 threshold. 32 of 90 claims
+    replicated, so always predicting ``unreplicable'' scores 0.644.}
+\end{table}
