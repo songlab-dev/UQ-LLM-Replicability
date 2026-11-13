@@ -2,7 +2,8 @@
 % (Step 3, arm spurious_stats). Run ids 0--99 for both arms (90 claims x 100 runs each), reasoning_effort=high.
 % (Temperature is not sent for gpt-5.4-mini: reasoning models take no temperature parameter.)
 % Each metric is computed per run over the 90 claims, mean +- SD across the 100 runs; accuracy uses a 0.5 threshold
-% (no q equals 0.5 exactly). Baseline row reproduces table_single_run_q_grid's RPP high-effort cell (AUC 0.611, Brier 0.232).
+% (no q equals 0.5 exactly). Baseline row reproduces table_single_run_q_grid's RPP high-effort cell (AUC 0.611, Brier 0.232, NLL 0.659).
+% NLL clips q to [0.01, 0.99] as in the grid; no q in either arm falls outside, so nothing is clipped.
 % Run-averaged q-bar, for reference: baseline 0.626/0.678/0.229; spurious 0.589/0.678/0.224 (AUC/Acc/Brier).
 % Source: scratchpad single_run_q_gpt_spurious.py.
 % Requires \usepackage{booktabs}.
@@ -13,17 +14,17 @@
     statistics step on RPP ($n=90$ claims, $R=100$) using \texttt{gpt-5.4-mini}, for the single-run verbalized
     replication probability $q_i^{(r)}$.}
   \label{tab:classification_gpt_spurious}
-  \begin{tabular}{@{}lccc@{}}
+  \begin{tabular}{@{}lcccc@{}}
     \toprule
-    Arm & AUC & Acc. & Brier\\
+    Arm & AUC & Acc. & Brier & NLL\\
     \midrule
-    Baseline       & $0.611 \pm 0.030$ & $0.659 \pm 0.029$ & $0.232 \pm 0.006$\\
-    Spurious stats & $0.581 \pm 0.028$ & $0.658 \pm 0.027$ & $0.227 \pm 0.005$\\
+    Baseline       & $0.611 \pm 0.030$ & $0.659 \pm 0.029$ & $0.232 \pm 0.006$ & $0.659 \pm 0.013$\\
+    Spurious stats & $0.581 \pm 0.028$ & $0.658 \pm 0.027$ & $0.227 \pm 0.005$ & $0.647 \pm 0.011$\\
     \bottomrule
   \end{tabular}
 
   \smallskip
   \parbox{\linewidth}{\footnotesize
     Each metric is computed for each run and reported as mean $\pm$ SD across runs (run-to-run spread, not a standard
-    error). Accuracy uses a 0.5 threshold. 32 of 90 claims replicated, so always predicting ``unreplicable'' scores 0.644.}
+    error). Accuracy uses a 0.5 threshold; NLL is the mean negative log-likelihood (nats per claim). 32 of 90 claims replicated, so always predicting ``unreplicable'' scores 0.644.}
 \end{table}
